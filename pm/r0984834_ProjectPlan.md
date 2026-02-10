@@ -13,7 +13,7 @@
 #### **Week 1: Project Kickoff & Setup (Feb 10 - Feb 16)**
 *Goal: Understand requirements and set up the workspace.*
 - [ ] Read assignment slides and understand business questions (1h)
-- [ ] Create folder structure (`data/raw`, `data/processed`, `helpers/`) (0.5h)
+- [ ] Create folder structure (`data/raw`, `data/processed`, `src/`) (0.5h)
 - [ ] Initialize Git repository and create `.gitignore` (0.5h)
 - [ ] List all required fields/metrics based on business questions (2h)
 
@@ -52,8 +52,8 @@
 - [ ] Calculate derived columns (e.g., Age from Birthdate) (1h)
 
 #### **Week 7: Export & Validation (Mar 24 - Mar 30)**
-*Goal: Finalize ETL and generate CSVs for Power BI.*h)
-- [ ] Verify CSV filenames match `dim_xxx.csv` and `fact_xxx.csv` (STRICT 5pt PENALTY) (0
+*Goal: Finalize ETL and generate CSVs for Power BI.*
+- [ ] Verify CSV filenames match `dim_xxx.csv` and `fact_xxx.csv` (STRICT 5pt PENALTY)
 - [ ] Write `load.py` to export cleaned DataFrames to CSV (1.5h)
 - [ ] Run full pipeline: Raw Excel → Python → Clean CSVs (1h)
 - [ ] Check CSV output quality (do columns match the schema?) (1.5h)
