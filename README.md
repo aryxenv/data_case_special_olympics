@@ -1,7 +1,7 @@
 # Project: Special Olympics Data Dashboard
 
 ## Overview
-This project is about building an end-to-end data solution for the Special Olympics. We are acting as consultants for a client (Bilal) to transform raw data into actionable insights using Python and Power BI.
+This project is about building an end-to-end data solution for the Special Olympics. We are acting as consultants for a client (Special Olympics) to transform raw data into actionable insights using Python and Power BI.
 
 ## The Goal
 The main objective is to answer business questions about athlete participation, performance trends, and regional statistics. We need to show things like:
