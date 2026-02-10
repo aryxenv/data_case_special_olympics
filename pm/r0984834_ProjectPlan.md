@@ -12,10 +12,10 @@
 
 #### **Week 1: Project Kickoff & Setup (Feb 10 - Feb 16)**
 *Goal: Understand requirements and set up the workspace.*
-- [ ] Read assignment slides and understand business questions (1h)
-- [ ] Create folder structure (`data/raw`, `data/processed`, `src/`) (0.5h)
-- [ ] Initialize Git repository and create `.gitignore` (0.5h)
-- [ ] List all required fields/metrics based on business questions (2h)
+- [x] Read assignment slides and understand business questions (1h)
+- [x] Create folder structure (`data/raw`, `data/processed`, `src/`) (0.5h)
+- [x] Initialize Git repository and create `.gitignore` (0.5h)
+- [x] List all required fields/metrics based on business questions (2h)
 
 #### **Week 2: Data Exploration (Feb 17 - Feb 23)**
 *Goal: Profile raw data and identify data quality issues.*
