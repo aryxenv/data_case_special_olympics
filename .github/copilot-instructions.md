@@ -140,6 +140,15 @@ fix(transform): correct fuzzy club matching threshold
 docs: add star schema diagram to README
 ```
 
+## Visuals & Diagrams
+
+All diagrams **must** use Excalidraw — no other diagramming tools allowed. See the `visuals` skill (`.github/skills/visuals/SKILL.md`) for the full workflow:
+
+- Source files: `excalidraw/diagrams/excalidraw/<name>.excalidraw`
+- Exported PNGs: `excalidraw/diagrams/export/<name>.png` (dark mode, `#000000` background)
+- Export command: `node excalidraw/scripts/export-excalidraw.js excalidraw/diagrams/excalidraw/<name>.excalidraw`
+- README embedding: inline image + Excalidraw.com edit link
+
 ## Power BI Notes
 
 All data transformation happens in Python, **not** in Power BI. Power BI only consumes the clean CSVs from `data/processed/` and handles visualization + DAX measures.

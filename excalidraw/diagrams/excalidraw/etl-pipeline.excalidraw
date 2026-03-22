@@ -1,0 +1,133 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "r1",
+      "x": 80,
+      "y": 180,
+      "width": 180,
+      "height": 90,
+      "roundness": { "type": 3 },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeColor": "#e0e0e0",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "r1_label",
+      "x": 110,
+      "y": 200,
+      "width": 120,
+      "height": 40,
+      "text": "Extract\n(Raw Excel)",
+      "fontSize": 20,
+      "textAlign": "center",
+      "containerId": "r1",
+      "strokeColor": "#1e1e2e"
+    },
+    {
+      "type": "rectangle",
+      "id": "r2",
+      "x": 360,
+      "y": 180,
+      "width": 180,
+      "height": 90,
+      "roundness": { "type": 3 },
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeColor": "#e0e0e0",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "r2_label",
+      "x": 395,
+      "y": 200,
+      "width": 110,
+      "height": 40,
+      "text": "Transform\n(pandas)",
+      "fontSize": 20,
+      "textAlign": "center",
+      "containerId": "r2",
+      "strokeColor": "#1e1e2e"
+    },
+    {
+      "type": "rectangle",
+      "id": "r3",
+      "x": 640,
+      "y": 180,
+      "width": 180,
+      "height": 90,
+      "roundness": { "type": 3 },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeColor": "#e0e0e0",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "r3_label",
+      "x": 665,
+      "y": 200,
+      "width": 130,
+      "height": 40,
+      "text": "Load\n(Star Schema)",
+      "fontSize": 20,
+      "textAlign": "center",
+      "containerId": "r3",
+      "strokeColor": "#1e1e2e"
+    },
+    {
+      "type": "arrow",
+      "id": "a1",
+      "x": 260,
+      "y": 225,
+      "width": 100,
+      "height": 0,
+      "points": [[0,0],[100,0]],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e0e0e0",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "arrow",
+      "id": "a2",
+      "x": 540,
+      "y": 225,
+      "width": 100,
+      "height": 0,
+      "points": [[0,0],[100,0]],
+      "endArrowhead": "arrow",
+      "strokeColor": "#e0e0e0",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "x": 230,
+      "y": 90,
+      "width": 400,
+      "height": 35,
+      "text": "ETL Pipeline Overview",
+      "fontSize": 28,
+      "strokeColor": "#e0e0e0"
+    }
+  ],
+  "appState": {
+    "theme": "dark",
+    "viewBackgroundColor": "#000000"
+  }
+}
