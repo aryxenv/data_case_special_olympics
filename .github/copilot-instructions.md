@@ -79,6 +79,8 @@ CSV filenames **must** follow `dim_<name>.csv` / `fact_<name>.csv` (strict assig
 
 ## Git Workflow
 
+**Always use `gh` CLI** (GitHub CLI) for all Git operations — creating branches, pushing, creating PRs, checking status, etc. Do **not** fall back to raw `git` commands or the GitHub MCP API when `gh` can do the job.
+
 **Branching model:** `main` is the single production + development branch.
 
 - **Never commit directly to `main`.** All changes (features, fixes, docs, etc.) go through a dedicated branch + pull request.
