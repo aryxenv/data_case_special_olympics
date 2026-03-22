@@ -169,14 +169,17 @@ class DataProfiler:
 # ------------------------------------------------------------------
 
 if __name__ == "__main__":
+    import sys
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+    from src.utils.data_loader import DataLoader
+
     RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
+    loader = DataLoader(RAW_DIR)
     profiler = DataProfiler(RAW_DIR)
 
     # 1. Profile every raw file
-    raw_files = sorted(
-        f for f in os.listdir(RAW_DIR) if f.endswith(".xlsx")
-    )
-    for f in raw_files:
+    for f in loader.list_raw_files():
         print(f"Profiling {f} ...")
         profiler.profile_file(f)
 
@@ -184,8 +187,7 @@ if __name__ == "__main__":
     profiler.generate_report()
 
     # 3. Column analysis on Certifications
-    cert_path = os.path.join(RAW_DIR, "Thomas More Data Certifications.xlsx")
-    cert_df = pd.read_excel(cert_path)
+    cert_df = loader.load_certifications()
     print("\n--- Column analysis: Certifications ---")
     for col in cert_df.columns:
         stats = DataProfiler.analyze_column(cert_df, col)
@@ -194,7 +196,7 @@ if __name__ == "__main__":
               f"missing={stats['missing_count']} ({stats['missing_pct']}%)")
 
     # 4. Compare schemas across all Results files
-    results_files = [f for f in raw_files if "Results" in f]
+    results_files = [f for f in loader.list_raw_files() if "Results" in f]
     if len(results_files) > 1:
         print("\n--- Schema comparison: Results files ---")
         schema_cmp = profiler.compare_schemas(results_files)
@@ -208,14 +210,12 @@ if __name__ == "__main__":
         dups = DataProfiler.detect_duplicates(cert_df, ["Code"])
         print(f"\n--- Duplicates on 'Code' in Certifications: {len(dups)} rows ---")
 
-    # 6. Referential integrity: Results ↔ Certifications
-    sample_results_file = os.path.join(RAW_DIR, "Thomas More Results 2024.xlsx")
-    if os.path.exists(sample_results_file):
-        res_df = pd.read_excel(sample_results_file)
-        if "Code" in res_df.columns and "Code" in cert_df.columns:
-            integrity = DataProfiler.check_referential_integrity(
-                res_df, cert_df, "Code", "Code"
-            )
-            print(f"\n--- Referential integrity: Results 2024 ↔ Certifications ---")
-            print(f"  In Results but not Certifications: {integrity['left_only_count']}")
-            print(f"  In Certifications but not Results: {integrity['right_only_count']}")
+    # 6. Referential integrity: Results 2024 vs Certifications
+    res_df = loader.load_results(2024)
+    if "Code" in res_df.columns and "Code" in cert_df.columns:
+        integrity = DataProfiler.check_referential_integrity(
+            res_df, cert_df, "Code", "Code"
+        )
+        print(f"\n--- Referential integrity: Results 2024 vs Certifications ---")
+        print(f"  In Results but not Certifications: {integrity['left_only_count']}")
+        print(f"  In Certifications but not Results: {integrity['right_only_count']}")
