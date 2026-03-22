@@ -861,3 +861,90 @@ For the 7,579 athletes appearing in both files:
 3. 🟡 **`General` club requires special handling** — 7,310 Certifications rows (36.2%) have no real club. Recover from Results where possible (2,267 athletes have real clubs in Results).
 4. 🟠 **Sport normalization** — `Aquatics/Swimming` rename in 2024–2025 must be mapped. `dim_sports` should use canonical names.
 5. 🟢 **Cert-only records are expected** — 62.5% of Certifications never appear in Results (coaches, staff, non-competing athletes). Filter by `Person type = Athlete/Unified Partner` for `dim_athletes`.
+
+---
+
+## 5. Data Quality Summary
+
+### 5.1 Critical Issues (Must Fix for ETL)
+
+Issues that would **break the pipeline or produce incorrect results** if left unaddressed.
+
+| # | Issue | Source | Rows Affected | Why Critical |
+|---|-------|--------|---------------|--------------|
+| C1 | **780 completely empty rows** in Certifications | Certifications | 780 | Will inflate counts and create ghost dimension records in `dim_athletes`. |
+| C2 | **Club name fuzzy matching** — only 75.5% exact match between Results `Club` and Clubs `Name` | Results ↔ Clubs | ~16,500 (14.7% of fact rows) | Unresolved club names → NULL `ClubID` in `fact_results`, breaking regional analysis and club-level KPIs. |
+| C3 | **Score format heterogeneity** — `X min, Y.ZZ sec`, `Xm, Y.ZZcm`, `X.XX points` | Results | All score cells | Scores must be parsed to numeric for performance trends, athlete development tracking, and best-results queries. Unparsed scores = no performance analysis. |
+| C4 | **Place/Rank parsing** — 63 distinct values including ordinals (`1st`, `2nd`), 12 DQ code variants, DNS/DNF/DNC/DNT, and aquatics level indicators | Results | All Place cells | Rank must be integer for medal derivation (1→Gold, 2→Silver, 3→Bronze) and the 20% DQ rule calculation. Inconsistent DQ codes will under/over-count disqualifications. |
+| C5 | **`General` club has no master entry** — 7,310 Certifications rows (34.8%) reference a catch-all club with no record in Clubs file | Certifications ↔ Clubs | 7,310 | Creates a NULL gap in `dim_geography`. 2,267 athletes can be recovered from Results club data; rest need a dedicated "Unknown" club record. |
+| C6 | **Country spelling variants** — 14 variants of "Belgium" + encoding issues + province/city values in Country column | Clubs | 14 variants + 74 missing + row 433 swap | Breaks `dim_geography` grouping; regional analysis becomes unreliable. |
+| C7 | **Sport name instability** — `Aquatics/Swimming` renamed to `Swimming` in 2024–2025 | Results | All aquatics rows across years | Without normalization, `dim_sports` will have duplicate entries and multi-year trend analysis for swimming will break. |
+
+### 5.2 Medium Issues (Should Fix)
+
+Issues that **degrade data quality** but won't break the pipeline outright.
+
+| # | Issue | Source | Rows Affected | Impact |
+|---|-------|--------|---------------|--------|
+| M1 | **DOB missing** — ~1,210 NULLs (mostly Coaches) | Certifications | 1,210 | Age-based demographics incomplete. Coaches are filtered from `dim_athletes`, so athlete impact is lower (~200 athletes). |
+| M2 | **Sentinel DOB** — 6 records with `1900-01-02` (Age 125) | Certifications | 6 | Outlier ages will skew "average age of best performers" use-case. |
+| M3 | **Age = 0 instead of NaN** | Certifications | Unknown count | Will distort age distributions and averages unless converted to NULL. |
+| M4 | **Province normalization** — 24 values instead of ~11 due to casing, hyphens, and typos | Clubs | Multiple | Regional grouping will have duplicates (e.g., "West-Vlaanderen" vs "West-vlaanderen"), fragmenting regional analysis. |
+| M5 | **City casing** — 63% ALL CAPS, 37% mixed case | Clubs | ~300 clubs | Cosmetic for dashboard display but will cause duplicate cities in filters/slicers. |
+| M6 | **491 raw club name variants** in Results | Results | Spread across all years | Even after fuzzy matching, remaining variants will fragment club-level aggregations. |
+| M7 | **Bilingual event names** — 375 distinct event names with Dutch/French/English naming | Results | All event rows | `dim_sports` will be bloated with duplicates unless canonicalized. |
+| M8 | **2025 high missingness** — Place 40.8% missing, Score 35.8% missing | Results (2025) | ~4,600 rows | Most recent year has weakest data; trend analysis for 2025 will be incomplete. |
+| M9 | **`Summary (all)` column missing in 2023** | Results (2023) | All 2023 rows | Schema inconsistency; ETL must handle this column's absence gracefully. |
+| M10 | **Certifications Club ↔ Results Club only 54% consistent** | Cross-file | ~3,800 athletes | Athletes appear under different clubs in each source; ETL must decide source of truth (Results club per year recommended). |
+
+### 5.3 Low Issues (Nice to Fix)
+
+| # | Issue | Source | Rows Affected | Impact |
+|---|-------|--------|---------------|--------|
+| L1 | **51 "U" (Unknown) gender values** | Certifications | 51 | Minor gap in gender distribution analysis; can map to "Unknown" in `dim_athletes`. |
+| L2 | **Zipcode outlier** — `29900` should be `2990` | Clubs | 1 | Single-row fix; negligible dashboard impact. |
+| L3 | **14 Person types** — only 3 matter (Athlete 75.5%, Coach 18.1%, Unified Partner 2.5%) | Certifications | ~820 (minor types) | Filter to relevant types; others are noise for the dashboard. |
+| L4 | **Certificate columns 53–99% NaN** | Certifications | Most rows | Sparse but not needed for core use-cases; can be dropped or kept as optional flags. |
+| L5 | **`Football/Soccer` discontinued post-COVID** | Results | Pre-2020 football rows | Historical only; no new data. Flag in `dim_sports` but no ETL action needed. |
+| L6 | **Kayaking/Sailing sporadic appearances** | Results | Small | One-off sports; include in `dim_sports` as-is. |
+| L7 | **Row 433 province/country swap** | Clubs | 1 | Single-row correction in `dim_geography` build. |
+
+---
+
+### 5.4 Impact on Use-Cases
+
+Mapping of key quality issues to the specific business questions from the dashboard use-cases:
+
+| Use-Case | Affected By | Severity | Notes |
+|----------|-------------|----------|-------|
+| **Distribution by age & gender** | M1 (DOB missing), M2 (sentinel DOB), M3 (Age=0), L1 (Gender "U") | 🟡 Medium | ~1,210 missing DOBs mostly affect coaches (filtered out). 6 sentinel dates and Age=0 will skew distributions if not cleaned. 51 unknown genders are minor. |
+| **Average age of best performers** | M2 (sentinel DOB), C4 (Place parsing) | 🟡 Medium | Sentinel ages (125) will heavily skew averages. Place must be parsed to identify "best" performers. |
+| **Athletes in multiple disciplines / changed sports** | C7 (sport name instability), M7 (bilingual events) | 🔴 High | Sport renaming (`Aquatics/Swimming` → `Swimming`) will create false "sport changes." Bilingual duplicates inflate discipline counts. |
+| **Experience vs performance** | C3 (score parsing), C4 (place parsing) | 🔴 High | Both score and rank must be numeric for any performance correlation. This use-case is completely blocked without C3+C4. |
+| **Year-over-year development** | C3 (score parsing), C7 (sport normalization), M8 (2025 missingness) | 🔴 High | Score comparisons across years require consistent parsing. 2025's 35–41% missingness weakens the latest data point. |
+| **3+ competitions → better performance?** | C3 (score parsing), C4 (place parsing) | 🔴 High | Requires counting competitions per athlete and comparing scores — blocked without numeric scores and ranks. |
+| **Score improvements since previous edition** | C3 (score parsing), C7 (sport normalization) | 🔴 High | Direct score comparison across years; completely dependent on consistent numeric conversion. |
+| **Best results** | C3 (score parsing), C4 (place parsing) | 🔴 High | Ranking athletes by performance requires parsed scores and places. |
+| **20% disqualification rule** | C4 (DQ code parsing) | 🔴 High | 12 inconsistent DQ code formats must be unified to accurately calculate DQ percentages per sport/event. Under-counting DQs defeats the purpose of this rule. |
+| **Regional analysis** (participants by region, geography vs sport, club size vs performance) | C2 (club matching), C5 (General club), C6 (country variants), M4 (province normalization) | 🔴 High | The full club/geography chain is broken: 14.7% of fact rows lose their club link, 34.8% of athletes are in "General," and provinces are fragmented. |
+| **Multi-year athlete tracking** | (Code join is solid at 99.6%) | 🟢 Low | Code-based joins are reliable. Only 28 orphan codes — this is the strongest part of the data. |
+
+---
+
+### 5.5 Recommended ETL Transformation Priority
+
+Ordered by **impact × dependency** — later steps depend on earlier ones.
+
+| Priority | Task | Issues Resolved | Rationale |
+|----------|------|-----------------|-----------|
+| **1** | **Drop empty rows & filter Person types** | C1, L3 | Fastest win: removes 780 ghost rows and scopes data to relevant types. Foundation for all downstream counts. |
+| **2** | **Country / Province / City normalization** | C6, M4, M5, L2, L7 | Fix `dim_geography` first — it's a dimension that everything else joins to. Includes country dedup (14 → 1), province canonicalization (24 → ~11), city casing, zipcode fix, and row 433 swap. |
+| **3** | **Club name fuzzy matching** | C2, M6 | Build the Club → ClubID mapping. Use case-insensitive normalization first, then Levenshtein/token-set matching for the remaining ~122 unmatched names. Unlocks 14.7% of fact rows. |
+| **4** | **`General` club recovery** | C5, M10 | Cross-reference Results club data to recover real clubs for 2,267 athletes currently under "General." Create an "Unknown" stub for the rest. |
+| **5** | **Sport & Event name canonicalization** | C7, M7 | Normalize `Aquatics/Swimming` → `Swimming`, unify bilingual event names, and build `dim_sports`. Required before any sport-based analysis. |
+| **6** | **Score parsing** | C3 | Parse `X min, Y.ZZ sec` → seconds, `Xm, Y.ZZcm` → meters, `X.XX points` → float. This is the most complex transformation and unlocks all performance use-cases. |
+| **7** | **Place / Rank parsing & Medal derivation** | C4 | Parse ordinals → integers, unify 12 DQ codes into a single `IsDisqualified` flag, handle DNS/DNF/DNC/DNT as NULLs. Derive Medal from Place (1→Gold, 2→Silver, 3→Bronze). |
+| **8** | **DOB / Age cleanup** | M1, M2, M3 | Replace sentinel `1900-01-02` → NULL, convert Age=0 → NULL, recalculate age from DOB where possible. |
+| **9** | **Gender standardization** | L1 | Map `U` → `Unknown`. Already clean otherwise (M/F only). |
+| **10** | **Handle 2023 schema gap & 2025 missingness** | M8, M9 | Make `Summary (all)` column optional in the extract step. Document 2025 missingness as a known limitation in the dashboard. |
+| **11** | **Certificate columns** | L4 | Decide keep/drop based on dashboard requirements. Low priority — not needed for core use-cases. |
