@@ -6,4 +6,5 @@ node_modules
 data/raw/
 data/bronze/
 data/silver/
+data/gold/
 data/processed/

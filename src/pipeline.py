@@ -38,7 +38,7 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 _RAW_DIR = _PROJECT_ROOT / "data" / "raw"
 _BRONZE_DIR = _PROJECT_ROOT / "data" / "bronze"
 _SILVER_DIR = _PROJECT_ROOT / "data" / "silver"
-_PROCESSED_DIR = _PROJECT_ROOT / "data" / "processed"
+_GOLD_DIR = _PROJECT_ROOT / "data" / "gold"
 
 
 class Pipeline:
@@ -57,12 +57,12 @@ class Pipeline:
         raw_dir: str | Path = _RAW_DIR,
         bronze_dir: str | Path = _BRONZE_DIR,
         silver_dir: str | Path = _SILVER_DIR,
-        processed_dir: str | Path = _PROCESSED_DIR,
+        gold_dir: str | Path = _GOLD_DIR,
     ) -> None:
         self._raw_dir = Path(raw_dir)
         self._bronze_dir = Path(bronze_dir)
         self._silver_dir = Path(silver_dir)
-        self._processed_dir = Path(processed_dir)
+        self._gold_dir = Path(gold_dir)
         self._loader = DataLoader(str(self._raw_dir))
 
         # Bronze outputs stored after extraction
@@ -170,22 +170,22 @@ class Pipeline:
         start = time.perf_counter()
 
         # --- Dimensions (order matters: sport before event) ---
-        self.dim_time = DimTimeTransformer(self._processed_dir).run()
+        self.dim_time = DimTimeTransformer(self._gold_dir).run()
 
         self.dim_athlete = DimAthleteTransformer(
-            self.silver_certifications, self._processed_dir
+            self.silver_certifications, self._gold_dir
         ).run()
 
         self.dim_geography = DimGeographyTransformer(
-            self.silver_clubs, self._processed_dir
+            self.silver_clubs, self._gold_dir
         ).run()
 
         self.dim_sport = DimSportTransformer(
-            self.silver_results, self._processed_dir
+            self.silver_results, self._gold_dir
         ).run()
 
         self.dim_event = DimEventTransformer(
-            self.silver_results, self.dim_sport, self._processed_dir
+            self.silver_results, self.dim_sport, self._gold_dir
         ).run()
 
         # --- Facts (need all dimensions for FK lookups) ---
@@ -195,11 +195,11 @@ class Pipeline:
             self.dim_geography,
             self.dim_sport,
             self.dim_event,
-            self._processed_dir,
+            self._gold_dir,
         ).run()
 
         self.fact_participation = FactParticipationTransformer(
-            self.fact_results, self._processed_dir
+            self.fact_results, self._gold_dir
         ).run()
 
         elapsed = time.perf_counter() - start
@@ -211,7 +211,7 @@ class Pipeline:
             "dim_event": self.dim_event,
             "fact_results": self.fact_results,
             "fact_participation": self.fact_participation,
-        }, self._processed_dir)
+        }, self._gold_dir)
 
     # ------------------------------------------------------------------
     # Logging
