@@ -5,4 +5,5 @@ node_modules
 # Data files (too large for Git — kept locally)
 data/raw/
 data/bronze/
+data/silver/
 data/processed/
