@@ -53,9 +53,9 @@ _Goal: Read data from Excel into Python._
 
 _Goal: Clean raw data using OOP principles._
 
-- [ ] Write `clean.py` class structure (1h)
-- [ ] Implement methods to handle NULLs and duplicates (2h)
-- [ ] Standardize date formats and string casing (1h)
+- [x] Write `clean.py` class structure (1h)
+- [x] Implement methods to handle NULLs and duplicates (2h)
+- [x] Standardize date formats and string casing (1h)
 
 #### **Week 6: Transformation & Aggregation (Mar 17 - Mar 23)**
 
