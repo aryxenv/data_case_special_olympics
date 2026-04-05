@@ -96,12 +96,11 @@ CSV filenames **must** follow `dim_<name>.csv` / `fact_<name>.csv` (strict assig
 
 ## Approach — Weekly Task Workflow
 
-When the user provides a week of work (e.g. "Week 4") with a linked GitHub issue, use the `weekly-workflow` skill (`.github/skills/weekly-workflow/SKILL.md`) which defines the full phased approach:
+When the user provides a week of work (e.g. "Week 4"), use the `weekly-workflow` skill (`.github/skills/weekly-workflow/SKILL.md`) which defines the full phased approach:
 
-1. **Scope** — Read the issue, cross-reference the project plan (`pm/`), review business context (`docs/`), audit existing code, and produce an implementation plan before writing code.
+1. **Scope** — Read the specified week's tasks in `pm/r0984834_ProjectPlan.md`, review business context (`docs/`), audit existing code, and produce an implementation plan before writing code.
 2. **Implement** — Single `feat/week-N-...` branch. Jupyter notebooks in `src/notebooks/` for exploration; OOP classes in `src/` for production code; docs in `docs/` only for significant items. Atomic commits.
-3. **Deliver** — Validate pipeline output and CSVs, then open a PR via `gh`.
-
+3. **Deliver** — Validate pipeline output and CSVs, then run `git-workflow` skill (`.github/skills/git-workflow/SKILL.md`).
 
 ## Code Style
 

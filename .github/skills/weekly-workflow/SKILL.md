@@ -1,15 +1,13 @@
 ---
 name: weekly-workflow
-description: Defines the phased approach for executing weekly task batches. Use this when the user provides a week number and GitHub issue to implement. Covers scoping, planning, implementation, and delivery.
+description: Defines the phased approach for executing weekly task batches. Use this when the user provides a week number to implement. Covers scoping, planning, implementation, and delivery.
 ---
 
 # Weekly Workflow — Task Execution Approach
 
 ## When to Use
 
-This workflow activates when the user provides:
-- A **week number** (e.g. "Week 4") referencing the project plan
-- A **GitHub issue** (ticket) containing the task items for that week
+This workflow activates when the user provides a **week number** (e.g. "Week 4") referencing the project plan in `pm/r0984834_ProjectPlan.md`.
 
 Follow the phases below **in order**. Do not skip phases or start coding before scoping is complete.
 
@@ -19,20 +17,16 @@ Follow the phases below **in order**. Do not skip phases or start coding before 
 
 **Goal:** Understand exactly what needs to be built, why it matters, and how it fits into the existing codebase.
 
-### Step 1 — Read the GitHub issue
+### Step 1 — Read the project plan
 
-- Extract every task item, checkbox, and acceptance criterion from the issue.
+- Open `pm/r0984834_ProjectPlan.md` and locate the requested week.
+- Extract every task item, checkbox, and deliverable listed for that week.
+- Understand which **project phase** this week belongs to (Planning, ETL Development, Dashboarding, Finalizing).
+- Check which prior weeks are marked complete — this tells you what's already built.
 - Note any specific file names, column names, or data sources mentioned.
 - Identify the **deliverables** — what artifacts (code, CSVs, notebooks, docs) the week should produce.
 
-### Step 2 — Cross-reference the project plan
-
-- Open `pm/r0984834_ProjectPlan.md` and locate the week.
-- Understand which **project phase** this week belongs to (Planning, ETL Development, Dashboarding, Finalizing).
-- Check which prior weeks are marked complete — this tells you what's already built.
-- Note the week's stated goal and estimated effort.
-
-### Step 3 — Review business context
+### Step 2 — Review business context
 
 Scan `docs/` to understand the *why* behind the tasks:
 
@@ -43,7 +37,7 @@ Scan `docs/` to understand the *why* behind the tasks:
 
 The ETL is scored on whether it serves the business questions. Every transformation should trace back to a dashboard need.
 
-### Step 4 — Audit the codebase
+### Step 3 — Audit the codebase
 
 Check what already exists before writing anything:
 
@@ -53,11 +47,11 @@ Check what already exists before writing anything:
 - **`main.py`** — is the pipeline entry point wired up?
 - **`requirements.txt`** — will this week's work need new dependencies?
 
-### Step 5 — Produce a scoped implementation plan
+### Step 4 — Produce a scoped implementation plan
 
 Before writing any code, produce a plan that includes:
 
-- **Task breakdown** — each task from the issue decomposed into implementable units.
+- **Task breakdown** — each task from the project plan decomposed into implementable units.
 - **Commit plan** — which logical commits will be made and in what order.
 - **Dependencies** — what must be built first (e.g., extraction before transformation).
 - **Open questions** — flag anything ambiguous and ask the user before proceeding.
@@ -68,7 +62,7 @@ Before writing any code, produce a plan that includes:
 
 **Goal:** Build everything for the week in a clean, reviewable branch.
 
-### Step 6 — Create the feature branch
+### Step 5 — Create the feature branch
 
 ```bash
 git checkout main
@@ -78,7 +72,7 @@ git checkout -b feat/week-N-short-description
 
 One branch per week. The branch name uses the `feat/` prefix and a short description of the week's focus (e.g., `feat/week-4-extraction-logic`).
 
-### Step 7 — Explore with Jupyter notebooks
+### Step 6 — Explore with Jupyter notebooks
 
 For any task that involves understanding data, experimenting with transformations, or validating assumptions:
 
@@ -87,14 +81,14 @@ For any task that involves understanding data, experimenting with transformation
 - This is preferred over throwaway scripts or verbose markdown documents without code.
 - Notebooks are exploration artifacts — the production logic goes into `src/` classes.
 
-### Step 8 — Write production code
+### Step 7 — Write production code
 
 - **OOP classes in `src/`** — follow the same patterns as `DataProfiler` and `DataLoader` (class-based, docstrings, logical method grouping with section comments).
 - **Reuse `DataLoader`** (`src/utils/data_loader.py`) for all raw file access — do not re-implement Excel loading.
 - **Readability matters** — an evaluator should understand the pipeline by reading the code. Use clear method names, type hints, and concise docstrings.
 - **Wire into `main.py`** — if this week produces new pipeline stages, integrate them into the entry point.
 
-### Step 9 — Write documentation (selectively)
+### Step 8 — Write documentation (selectively)
 
 Create docs **only** when a task is significant enough to warrant explanation beyond what the code and notebooks already provide:
 
@@ -104,7 +98,7 @@ Create docs **only** when a task is significant enough to warrant explanation be
 
 Docs go in `docs/`. Do not create documentation for the sake of it.
 
-### Step 10 — Commit atomically
+### Step 9 — Commit atomically
 
 Each commit should represent **one logical unit of work**:
 
@@ -128,7 +122,7 @@ Do **not** lump an entire week into a single commit.
 
 **Goal:** Validate the output and open a pull request.
 
-### Step 11 — Validate
+### Step 10 — Validate
 
 - **Run the pipeline:** `python main.py` — it should complete without errors.
 - **Check output CSVs** in `data/processed/`:
@@ -137,16 +131,13 @@ Do **not** lump an entire week into a single commit.
   - Are row counts reasonable? (compare against raw file counts in `docs/data_exploration.md`)
 - **Spot-check data quality** — sample a few rows and verify transformations (e.g., ordinal rank parsing, gender standardization, score normalization).
 
-### Step 12 — Open the pull request
+### Step 11 — Open the pull request
 
-```bash
-gh pr create --title "feat(etl): week N — short description" --body "Description of what was implemented" --base main
-```
+Use the `git-workflow` skill (`.github/skills/git-workflow/SKILL.md`) to open the PR. Follow its conventions for branch pushing, PR title format, and body content.
 
 The PR should:
 - Have a **conventional commit-style title** (e.g., `feat(etl): week 4 — extraction logic`).
 - Include a **body** summarizing what was built, any decisions made, and any known limitations.
-- Reference the GitHub issue it addresses.
 - **Not be self-merged** — wait for review and approval.
 
 ---
