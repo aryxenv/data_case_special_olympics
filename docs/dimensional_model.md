@@ -226,7 +226,7 @@ Aggregated participation records — one row per athlete per club per year.
 
 ## Output File Naming Convention
 
-All CSVs are exported to `data/processed/` with strict naming:
+All CSVs are exported to `data/gold/` with strict naming:
 
 | File | Table |
 |------|-------|

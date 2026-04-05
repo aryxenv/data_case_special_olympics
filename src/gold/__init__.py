@@ -1,7 +1,7 @@
 """Gold layer transformers for the Special Olympics ETL pipeline.
 
 The gold layer transforms cleaned silver data into the star schema:
-5 dimension tables and 2 fact tables, exported to data/processed/.
+5 dimension tables and 2 fact tables, exported to data/gold/.
 """
 
 from .base_transformer import BaseTransformer
