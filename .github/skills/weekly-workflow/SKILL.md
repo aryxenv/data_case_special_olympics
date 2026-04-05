@@ -33,7 +33,7 @@ Scan `docs/` to understand the _why_ behind the tasks:
 - **`docs/data_requirements.md`** — the star schema definition, required fields, and transformation rules. This is the source of truth for what the ETL must produce.
 - **`docs/Special Olympics - Use-Cases.pdf`** — the business questions the dashboard must answer (athlete demographics, participation trends, performance analysis, regional distribution).
 - **`docs/Slides - Assignment.pdf`** — grading criteria and submission requirements.
-- **`docs/data_exploration.md`** — known data quality issues, column statistics, and schema quirks discovered during profiling.
+- **`docs/week2_data_exploration.md`** — known data quality issues, column statistics, and schema quirks discovered during profiling.
 
 The ETL is scored on whether it serves the business questions. Every transformation should trace back to a dashboard need.
 
@@ -128,7 +128,7 @@ Do **not** lump an entire week into a single commit.
 - **Check output CSVs** in `data/gold/`:
   - Do the filenames follow `dim_<name>.csv` / `fact_<name>.csv`? (strict penalty for non-compliance)
   - Do the columns match the schema in `docs/data_requirements.md`?
-  - Are row counts reasonable? (compare against raw file counts in `docs/data_exploration.md`)
+  - Are row counts reasonable? (compare against raw file counts in `docs/week2_data_exploration.md`)
 - **Spot-check data quality** — sample a few rows and verify transformations (e.g., ordinal rank parsing, gender standardization, score normalization).
 
 ### Step 11 — Open the pull request
