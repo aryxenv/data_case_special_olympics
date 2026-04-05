@@ -159,28 +159,3 @@ _Goal: Submit project._
 ## AI Usage
 
 Gemini 3 Pro was used to generate this project plan.
-
-### Prompt 1: Initial Project Management Plan
-
-```txt
-create a weekly breakdown of the project found in #file:Slides - Assignment.pdf  in section Project Phases and task. today is 10 february 2026, the deadline for this is 15 may 2026. Create a logical weekly break of the project in PM folder with structured markdown. ensure the distribution of tasks is realistic and sequential (waterfall). you can find more of the requirements in #file:Slides - Assignment.pdf .
-```
-
-### Prompt 2: Summarize Project Management Plan
-
-```txt
-the #file:pm  folder is way too detailed. I simply want 1 file describing the weekly breakdown (assume I will spend 4 hours per week on this from 10 feb till 15 may (13 weeks)). Include the task list since that's quite nice to have to keep track. But again, all in 1 file, must still be logical, but just not so detailed as it is right now. Make sure the requirements are still correctly met based on #file:Slides - Assignment.pdf .
-```
-
-### Prompt 3: Week 2 Data Exploration
-
-```txt
-plan out the tasks of week 2 from the project plan, make sure to review the slides to have a complete overview of what is expected
-```
-
-Copilot CLI (Claude Opus 4.6) was used to:
-
-- Rewrite `src/explore.py` as an OOP-based `DataProfiler` class
-- Profile all 11 raw Excel files (Certifications, Clubs, 9 Results files)
-- Document cross-file relationships and referential integrity
-- Generate `docs/data_exploration.md` with comprehensive findings
