@@ -25,8 +25,8 @@ def main() -> None:
     # Week 4: Bronze extraction
     pipeline.run_bronze()
 
-    # Week 5: Silver cleaning (placeholder)
-    # pipeline.run_silver()
+    # Week 5: Silver cleaning
+    pipeline.run_silver()
 
     # Weeks 6-7: Gold transformation (placeholder)
     # pipeline.run_gold()
