@@ -258,4 +258,4 @@ All CSVs are exported to `data/processed/` with strict naming:
 Copilot CLI (Claude Opus 4.6) was used to:
 - Explore dimension cardinalities and validate grain decisions via Python (see `src/notebooks/week3_dimensional_modeling.ipynb`)
 - Draft this dimensional model document based on findings from `docs/data_exploration.md` and `docs/data_requirements.md`
-- Create the Excalidraw star-schema diagram
+- Create the Excalidraw star-schema diagram and PNG export
