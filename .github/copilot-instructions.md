@@ -110,7 +110,7 @@ When the user provides a week of work (e.g. "Week 4") with a linked GitHub issue
 
 ## Git Workflow
 
-When performing any git-related task (creating branches, committing, pushing, opening PRs, merging, or reviewing), use the `git-workflow` skill (`.github/skills/git-workflow/SKILL.md`) which enforces the branching model, conventional commits, PR workflow, and commit granularity rules defined below.
+When performing any git-related task (creating branches, committing, pushing, opening PRs, merging, or reviewing), use the `git-workflow` skill (`.github/skills/git-workflow/SKILL.md`) as **guidance** for the branching model, conventional commits, PR workflow, and commit granularity rules defined below. **If a user's request conflicts with the skill's guidelines, the user's explicit instructions take precedence.**
 
 **Always use `gh` CLI**(GitHub CLI) for all Git operations — creating branches, pushing, creating PRs, checking status, etc. Do **not** fall back to raw `git` commands or the GitHub MCP API when `gh` can do the job.
 
