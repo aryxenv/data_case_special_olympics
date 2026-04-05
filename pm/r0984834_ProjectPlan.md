@@ -69,10 +69,10 @@ _Goal: Shape data into the Star Schema._
 
 _Goal: Finalize ETL and generate CSVs for Power BI._
 
-- [ ] Verify CSV filenames match `dim_xxx.csv` and `fact_xxx.csv` (STRICT 5pt PENALTY)
-- [ ] Write `load.py` to export cleaned DataFrames to CSV (1.5h)
-- [ ] Run full pipeline: Raw Excel → Python → Clean CSVs (1h)
-- [ ] Check CSV output quality (do columns match the schema?) (1.5h)
+- [x] Verify CSV filenames match `dim_xxx.csv` and `fact_xxx.csv` (STRICT 5pt PENALTY)
+- [x] Write `load.py` to export cleaned DataFrames to CSV (1.5h)
+- [x] Run full pipeline: Raw Excel → Python → Clean CSVs (1h)
+- [x] Check CSV output quality (do columns match the schema?) (1.5h)
 
 ---
 
