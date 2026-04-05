@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1135" height="1065" viewBox="-200 0 1135 1065">
+<defs><marker id="arrow-e0e0e0" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#e0e0e0" /></marker><marker id="arrow-b0b0b0" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#b0b0b0" /></marker><style>text { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; }</style></defs>
+<rect width="100%" height="100%" fill="#000000"/>
+<rect x="220" y="20" width="290" height="155" rx="8" stroke="#e0e0e0" fill="#a5d8ff" stroke-width="1" />
+<text x="365" y="50" font-size="13" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">dim_athlete</text>
+<line x1="230" y1="64" x2="500" y2="64" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="235" y="80" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">PK  athlete_key</text>
+<text x="235" y="96" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">code | gender | dob</text>
+<text x="235" y="112" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">age | person_type</text>
+<text x="235" y="128" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">4 certificate flags</text>
+<rect x="-180" y="310" width="290" height="155" rx="8" stroke="#e0e0e0" fill="#a5d8ff" stroke-width="1" />
+<text x="-35" y="340" font-size="13" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">dim_geography</text>
+<line x1="-170" y1="354" x2="100" y2="354" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="-165" y="370" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">PK  geography_key</text>
+<text x="-165" y="386" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">club_id | club_name</text>
+<text x="-165" y="402" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">province | city | country</text>
+<text x="-165" y="418" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">primary_language</text>
+<rect x="660" y="260" width="215" height="100" rx="8" stroke="#e0e0e0" fill="#a5d8ff" stroke-width="1" />
+<text x="767" y="290" font-size="13" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">dim_sport</text>
+<line x1="670" y1="304" x2="865" y2="304" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="675" y="320" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">PK  sport_key</text>
+<text x="675" y="336" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">sport_name</text>
+<rect x="660" y="410" width="255" height="130" rx="8" stroke="#e0e0e0" fill="#a5d8ff" stroke-width="1" />
+<text x="787" y="440" font-size="13" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">dim_event</text>
+<line x1="670" y1="454" x2="905" y2="454" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="675" y="470" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">PK  event_key</text>
+<text x="675" y="486" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  sport_key</text>
+<text x="675" y="502" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">event_code | event_name</text>
+<rect x="245" y="650" width="240" height="105" rx="8" stroke="#e0e0e0" fill="#a5d8ff" stroke-width="1" />
+<text x="365" y="680" font-size="13" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">dim_time</text>
+<line x1="255" y1="694" x2="475" y2="694" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="260" y="710" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">PK  time_key</text>
+<text x="260" y="726" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">year | period | is_covid_gap</text>
+<rect x="195" y="280" width="340" height="280" rx="8" stroke="#e0e0e0" fill="#ffd8a8" stroke-width="1" />
+<text x="365" y="305" font-size="14" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">fact_results</text>
+<line x1="205" y1="318" x2="525" y2="318" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="210" y="334" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">PK  result_key</text>
+<text x="210" y="350" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  athlete_key</text>
+<text x="210" y="366" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  geography_key</text>
+<text x="210" y="382" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  sport_key</text>
+<text x="210" y="398" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  event_key</text>
+<text x="210" y="414" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  time_key</text>
+<line x1="205" y1="424" x2="525" y2="424" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="210" y="440" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">rank | medal</text>
+<text x="210" y="456" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">score_value | score_unit</text>
+<text x="210" y="472" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">is_disqualified</text>
+<text x="210" y="488" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">result_status</text>
+<rect x="230" y="870" width="280" height="175" rx="8" stroke="#e0e0e0" fill="#ffd8a8" stroke-width="1" />
+<text x="370" y="895" font-size="14" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="bold">fact_participation</text>
+<line x1="240" y1="908" x2="500" y2="908" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="245" y="924" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  athlete_key</text>
+<text x="245" y="940" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  geography_key</text>
+<text x="245" y="956" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">FK  time_key</text>
+<line x1="240" y1="966" x2="500" y2="966" stroke="#1e1e1e" stroke-width="0.5"/>
+<text x="245" y="982" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">events_entered</text>
+<text x="245" y="998" font-size="11" fill="#1e1e1e" font-family="Consolas, monospace">sports_entered</text>
+<path d="M 365 280 L 365 175" stroke="#e0e0e0" fill="none" stroke-width="2" marker-end="url(#arrow-e0e0e0)" />
+<path d="M 195 420 L 110 390" stroke="#e0e0e0" fill="none" stroke-width="2" marker-end="url(#arrow-e0e0e0)" />
+<path d="M 535 350 L 660 310" stroke="#e0e0e0" fill="none" stroke-width="2" marker-end="url(#arrow-e0e0e0)" />
+<path d="M 535 450 L 660 475" stroke="#e0e0e0" fill="none" stroke-width="2" marker-end="url(#arrow-e0e0e0)" />
+<path d="M 365 560 L 365 650" stroke="#e0e0e0" fill="none" stroke-width="2" marker-end="url(#arrow-e0e0e0)" />
+<path d="M 370 870 L 365 755" stroke="#e0e0e0" fill="none" stroke-width="2" marker-end="url(#arrow-e0e0e0)" />
+<path d="M 230 915 L -50 915 L -50 90 L 220 90" stroke="#b0b0b0" fill="none" stroke-width="1" marker-end="url(#arrow-b0b0b0)" />
+<path d="M 230 960 L -20 960 L -20 385 L -180 385" stroke="#b0b0b0" fill="none" stroke-width="1" marker-end="url(#arrow-b0b0b0)" />
+<rect x="660" y="650" width="130" height="30" rx="8" stroke="#e0e0e0" fill="#a5d8ff" stroke-width="1" />
+<text x="725" y="669" font-size="12" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif">Dimension</text>
+<rect x="660" y="695" width="130" height="30" rx="8" stroke="#e0e0e0" fill="#ffd8a8" stroke-width="1" />
+<text x="725" y="714" font-size="12" fill="#1e1e1e" text-anchor="middle" font-family="Segoe UI, sans-serif">Fact</text>
+<text x="660" y="640" font-size="14" fill="#e0e0e0" font-family="Segoe UI, sans-serif" font-weight="bold">LEGEND</text>
+<text x="650" y="755" font-size="11" fill="#909090" font-family="Segoe UI, sans-serif">All relationships: Many-to-One (Fact → Dim)</text>
+<text x="200" y="-5" font-size="22" fill="#e0e0e0" font-family="Segoe UI, sans-serif" font-weight="bold">Star Schema — Special Olympics Data Dashboard</text>
+</svg>
