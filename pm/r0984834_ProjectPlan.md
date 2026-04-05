@@ -45,9 +45,9 @@ USE MEDALLION ARCHITECTURE (Bronze: Raw → Silver: Cleaned → Gold: Star Schem
 
 _Goal: Read data from Excel into Python._
 
-- [ ] Set up Python virtual environment & install `pandas`, `openpyxl` (0.5h)
-- [ ] Write `extract.py` to read all Excel files into DataFrames (2.5h)
-- [ ] Verify row counts match raw files (1h)
+- [x] Set up Python virtual environment & install `pandas`, `openpyxl` (0.5h)
+- [x] Write `extract.py` to read all Excel files into DataFrames (2.5h)
+- [x] Verify row counts match raw files (1h)
 
 #### **Week 5: Data Cleaning (Mar 10 - Mar 16)**
 
