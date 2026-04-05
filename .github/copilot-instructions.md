@@ -4,14 +4,36 @@
 
 ETL pipeline (Python/pandas) that transforms raw Special Olympics Excel files into clean CSVs for a Power BI star-schema dashboard. The data covers athlete certifications, club/delegation info, and competition results (2015–2025).
 
+## Commands
+
+```bash
+# Environment setup (uv, not pip)
+uv venv
+uv pip install -r requirements.txt
+
+# Run the full ETL pipeline
+python main.py
+
+# Run the data profiler standalone
+python -m src.explore
+
+# Excalidraw diagram export (requires Node.js)
+cd excalidraw && npm install
+node excalidraw/scripts/export-excalidraw.js excalidraw/diagrams/excalidraw/<name>.excalidraw
+```
+
+No test suite exists yet. There are no linters or CI configured.
+
 ## Architecture
 
 ```
 data/raw/       → Source Excel files (11 files: Certifications, Clubs, Results per year)
 data/processed/ → Output CSVs: dim_*.csv (dimensions), fact_*.csv (facts)
 src/            → Python ETL scripts (OOP required by assignment)
-  explore.py    → Data profiling utility (inspect sheets/columns)
-  utils/        → Shared helpers (currently empty)
+  explore.py    → DataProfiler class (schema inspection, column stats, duplicate detection)
+  utils/
+    data_loader.py → DataLoader class (cached Excel loading, year extraction)
+  notebooks/    → Jupyter notebooks for ad-hoc exploration
 main.py         → Pipeline entry point (project root)
 docs/           → Data requirements, use-case specs, assignment slides
 pm/             → Project plan and timeline
@@ -21,6 +43,11 @@ pm/             → Project plan and timeline
 
 - **Dimensions:** Athletes, Geography (Clubs), Sports/Events, Time
 - **Facts:** Results/Performance, Participation
+
+### Key classes
+
+- **`DataLoader`** (`src/utils/data_loader.py`): Loads and caches raw Excel files. Use `load_certifications()`, `load_clubs()`, `load_results(year)`, `load_all_results()`. Has `available_years()` (returns `[2015–2019, 2022–2025]`) and `extract_year(filename)`.
+- **`DataProfiler`** (`src/explore.py`): Profiles schemas, analyzes columns, detects duplicates, compares schemas across files, and checks referential integrity. All new ETL classes should follow this same OOP pattern.
 
 ### Source files in `data/raw/`
 
@@ -49,14 +76,9 @@ pm/             → Project plan and timeline
 
 ## ETL Conventions
 
-The virtual environment is at the **project root** (`.venv`), managed with **uv**:
+The virtual environment is at the **project root** (`.venv`), managed with **uv**. Dependencies: `pandas`, `openpyxl`.
 
-```bash
-uv venv
-uv pip install -r requirements.txt
-```
-
-ETL scripts live in `src/`. The pipeline entry point is `main.py` at the project root.
+ETL scripts live in `src/`. The pipeline entry point is `main.py` at the project root (not yet implemented — currently empty). New ETL classes (extractors, transformers) go in `src/` and should reuse `DataLoader` for all raw file access.
 
 ### Transformation rules (from `docs/data_requirements.md`)
 
@@ -71,6 +93,15 @@ ETL scripts live in `src/`. The pipeline entry point is `main.py` at the project
 ### Output naming
 
 CSV filenames **must** follow `dim_<name>.csv` / `fact_<name>.csv` (strict assignment penalty for non-compliance).
+
+## Approach — Weekly Task Workflow
+
+When the user provides a week of work (e.g. "Week 4") with a linked GitHub issue, use the `weekly-workflow` skill (`.github/skills/weekly-workflow/SKILL.md`) which defines the full phased approach:
+
+1. **Scope** — Read the issue, cross-reference the project plan (`pm/`), review business context (`docs/`), audit existing code, and produce an implementation plan before writing code.
+2. **Implement** — Single `feat/week-N-...` branch. Jupyter notebooks in `src/notebooks/` for exploration; OOP classes in `src/` for production code; docs in `docs/` only for significant items. Atomic commits.
+3. **Deliver** — Validate pipeline output and CSVs, then open a PR via `gh`.
+
 
 ## Code Style
 
