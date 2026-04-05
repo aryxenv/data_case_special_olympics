@@ -1,0 +1,29 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "elements": [
+    {"type":"rectangle","x":220,"y":20,"width":290,"height":155,"backgroundColor":"#a5d8ff","strokeColor":"#e0e0e0","roughness":0,"text":"dim_athlete\n--------\nPK  athlete_key\ncode | gender | dob\nage | person_type\n4 certificate flags","fontSize":13,"fontFamily":3},
+    {"type":"rectangle","x":-180,"y":310,"width":290,"height":155,"backgroundColor":"#a5d8ff","strokeColor":"#e0e0e0","roughness":0,"text":"dim_geography\n--------\nPK  geography_key\nclub_id | club_name\nprovince | city | country\nprimary_language","fontSize":13,"fontFamily":3},
+    {"type":"rectangle","x":660,"y":260,"width":215,"height":100,"backgroundColor":"#a5d8ff","strokeColor":"#e0e0e0","roughness":0,"text":"dim_sport\n--------\nPK  sport_key\nsport_name","fontSize":13,"fontFamily":3},
+    {"type":"rectangle","x":660,"y":410,"width":255,"height":130,"backgroundColor":"#a5d8ff","strokeColor":"#e0e0e0","roughness":0,"text":"dim_event\n--------\nPK  event_key\nFK  sport_key\nevent_code | event_name","fontSize":13,"fontFamily":3},
+    {"type":"rectangle","x":245,"y":650,"width":240,"height":105,"backgroundColor":"#a5d8ff","strokeColor":"#e0e0e0","roughness":0,"text":"dim_time\n--------\nPK  time_key\nyear | period | is_covid_gap","fontSize":13,"fontFamily":3},
+    {"type":"rectangle","x":195,"y":280,"width":340,"height":280,"backgroundColor":"#ffd8a8","strokeColor":"#e0e0e0","roughness":0,"text":"fact_results\n--------\nPK  result_key\nFK  athlete_key\nFK  geography_key\nFK  sport_key\nFK  event_key\nFK  time_key\n--------\nrank | medal\nscore_value | score_unit\nis_disqualified\nresult_status","fontSize":13,"fontFamily":3},
+    {"type":"rectangle","x":230,"y":870,"width":280,"height":175,"backgroundColor":"#ffd8a8","strokeColor":"#e0e0e0","roughness":0,"text":"fact_participation\n--------\nFK  athlete_key\nFK  geography_key\nFK  time_key\n--------\nevents_entered\nsports_entered","fontSize":13,"fontFamily":3},
+    {"type":"arrow","x":365,"y":280,"points":[{"x":0,"y":0},{"x":0,"y":-105}],"strokeColor":"#e0e0e0","strokeWidth":2},
+    {"type":"arrow","x":195,"y":420,"points":[{"x":0,"y":0},{"x":-85,"y":-30}],"strokeColor":"#e0e0e0","strokeWidth":2},
+    {"type":"arrow","x":535,"y":350,"points":[{"x":0,"y":0},{"x":125,"y":-40}],"strokeColor":"#e0e0e0","strokeWidth":2},
+    {"type":"arrow","x":535,"y":450,"points":[{"x":0,"y":0},{"x":125,"y":25}],"strokeColor":"#e0e0e0","strokeWidth":2},
+    {"type":"arrow","x":365,"y":560,"points":[{"x":0,"y":0},{"x":0,"y":90}],"strokeColor":"#e0e0e0","strokeWidth":2},
+    {"type":"arrow","x":370,"y":870,"points":[{"x":0,"y":0},{"x":-5,"y":-115}],"strokeColor":"#e0e0e0","strokeWidth":2},
+    {"type":"arrow","x":230,"y":915,"points":[{"x":0,"y":0},{"x":-280,"y":0},{"x":-280,"y":-825},{"x":-10,"y":-825}],"strokeColor":"#b0b0b0","strokeWidth":1},
+    {"type":"arrow","x":230,"y":960,"points":[{"x":0,"y":0},{"x":-250,"y":0},{"x":-250,"y":-575},{"x":-120,"y":-575}],"strokeColor":"#b0b0b0","strokeWidth":1},
+    {"type":"rectangle","x":660,"y":650,"width":130,"height":30,"backgroundColor":"#a5d8ff","strokeColor":"#e0e0e0","roughness":0,"text":"Dimension","fontSize":12},
+    {"type":"rectangle","x":660,"y":695,"width":130,"height":30,"backgroundColor":"#ffd8a8","strokeColor":"#e0e0e0","roughness":0,"text":"Fact","fontSize":12},
+    {"type":"text","x":660,"y":620,"strokeColor":"#e0e0e0","text":"LEGEND","fontSize":14,"fontFamily":3},
+    {"type":"text","x":650,"y":740,"strokeColor":"#909090","text":"All relationships:\nMany-to-One (Fact \u2192 Dim)","fontSize":11,"fontFamily":3}
+  ],
+  "appState": {
+    "theme": "dark",
+    "viewBackgroundColor": "#000000"
+  }
+}
