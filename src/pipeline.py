@@ -4,6 +4,7 @@ Coordinates the medallion-architecture layers:
 - **Bronze:** raw extraction (Week 4)
 - **Silver:** cleaning & standardization (Week 5)
 - **Gold:** star-schema transformation (Week 6)
+- **Validation:** output quality assurance (Week 7)
 """
 
 from __future__ import annotations
@@ -30,6 +31,7 @@ from src.silver import (
     ResultsCleaner,
 )
 from src.utils import DataLoader
+from src.validation import OutputValidator
 
 logger = logging.getLogger(__name__)
 
@@ -212,6 +214,30 @@ class Pipeline:
             "fact_results": self.fact_results,
             "fact_participation": self.fact_participation,
         }, self._gold_dir)
+
+    # ------------------------------------------------------------------
+    # Validation
+    # ------------------------------------------------------------------
+
+    def run_validation(self) -> None:
+        """Validate all gold-layer outputs against the dimensional model.
+
+        Checks file existence, schemas, row counts, FK integrity,
+        and data quality. Logs a full PASS/FAIL report.
+        """
+        logger.info("=" * 60)
+        logger.info("VALIDATION — Output Quality Assurance")
+        logger.info("=" * 60)
+
+        validator = OutputValidator(self._gold_dir)
+        report = validator.run()
+        report.log_summary()
+
+        if not report.all_passed:
+            logger.warning(
+                "Validation completed with %d failure(s) — review above",
+                report.failed,
+            )
 
     # ------------------------------------------------------------------
     # Logging

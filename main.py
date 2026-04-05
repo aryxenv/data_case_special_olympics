@@ -31,6 +31,9 @@ def main() -> None:
     # Week 6: Gold transformation (star schema)
     pipeline.run_gold()
 
+    # Week 7: Output validation
+    pipeline.run_validation()
+
 
 if __name__ == "__main__":
     main()
