@@ -4,12 +4,12 @@
 
 ## Overview
 
-The vast majority of this project was built using **GitHub Copilot CLI** (terminal-based AI agent) running **Claude Opus 4.6** as the underlying model. A small amount of initial project planning used **Gemini 3 Pro** via VS Code chat.
+The vast majority of this project was built using **Copilot CLI** (terminal-based AI agent) running **Claude Opus 4.6** as the underlying model. A small amount of initial project planning used **Gemini 3 Pro** via Antigravity.
 
-| Tool | Model | Used For |
-|------|-------|----------|
-| GitHub Copilot CLI | Claude Opus 4.6 | ETL pipeline code, documentation, diagrams, validation, git workflow |
-| Gemini 3 Pro (VS Code) | Gemini 3 Pro | Initial project plan generation (Week 1) |
+| Tool                       | Model           | Used For                                                             |
+| -------------------------- | --------------- | -------------------------------------------------------------------- |
+| Copilot CLI                | Claude Opus 4.6 | ETL pipeline code, documentation, diagrams, validation, git workflow |
+| Gemini 3 Pro (Antigravity) | Gemini 3 Pro    | Initial project plan generation (Week 1)                             |
 
 ---
 
@@ -50,14 +50,14 @@ A typical week of work followed this pattern:
 
 ### What the Agent Did vs. What I Did
 
-| Agent Responsibility | My Responsibility |
-|---------------------|-------------------|
-| Write all Python code (OOP classes, pipeline logic) | Review plans before approving |
-| Design data cleaning rules based on exploration findings | Provide high-level direction ("do week N") |
-| Create documentation (data exploration, dimensional model) | Validate outputs make sense |
-| Run and debug the pipeline | Make architectural decisions when asked |
-| Create Excalidraw diagrams | Build the Power BI dashboard (manual) |
-| Handle Git workflow (branches, commits, PRs) | Merge approval |
+| Agent Responsibility                                       | My Responsibility                          |
+| ---------------------------------------------------------- | ------------------------------------------ |
+| Write all Python code (OOP classes, pipeline logic)        | Review plans before approving              |
+| Design data cleaning rules based on exploration findings   | Provide high-level direction ("do week N") |
+| Create documentation (data exploration, dimensional model) | Validate outputs make sense                |
+| Run and debug the pipeline                                 | Make architectural decisions when asked    |
+| Create Excalidraw diagrams                                 | Build the Power BI dashboard (manual)      |
+| Handle Git workflow (branches, commits, PRs)               | Merge approval                             |
 
 ---
 
