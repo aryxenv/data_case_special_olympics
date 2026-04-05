@@ -28,7 +28,7 @@ No test suite exists yet. There are no linters or CI configured.
 
 ```
 data/raw/       → Source Excel files (11 files: Certifications, Clubs, Results per year)
-data/processed/ → Output CSVs: dim_*.csv (dimensions), fact_*.csv (facts)
+data/gold/      → Output CSVs: dim_*.csv (dimensions), fact_*.csv (facts)
 src/            → Python ETL scripts (OOP required by assignment)
   explore.py    → DataProfiler class (schema inspection, column stats, duplicate detection)
   utils/
@@ -65,7 +65,7 @@ pm/             → Project plan and timeline
 
 > **Note:** 2020 and 2021 are missing (COVID gap). There are 9 results files total.
 
-### Expected outputs in `data/processed/`
+### Expected outputs in `data/gold/`
 
 - `dim_athletes.csv` — AthleteID, Gender, BirthDate, Age, PersonType
 - `dim_geography.csv` — ClubID, ClubName, Region/Province, City, Language
@@ -183,4 +183,4 @@ All diagrams **must** use Excalidraw — no other diagramming tools allowed. See
 
 ## Power BI Notes
 
-All data transformation happens in Python, **not** in Power BI. Power BI only consumes the clean CSVs from `data/processed/` and handles visualization + DAX measures.
+All data transformation happens in Python, **not** in Power BI. Power BI only consumes the clean CSVs from `data/gold/` and handles visualization + DAX measures.

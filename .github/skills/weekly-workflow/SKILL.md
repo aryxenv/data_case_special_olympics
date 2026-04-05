@@ -28,7 +28,7 @@ Follow the phases below **in order**. Do not skip phases or start coding before 
 
 ### Step 2 — Review business context
 
-Scan `docs/` to understand the *why* behind the tasks:
+Scan `docs/` to understand the _why_ behind the tasks:
 
 - **`docs/data_requirements.md`** — the star schema definition, required fields, and transformation rules. This is the source of truth for what the ETL must produce.
 - **`docs/Special Olympics - Use-Cases.pdf`** — the business questions the dashboard must answer (athlete demographics, participation trends, performance analysis, regional distribution).
@@ -43,7 +43,7 @@ Check what already exists before writing anything:
 
 - **`src/`** — which classes exist? What do they cover? Reuse `DataLoader` for all raw file access.
 - **`src/notebooks/`** — any prior exploration notebooks relevant to this week's tasks?
-- **`data/processed/`** — which output CSVs already exist?
+- **`data/gold/`** — which output CSVs already exist?
 - **`main.py`** — is the pipeline entry point wired up?
 - **`requirements.txt`** — will this week's work need new dependencies?
 
@@ -125,7 +125,7 @@ Do **not** lump an entire week into a single commit.
 ### Step 10 — Validate
 
 - **Run the pipeline:** `python main.py` — it should complete without errors.
-- **Check output CSVs** in `data/processed/`:
+- **Check output CSVs** in `data/gold/`:
   - Do the filenames follow `dim_<name>.csv` / `fact_<name>.csv`? (strict penalty for non-compliance)
   - Do the columns match the schema in `docs/data_requirements.md`?
   - Are row counts reasonable? (compare against raw file counts in `docs/data_exploration.md`)
@@ -136,6 +136,7 @@ Do **not** lump an entire week into a single commit.
 Use the `git-workflow` skill (`.github/skills/git-workflow/SKILL.md`) to open the PR. Follow its conventions for branch pushing, PR title format, and body content.
 
 The PR should:
+
 - Have a **conventional commit-style title** (e.g., `feat(etl): week 4 — extraction logic`).
 - Include a **body** summarizing what was built, any decisions made, and any known limitations.
 - **Not be self-merged** — wait for review and approval.

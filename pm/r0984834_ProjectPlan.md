@@ -15,7 +15,7 @@
 _Goal: Understand requirements and set up the workspace._
 
 - [x] Read assignment slides and understand business questions (1h)
-- [x] Create folder structure (`data/raw`, `data/processed`, `src/`) (0.5h)
+- [x] Create folder structure (`data/raw`, `data/gold`, `src/`) (0.5h)
 - [x] Initialize Git repository and create `.gitignore` (0.5h)
 - [x] List all required fields/metrics based on business questions (2h)
 
