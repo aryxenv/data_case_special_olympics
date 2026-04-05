@@ -25,9 +25,9 @@
 
 #### **Week 3: Dimensional Modeling (Feb 24 - Mar 2)**
 *Goal: Design the Star Schema (Gold Layer).*
-- [ ] Design Dimension tables (Athletes, Sports, Dates, Locations) (2h)
-- [ ] Design Fact tables (Results, Participation) (1.5h)
-- [ ] Create formal dimensional model (r0984834_Model.pdf) using Excalidraw (0.5h)
+- [x] Design Dimension tables (Athletes, Sports, Dates, Locations) (2h)
+- [x] Design Fact tables (Results, Participation) (1.5h)
+- [x] Create formal dimensional model (r0984834_Model.pdf) using Excalidraw (0.5h)
 
 ---
 
