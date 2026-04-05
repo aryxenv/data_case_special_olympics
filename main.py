@@ -28,8 +28,8 @@ def main() -> None:
     # Week 5: Silver cleaning
     pipeline.run_silver()
 
-    # Weeks 6-7: Gold transformation (placeholder)
-    # pipeline.run_gold()
+    # Week 6: Gold transformation (star schema)
+    pipeline.run_gold()
 
 
 if __name__ == "__main__":

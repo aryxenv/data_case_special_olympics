@@ -3,7 +3,7 @@
 Coordinates the medallion-architecture layers:
 - **Bronze:** raw extraction (Week 4)
 - **Silver:** cleaning & standardization (Week 5)
-- **Gold:** star-schema transformation (Weeks 6-7 — placeholder)
+- **Gold:** star-schema transformation (Week 6)
 """
 
 from __future__ import annotations
@@ -15,6 +15,15 @@ from pathlib import Path
 import pandas as pd
 
 from src.bronze import CertificationsExtractor, ClubsExtractor, ResultsExtractor
+from src.gold import (
+    DimAthleteTransformer,
+    DimEventTransformer,
+    DimGeographyTransformer,
+    DimSportTransformer,
+    DimTimeTransformer,
+    FactParticipationTransformer,
+    FactResultsTransformer,
+)
 from src.silver import (
     CertificationsCleaner,
     ClubsCleaner,
@@ -40,7 +49,7 @@ class Pipeline:
         pipeline = Pipeline()
         pipeline.run_bronze()      # Week 4
         pipeline.run_silver()      # Week 5
-        # pipeline.run_gold()      # Weeks 6-7
+        pipeline.run_gold()        # Week 6
     """
 
     def __init__(
@@ -65,6 +74,15 @@ class Pipeline:
         self.silver_certifications: pd.DataFrame | None = None
         self.silver_clubs: pd.DataFrame | None = None
         self.silver_results: pd.DataFrame | None = None
+
+        # Gold outputs stored after transformation
+        self.dim_time: pd.DataFrame | None = None
+        self.dim_athlete: pd.DataFrame | None = None
+        self.dim_geography: pd.DataFrame | None = None
+        self.dim_sport: pd.DataFrame | None = None
+        self.dim_event: pd.DataFrame | None = None
+        self.fact_results: pd.DataFrame | None = None
+        self.fact_participation: pd.DataFrame | None = None
 
     # ------------------------------------------------------------------
     # Bronze layer
@@ -131,6 +149,69 @@ class Pipeline:
             "Clubs": self.silver_clubs,
             "Results": self.silver_results,
         }, self._silver_dir)
+
+    # ------------------------------------------------------------------
+    # Gold layer
+    # ------------------------------------------------------------------
+
+    def run_gold(self) -> None:
+        """Execute all gold-layer transformers.
+
+        Builds dimensions first (they generate surrogate keys), then
+        facts (which look up those keys).  Requires silver layer to
+        have been run first.
+        """
+        if self.silver_certifications is None:
+            raise RuntimeError("Silver layer must be run before Gold")
+
+        logger.info("=" * 60)
+        logger.info("GOLD LAYER — Star Schema Transformation")
+        logger.info("=" * 60)
+        start = time.perf_counter()
+
+        # --- Dimensions (order matters: sport before event) ---
+        self.dim_time = DimTimeTransformer(self._processed_dir).run()
+
+        self.dim_athlete = DimAthleteTransformer(
+            self.silver_certifications, self._processed_dir
+        ).run()
+
+        self.dim_geography = DimGeographyTransformer(
+            self.silver_clubs, self._processed_dir
+        ).run()
+
+        self.dim_sport = DimSportTransformer(
+            self.silver_results, self._processed_dir
+        ).run()
+
+        self.dim_event = DimEventTransformer(
+            self.silver_results, self.dim_sport, self._processed_dir
+        ).run()
+
+        # --- Facts (need all dimensions for FK lookups) ---
+        self.fact_results = FactResultsTransformer(
+            self.silver_results,
+            self.dim_athlete,
+            self.dim_geography,
+            self.dim_sport,
+            self.dim_event,
+            self._processed_dir,
+        ).run()
+
+        self.fact_participation = FactParticipationTransformer(
+            self.fact_results, self._processed_dir
+        ).run()
+
+        elapsed = time.perf_counter() - start
+        self._log_summary("Gold transformation", elapsed, {
+            "dim_time": self.dim_time,
+            "dim_athlete": self.dim_athlete,
+            "dim_geography": self.dim_geography,
+            "dim_sport": self.dim_sport,
+            "dim_event": self.dim_event,
+            "fact_results": self.fact_results,
+            "fact_participation": self.fact_participation,
+        }, self._processed_dir)
 
     # ------------------------------------------------------------------
     # Logging

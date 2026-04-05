@@ -61,9 +61,9 @@ _Goal: Clean raw data using OOP principles._
 
 _Goal: Shape data into the Star Schema._
 
-- [ ] Write `transform.py` to merge tables into Facts & Dimensions (2.5h)
-- [ ] Implement "20% Rule" validation logic for disqualifications (0.5h)
-- [ ] Calculate derived columns (e.g., Age from Birthdate) (1h)
+- [x] Write `transform.py` to merge tables into Facts & Dimensions (2.5h)
+- [x] Implement "20% Rule" validation logic for disqualifications (0.5h)
+- [x] Calculate derived columns (e.g., Age from Birthdate) (1h)
 
 #### **Week 7: Export & Validation (Mar 24 - Mar 30)**
 
