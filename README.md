@@ -1,9 +1,17 @@
 # Project: Special Olympics Data Dashboard
 
+Final PowerBI dashboard in [./pbix](./pbix), or directly open [./pbix/r0984834_Dashboard.pbix](./pbix/r0984834_Dashboard.pbix) in PowerBI or see [./pbix/pages](./pbix/pages).
+
 ## Overview
+
 This project is about building an end-to-end data solution for the Special Olympics. We are acting as consultants for a client (Special Olympics) to transform raw data into actionable insights using Python and Power BI.
 
+## Example
+
+![PowerBI Overview Page](./pbix/pages/overview.png)
+
 ## The Goal
+
 The main objective is to answer business questions about athlete participation, performance trends, and regional statistics. We need to show things like:
 
 - Athlete distribution by age, gender, and sport.

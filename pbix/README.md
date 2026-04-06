@@ -1,5 +1,7 @@
 # Power BI Setup — Special Olympics Dashboard
 
+If you are looking for the final PowerBI pages, open [./r0984834_Dashboard.pbix](./r0984834_Dashboard.pbix) in PowerBI or see [./pages](./pages).
+
 ## 1. Data Import
 
 All 7 CSVs from `data/gold/` were imported via **Get Data → Text/CSV**:
