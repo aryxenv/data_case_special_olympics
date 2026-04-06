@@ -91,9 +91,9 @@ _Goal: Design Dashboard Wireframe and export as `r0984834_Wireframe.pdf`._
 
 _Goal: Visualize high-level KPIs._
 
-- [ ] Build "Athlete Overview" page (Bar charts: Age, Gender) (2h)
-- [ ] Add filters (Year, Sport, Region) (1h)
-- [ ] Format layout and colors (1h)
+- [x] Build "Athlete Overview" page (Bar charts: Age, Gender) (2h)
+- [x] Add filters (Year, Sport, Region) (1h)
+- [x] Format layout and colors (1h)
 
 #### **Week 10: Performance & Regional Details (Apr 14 - Apr 20)**
 
