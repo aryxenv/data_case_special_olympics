@@ -237,4 +237,79 @@ AVERAGEX(
 
 Average age of athletes only (excluding coaches, volunteers, etc.), ignoring rows with missing DOB/age.
 
+#### Participation Count
+
+```dax
+Participation Count =
+CALCULATE(
+    DISTINCTCOUNT(fact_participation[athlete_key]),
+    USERELATIONSHIP(fact_participation[time_key], dim_time[time_key])
+)
+```
+
+Distinct athlete count per year, using `USERELATIONSHIP` to activate the inactive `fact_participation → dim_time` relationship (needed because `fact_results → dim_time` is the active one).
+
+#### Athletes by Sport
+
+```dax
+Athletes by Sport =
+DISTINCTCOUNT(fact_results[athlete_key])
+```
+
+Count of distinct athletes in the current filter context (used for the Athletes by Sport bar chart).
+
+---
+
+## 5. Page 1: Overview
+
+Layout based on the wireframe ([docs/img/r0984834_Wireframe.png](../docs/img/r0984834_Wireframe.png)) — PAGE 1: Overview.
+
+### KPI Cards (top row)
+
+Three **Card** visuals arranged horizontally across the top:
+
+| Card | Measure            | Format                |
+| ---- | ------------------ | --------------------- |
+| 1    | `[Total Athletes]` | Whole number          |
+| 2    | `[Total Medals]`   | Whole number          |
+| 3    | `[DQ Rate]`        | Percentage, 1 decimal |
+
+### Participation Over Time
+
+- **Visual type:** Line Chart
+- **X-axis:** `dim_time[year]`
+- **Y-axis:** `[Participation Count]`
+- **Note:** 2020–2021 gap (COVID) appears naturally as missing data points.
+
+### Gender Split
+
+- **Visual type:** Donut Chart
+- **Legend:** `dim_athlete[gender]`
+- **Values:** `[Total Athletes]`
+
+### Athletes by Sport
+
+- **Visual type:** Clustered Bar Chart
+- **Y-axis:** `dim_sport[sport_name]`
+- **X-axis:** `[Athletes by Sport]`
+- **Sort:** Descending by `[Athletes by Sport]`
+
+### Medals by Year
+
+- **Visual type:** Stacked Area Chart
+- **X-axis:** `dim_time[year]`
+- **Y-axis:** `[Total Medals]`
+- **Legend:** `fact_results[medal]`
+- **Legend colors:** Gold `#FFD700`, Silver `#C0C0C0`, Bronze `#CD7F32`
+
+### Slicers (bottom row)
+
+Three **Slicer** visuals (Dropdown style):
+
+| Slicer | Field                     |
+| ------ | ------------------------- |
+| Year   | `dim_time[year]`          |
+| Sport  | `dim_sport[sport_name]`   |
+| Region | `dim_geography[province]` |
+
 _This document was generated with the help of AI (Claude Opus 4.6)_
