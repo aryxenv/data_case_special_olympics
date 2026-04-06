@@ -85,7 +85,7 @@ _Goal: Design Dashboard Wireframe and export as `r0984834_Wireframe.pdf`._
 - [x] Design Dashboard Wireframe (1h)
 - [x] Import Clean CSVs into Power BI (1h)
 - [x] Create relationships (One-to-Many) between Facts & Dimensions (1h)
-- [ ] Create basic Measures (Total Athletes, Medal Count) (2h)
+- [x] Create basic Measures (Total Athletes, Medal Count) (2h)
 
 #### **Week 9: Overview Dashboard Page (Apr 7 - Apr 13)**
 
