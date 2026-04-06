@@ -149,12 +149,13 @@ Same as above but filtered to `person_type = "Athlete"` only — excludes coache
 
 ```dax
 Total Medals =
-COUNTROWS(
-    FILTER(fact_results, NOT(ISBLANK(fact_results[medal])))
+CALCULATE(
+    COUNTROWS(fact_results),
+    fact_results[medal] IN {"Gold", "Silver", "Bronze"}
 )
 ```
 
-Counts all rows where a medal was awarded (Gold, Silver, or Bronze).
+Counts all rows where a medal was awarded. Uses explicit value matching instead of `ISBLANK()` because the `medal` column contains empty strings (`""`) rather than true nulls for non-medal results.
 
 #### Gold Medals
 
@@ -217,6 +218,79 @@ DIVIDE(
 
 Ratio of disqualified results to total results. Returns 0 when there are no results (avoids division by zero).
 
+#### Medal Rate
+
+```dax
+Medal Rate =
+DIVIDE(
+    CALCULATE(
+        COUNTROWS(fact_results),
+        fact_results[medal] IN {"Gold", "Silver", "Bronze"}
+    ),
+    COUNTROWS(fact_results),
+    0
+)
+```
+
+Percentage of results that earned a medal per sport. Complements DQ Rate — one shows failure rate, the other success rate.
+
+#### New Athletes
+
+```dax
+New Athletes =
+VAR CurrentYear = SELECTEDVALUE(dim_time[year])
+RETURN
+COUNTROWS(
+    FILTER(
+        VALUES(fact_participation[athlete_key]),
+        CALCULATE(MIN(fact_participation[time_key]), ALL(dim_time)) = CurrentYear
+    )
+)
+```
+
+Athletes whose first-ever participation year matches the current year in context. 2015 shows 100% new (no prior data).
+
+#### Returning Athletes
+
+```dax
+Returning Athletes =
+VAR CurrentYear = SELECTEDVALUE(dim_time[year])
+RETURN
+COUNTROWS(
+    FILTER(
+        VALUES(fact_participation[athlete_key]),
+        CALCULATE(MIN(fact_participation[time_key]), ALL(dim_time)) < CurrentYear
+    )
+)
+```
+
+Athletes who participated in a prior year. Uses `ALL(dim_time)` to look across all years regardless of current filter context.
+
+#### New Athlete %
+
+```dax
+New Athlete % =
+DIVIDE([New Athletes], [New Athletes] + [Returning Athletes], 0)
+```
+
+Ratio of new athletes to total participants for combo chart overlay.
+
+#### Club Size
+
+```dax
+Club Size = DISTINCTCOUNT(fact_participation[athlete_key])
+```
+
+Count of distinct athletes per club in current filter context. Used in Club vs Performance scatter plot.
+
+#### Medals Per Athlete
+
+```dax
+Medals Per Athlete = DIVIDE([Total Medals], [Club Size], 0)
+```
+
+Average medals earned per athlete at a club. Higher = more productive club.
+
 ---
 
 ### `dim_athlete` table
@@ -230,6 +304,7 @@ AVERAGEX(
         dim_athlete,
         dim_athlete[person_type] = "Athlete"
             && NOT(ISBLANK(dim_athlete[age]))
+            && COUNTROWS(RELATEDTABLE(fact_results)) > 0
     ),
     dim_athlete[age]
 )
@@ -257,6 +332,49 @@ DISTINCTCOUNT(fact_results[athlete_key])
 ```
 
 Count of distinct athletes in the current filter context (used for the Athletes by Sport bar chart).
+
+#### Years Active
+
+```dax
+Years Active = DISTINCTCOUNT(fact_participation[time_key])
+```
+
+Count of distinct years an athlete participated. Used in the Multi-Sport Athletes table.
+
+---
+
+## 4b. Calculated Columns
+
+### `dim_athlete` table
+
+#### Age Group
+
+```dax
+Age Group =
+SWITCH(
+    TRUE(),
+    dim_athlete[age] < 10, "0-9",
+    dim_athlete[age] < 20, "10-19",
+    dim_athlete[age] < 30, "20-29",
+    dim_athlete[age] < 40, "30-39",
+    dim_athlete[age] < 50, "40-49",
+    dim_athlete[age] < 60, "50-59",
+    dim_athlete[age] < 70, "60-69",
+    "70+"
+)
+```
+
+Bins athlete ages into decade groups for histogram visuals. Created as a **calculated column** (not a measure) because it evaluates row-by-row.
+
+### `dim_geography` table
+
+#### Province Full
+
+```dax
+Province Full = dim_geography[province] & ", " & dim_geography[country]
+```
+
+Disambiguates province names that exist in multiple countries (e.g., "Limburg" in both Belgium and Netherlands). Created for map visuals but replaced by Treemap approach due to Bing geocoding limitations.
 
 ---
 
@@ -312,4 +430,157 @@ Three **Slicer** visuals (Dropdown style):
 | Sport  | `dim_sport[sport_name]`   |
 | Region | `dim_geography[province]` |
 
-_This document was generated with the help of AI (Claude Opus 4.6)_
+---
+
+## 6. Page 2: Athlete Demographics
+
+Layout based on the wireframe — PAGE 2: Athlete Demographics.
+
+### Age Distribution (Histogram)
+
+- **Visual type:** Clustered Column Chart
+- **X-axis:** `dim_athlete[Age Group]` (calculated column)
+- **Y-axis:** Count of `dim_athlete[athlete_key]`
+- **Page-level filter:** `dim_athlete[person_type]` = `"Athlete"`
+
+### Person by Type
+
+- **Visual type:** Pie Chart
+- **Legend:** `dim_athlete[person_type]`
+- **Values:** Count of `dim_athlete[athlete_key]`
+
+### Average Age by Sport
+
+- **Visual type:** Clustered Bar Chart
+- **Y-axis:** `dim_sport[sport_name]`
+- **X-axis:** `[Avg Age]`
+- **Sort:** Descending by `[Avg Age]`
+- **Note:** Avg Age routes through `fact_results` via `RELATEDTABLE` so the sport filter context applies correctly.
+
+### Multi-Sport Athletes
+
+- **Visual type:** Table
+- **Columns:** `dim_athlete[code]`, `[Total Sports]`, `[Total Events]`, `[Years Active]`
+- **Visual-level filter:** `[Total Sports]` is greater than 1
+- **Totals row:** Off (DISTINCTCOUNT totals are misleading for this table)
+- **Excluded:** Blank codes
+
+### New vs Returning Athletes
+
+- **Visual type:** Line and Stacked Column Chart (combo)
+- **X-axis:** `dim_time[year]`
+- **Column Y-axis:** `[New Athletes]`, `[Returning Athletes]` (stacked bars, absolute counts)
+- **Line Y-axis:** `[New Athlete %]` (percentage overlay on secondary axis)
+- **Note:** 2015 shows 100% new (no prior data). Post-COVID 2022 shows spike in "returning" athletes.
+
+### Slicers
+
+Three **Slicer** visuals (Dropdown style):
+
+| Slicer      | Field                      |
+| ----------- | -------------------------- |
+| Year        | `dim_time[year]`           |
+| Gender      | `dim_athlete[gender]`      |
+| Person Type | `dim_athlete[person_type]` |
+
+---
+
+## 7. Page 3: Performance and Trends
+
+Layout based on the wireframe — PAGE 3: Performance and Trends.
+
+### Medal Cards (top row)
+
+Three **Card** visuals arranged horizontally:
+
+| Card   | Measure           | Color            |
+| ------ | ----------------- | ---------------- |
+| Gold   | `[Gold Medals]`   | Gold `#FFD700`   |
+| Silver | `[Silver Medals]` | Silver `#C0C0C0` |
+| Bronze | `[Bronze Medals]` | Bronze `#CD7F32` |
+
+### Medal Trends
+
+- **Visual type:** Line Chart
+- **X-axis:** `dim_time[year]`
+- **Legend:** `fact_results[medal]`
+- **Values:** Count of `fact_results[result_key]`
+- **Visual-level filter:** `fact_results[medal]` IN {Gold, Silver, Bronze} (exclude blanks)
+
+### DQ Rate by Sport
+
+- **Visual type:** Clustered Bar Chart
+- **Y-axis:** `dim_sport[sport_name]`
+- **X-axis:** `[DQ Rate]` (formatted as percentage)
+- **Sort:** Descending by `[DQ Rate]`
+
+### Medal Rate by Sport
+
+- **Visual type:** Clustered Bar Chart
+- **Y-axis:** `dim_sport[sport_name]`
+- **X-axis:** `[Medal Rate]` (formatted as percentage)
+- **Sort:** Descending by `[Medal Rate]`
+- **Note:** Complements DQ Rate — shows which sports have the highest medal conversion rate.
+
+### Top Results Table
+
+- **Visual type:** Table
+- **Columns:** `dim_athlete[code]`, `dim_event[event_name]`, `dim_sport[sport_name]`, `fact_results[score_value]`, `dim_time[year]`
+- **Visual-level filter:** `fact_results[rank]` = 1 (first-place results only)
+
+### Slicers
+
+Four **Slicer** visuals (Dropdown style):
+
+| Slicer | Field                   |
+| ------ | ----------------------- |
+| Year   | `dim_time[year]`        |
+| Sport  | `dim_sport[sport_name]` |
+| Event  | `dim_event[event_name]` |
+| Medal  | `fact_results[medal]`   |
+
+---
+
+## 8. Page 4: Regional Analysis
+
+Layout based on the wireframe — PAGE 4: Regional Analysis.
+
+### Participants by Province
+
+- **Visual type:** Treemap
+- **Group:** `dim_geography[province]`
+- **Values:** `[Total Athletes]` (distinct count of athletes)
+- **Visual-level filter:** Exclude blank provinces
+- **Note:** Filled Map was attempted but Bing geocoding couldn't reliably resolve Belgian provinces (especially "Limburg" which exists in both Belgium and Netherlands). Treemap is the fallback.
+
+### Language Split
+
+- **Visual type:** Donut Chart
+- **Legend:** `dim_geography[primary_language]`
+- **Values:** `[Total Athletes]`
+
+### Club vs Performance
+
+- **Visual type:** Scatter Chart
+- **X-axis:** `[Club Size]`
+- **Y-axis:** `[Medals Per Athlete]`
+- **Details:** `dim_geography[club_name]` (each dot = one club)
+- **Note:** Shows whether larger clubs produce more medals per athlete or if small clubs can be equally productive.
+
+### Top Clubs Table
+
+- **Visual type:** Table
+- **Columns:** `dim_geography[club_name]`, `dim_geography[province]`, `[Total Athletes]`, `[Total Medals]`, `[Total Events]`
+- **Sort:** Descending by `[Total Medals]`
+
+### Slicers
+
+Three **Slicer** visuals (Dropdown style):
+
+| Slicer   | Field                             |
+| -------- | --------------------------------- |
+| Year     | `dim_time[year]`                  |
+| Province | `dim_geography[province]`         |
+| Language | `dim_geography[primary_language]` |
+
+_This document was generated with the help of AI (Claude Opus 4.6), dashboard may not reflect this documentation_
