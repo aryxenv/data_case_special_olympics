@@ -99,16 +99,16 @@ _Goal: Visualize high-level KPIs._
 
 _Goal: Answer specific business questions._
 
-- [ ] Build "Performance Trends" visual (Line chart over time) (2h)
-- [ ] Build "Regional Map" or matrix (2h)
+- [x] Build "Performance Trends" visual (Line chart over time) (2h)
+- [x] Build "Regional Map" or matrix (2h)
 
 #### **Week 11: Polish & Interactivity (Apr 21 - Apr 27)**
 
 _Goal: Make the report professional._
 
-- [ ] Add navigation buttons/bookmarks (1h)
-- [ ] specific logic checks (e.g. participation rates correctness) (2h)
-- [ ] Final UI cleanup (titles, alignment) (1h)
+- [x] Add navigation buttons/bookmarks (1h)
+- [x] specific logic checks (e.g. participation rates correctness) (2h)
+- [x] Final UI cleanup (titles, alignment) (1h)
 
 ---
 
@@ -136,23 +136,23 @@ _Goal: Submit project._
 
 **Technical Stack**
 
-- [ ] **Python:** Used for ETL (Extract, Transform, Load)
-- [ ] **OOP:** Python code uses Classes/Objects
-- [ ] **Power BI:** Used for visualization (no data transformation in PBI)
-- [ ] **Star Schema:** Dimensional model used (Facts/Dimensions)
+- [x] **Python:** Used for ETL (Extract, Transform, Load)
+- [x] **OOP:** Python code uses Classes/Objects
+- [x] **Power BI:** Used for visualization (no data transformation in PBI)
+- [x] **Star Schema:** Dimensional model used (Facts/Dimensions)
 
 **Deliverables**
 
-- [ ] Python Code (Clean & Commented)
-- [ ] Clean Data (CSV files)
-- [ ] Power BI Report (.pbix)
-- [ ] Documentation (Project Plan & Data Model)
+- [x] Python Code (Clean & Commented)
+- [x] Clean Data (CSV files)
+- [x] Power BI Report (.pbix)
+- [x] Documentation (Project Plan & Data Model)
 
 **Business Goals**
 
-- [ ] Show Athlete participation stats (Age, Gender, etc.)
-- [ ] Show Performance trends over time
-- [ ] Show Regional distribution
+- [x] Show Athlete participation stats (Age, Gender, etc.)
+- [x] Show Performance trends over time
+- [x] Show Regional distribution
 
 ---
 
