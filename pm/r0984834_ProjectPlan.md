@@ -118,9 +118,9 @@ _Goal: Make the report professional._
 
 _Goal: Ensure everything is robust._
 
-- [ ] Re-run Python pipeline to ensure reproducibility (1h)
-- [ ] Document the data model and assumptions (READ.me/PDF) (2h)
-- [ ] Self-evaluation against assignment rubric (1h)
+- [x] Re-run Python pipeline to ensure reproducibility (1h)
+- [x] Document the data model and assumptions (READ.me/PDF) (2h)
+- [x] Self-evaluation against assignment rubric (1h)
 
 #### **Week 13: Final Submission Prep (May 5 - May 15)**
 
