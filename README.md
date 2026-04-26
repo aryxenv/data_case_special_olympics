@@ -26,6 +26,20 @@ The main objective is to answer business questions about athlete participation, 
 - **Visualization:** Microsoft Power BI.
 - **(Bonus):** MySQL & Medallion Architecture.
 
+## Run the ETL
+
+Use the existing uv-managed environment:
+
+```powershell
+uv run python main.py
+```
+
+This runs the full medallion pipeline from raw Excel files to validated gold-layer CSVs:
+
+```text
+data/raw -> data/bronze -> data/silver -> data/gold
+```
+
 ## Project Workflow
 
 - **Project Management:** Weekly planning and task breakdown.
@@ -33,6 +47,22 @@ The main objective is to answer business questions about athlete participation, 
 - **ETL Pipeline:** Writing Python scripts to clean raw Excel files and save them as CSVs.
 - **Dashboarding:** Importing clean data into Power BI to build a professional report.
 - **Validation:** Documenting everything and proving the numbers match the source.
+
+## Final Data Model
+
+The final Power BI model is a star schema with 5 dimensions and 2 facts:
+
+| Table | Rows | Purpose |
+| ----- | ---: | ------- |
+| `dim_athlete.csv` | 20,221 | Certified people, demographics, and certificate flags |
+| `dim_geography.csv` | 437 | Clubs/delegations and regional attributes |
+| `dim_sport.csv` | 23 | Distinct sports |
+| `dim_event.csv` | 210 | Normalized competition events |
+| `dim_time.csv` | 11 | Reporting years, including the 2020-2021 COVID gap |
+| `fact_results.csv` | 72,702 | Event-level performance results |
+| `fact_participation.csv` | 27,829 | Athlete participation by club and year |
+
+The latest reproducibility run completed with **68/68 validation checks passed**. See [final validation](./docs/md/final_validation.md) and the detailed [dimensional model](./docs/md/dimensional_model.md).
 
 ## Final Deliverables
 
@@ -43,6 +73,15 @@ Everything gets submitted in one ZIP file containing:
 - Power BI Dashboard (.pbix).
 - Python Repository & Cleaned Data.
 - Documentation with data audit.
+
+Key project documentation:
+
+- [Data requirements](./docs/md/data_requirements.md)
+- [Data exploration and audit](./docs/md/data_exploration.md)
+- [Dimensional model](./docs/md/dimensional_model.md)
+- [Final validation and self-evaluation](./docs/md/final_validation.md)
+- [Power BI setup and measures](./pbix/README.md)
+- [AI usage disclosure](./AI.md)
 
 ## Evaluation Focus
 
