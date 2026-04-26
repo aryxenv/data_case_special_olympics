@@ -2,7 +2,7 @@
 
 ## Overview
 
-The vast majority of this project was built using **Copilot CLI** (terminal-based AI agent) running **Claude Opus 4.6** as the underlying model. A small amount of initial project planning used **Gemini 3 Pro** via Antigravity. Everything done in PowerBI was done manually with **no AI assistance**.
+The vast majority of this project was built using **Copilot CLI** (terminal-based AI agent) running **Claude Opus 4.6 / GPT 5.5** as the underlying model. A small amount of initial project planning used **Gemini 3 Pro** via Antigravity. Everything done in PowerBI was done manually with **no AI assistance**.
 
 | Tool                       | Model           | Used For                                                             |
 | -------------------------- | --------------- | -------------------------------------------------------------------- |
