@@ -49,3 +49,27 @@ Everything gets submitted in one ZIP file containing:
 - **Accuracy:** Numbers must match the raw data.
 - **Professionalism:** Treat it like a real client job.
 - **Design:** Intuitive and logical dashboard layout.
+
+<!-- llm-mem:readme:start -->
+## llm-mem
+
+This repository is configured for [llm-mem](https://github.com/aryxenv/llm-mem) Copilot MCP integration. llm-mem keeps its index and run artifacts in the local `.llm-mem/` directory, which is intentionally ignored by Git.
+
+If you do not already have the `llm-mem` CLI installed, clone or open the llm-mem source repo and link the CLI first:
+
+```powershell
+git clone https://github.com/aryxenv/llm-mem.git
+cd llm-mem
+npm install
+npm run build
+npm run link:cli
+```
+
+Then, from this repository, bootstrap your local index and MCP wiring:
+
+```powershell
+llm-mem integrate copilot install
+```
+
+Keep using `copilot` normally after that. The project MCP config, skill, and instructions tell Copilot when to use llm-mem context tools.
+<!-- llm-mem:readme:end -->

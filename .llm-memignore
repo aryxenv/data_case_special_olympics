@@ -1,0 +1,15 @@
+# Repo-local llm-mem ignore rules.
+# Add files here that should not be indexed or surfaced through llm-mem.
+
+# Large/generated outputs
+.llm-mem/
+dist/
+coverage/
+
+# Local secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12

@@ -184,3 +184,23 @@ All diagrams **must** use Excalidraw — no other diagramming tools allowed. See
 ## Power BI Notes
 
 All data transformation happens in Python, **not** in Power BI. Power BI only consumes the clean CSVs from `data/gold/` and handles visualization + DAX measures.
+
+<!-- llm-mem:start -->
+## High-priority llm-mem context optimization
+
+Always prefer llm-mem for efficient memory and context management on repo-specific coding, debugging, refactoring, testing, explanation, and architecture tasks.
+
+Do not wait for the user to invoke `/llm-mem`. When MCP tools are available, proactively use the llm-mem MCP tools before broad repository discovery.
+
+Follow this protocol:
+
+1. Call the MCP tool `llm_mem_context_map` with `{ "task": "<user task>", "workingDirectory": "<current repo/worktree root>", "maxCandidates": 8 }` before broad file search for repo-specific tasks.
+2. Expand only needed candidates with `llm_mem_snippet` and their `expansionId` values.
+3. Use cited source refs first. Prefer the smallest edit path that satisfies the task and cited constraints.
+4. Use `llm_mem_context_pack` only for broad/debug tasks or when map plus snippets are insufficient.
+5. Use `llm_mem_remember` only for durable source-grounded facts when `repoId` is available; never guess `repoId`.
+6. Do not run shell `llm-mem context` when the MCP tools are available, and do not paste the full pack to the user unless asked.
+7. Skip llm-mem only for trivial single-file edits, pure shell/git questions, or tasks where the user already supplied all necessary context.
+
+Keep normal Copilot behavior and user intent first; llm-mem is an optimization layer, not a replacement assistant.
+<!-- llm-mem:end -->

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "llm-mem": {
+      "type": "stdio",
+      "command": "llm-mem",
+      "args": [
+        "mcp",
+        "stdio",
+        "--root",
+        "."
+      ]
+    }
+  }
+}
