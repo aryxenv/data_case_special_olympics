@@ -87,6 +87,10 @@ This phase was built entirely by Copilot CLI following the medallion architectur
 
 **Weeks 9–11** — Power BI dashboard building is done manually (no SDK exists for programmatic visual layout creation).
 
+### Phase 4: Finalizing (Weeks 12–13)
+
+**Week 12** — Copilot CLI re-ran the uv-backed ETL pipeline for reproducibility, documented the final validation results, summarized data-model assumptions, and added a rubric-aligned self-evaluation.
+
 ---
 
 ## Code Attribution
