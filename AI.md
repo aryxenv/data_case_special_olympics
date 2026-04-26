@@ -1,10 +1,8 @@
 # AI Usage Disclosure
 
-> **Mandatory per assignment rules.** Zero grade for undocumented AI usage.
-
 ## Overview
 
-The vast majority of this project was built using **Copilot CLI** (terminal-based AI agent) running **Claude Opus 4.6** as the underlying model. A small amount of initial project planning used **Gemini 3 Pro** via Antigravity.
+The vast majority of this project was built using **Copilot CLI** (terminal-based AI agent) running **Claude Opus 4.6** as the underlying model. A small amount of initial project planning used **Gemini 3 Pro** via Antigravity. Everything done in PowerBI was done manually with **no AI assistance**.
 
 | Tool                       | Model           | Used For                                                             |
 | -------------------------- | --------------- | -------------------------------------------------------------------- |
