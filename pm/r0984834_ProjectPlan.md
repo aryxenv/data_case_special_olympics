@@ -114,7 +114,7 @@ _Goal: Make the report professional._
 
 ### **Phase 4: Finalizing (Weeks 12-13)**
 
-#### \*\*Week 12: Data model & Validation (include screenshots proving PBI vs Excel match)
+#### Week 12: Data model & Validation (include screenshots proving PBI vs Excel match)
 
 _Goal: Ensure everything is robust._
 
