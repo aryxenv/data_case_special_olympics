@@ -60,7 +60,7 @@ Clubs and delegations from the Clubs master file, representing the organizationa
 | `city`             | VARCHAR(50) | Clubs.`City`             | Title-cased, deduplicated (e.g., `GENK` and `Genk` → `Genk`)          |
 | `country`          | VARCHAR(20) | Clubs.`Country`          | Standardized: all Belgium variants → `Belgium`, one `Luxembourg`      |
 | `primary_language` | VARCHAR(10) | Clubs.`Primary language` | `Dutch` / `French`                                                    |
-| `zipcode`          | VARCHAR(5)  | Clubs.`Zipcode`          | String format. Outlier 29900 → 2990                                   |
+| `zipcode`          | VARCHAR(5)  | Clubs.`Zipcode`          | String format. Missing real-club values enriched via Nominatim; outlier 29900 → 2990 |
 
 **Primary key:** `geography_key`  
 **Natural key:** `club_id`  
@@ -72,7 +72,7 @@ Clubs and delegations from the Clubs master file, representing the organizationa
 - Fix Province/Country swap on Group 786 (KHC SAINT-GEORGES).
 - Fill 74 missing Country values with `Belgium` (all have Belgian provinces).
 - Standardize city names to title case.
-- Convert zipcode from float64 → string; fix 29900 → 2990.
+- Convert zipcode from float64 → string, enrich missing real-club zipcodes via Nominatim geocoding, and fix 29900 → 2990.
 - Insert a special row: `geography_key = -1, club_name = 'Unknown'` for unmatched Results clubs.
 
 **Club matching strategy:** Results files reference clubs by name (not ID). The ETL must:

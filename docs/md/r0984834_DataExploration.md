@@ -274,6 +274,7 @@ All four certificate columns are binary flags (1.0 = has certificate, 0.0 = expl
 - **Range:** 1000–29900
 - **Outlier:** Group 787 ("ATHLETES FOR HOPE") has zipcode `29900` — Belgian postal codes max at 9999. This is likely a data entry error (should be `2990` for Wuustwezel).
 - **Dtype:** float64 (due to NaN values) — should be converted to string/int
+- **ETL handling:** The silver layer enriches the 3 missing real-club zipcodes through Nominatim geocoding: Group 126 → `1435`, Group 297 → `4000`, Group 332 → `7131`.
 
 #### Address (Street and Number)
 - **Missing:** 2 (0.5%)
@@ -290,6 +291,7 @@ All four certificate columns are binary flags (1.0 = has certificate, 0.0 = expl
 | Province erroneous values | 🟡 Medium | Province | 2 rows | "Belgie" and "Wallonie" are not provinces |
 | City case inconsistency | 🟡 Medium | City | All rows | Mix of ALL CAPS and Mixed case — standardize |
 | Country erroneous values | 🟡 Medium | Country | 2 rows | "WAREGEM" is a city; "West-Vlaanderen" is a province |
+| Zipcode missing values | 🟡 Medium | Zipcode | 3 rows | Enriched in silver via Nominatim geocoding |
 | Zipcode outlier | 🟡 Medium | Zipcode | 1 row (Group 787) | 29900 → likely 2990 |
 | Participation dtype mismatch | 🟠 Low | Participation cols | All rows | 2016–2019 are bool; others are float64 |
 | Participation missing = no participation | 🟠 Low | Participation cols | Varies | NaN means "did not participate" (not truly missing) |
@@ -311,7 +313,7 @@ All four certificate columns are binary flags (1.0 = has certificate, 0.0 = expl
 
 7. **All clubs are Belgian** (except 1 Luxembourg entry) — the dataset is Belgium-centric. Province values map to Belgian provinces/regions. The 74 missing Country values can be safely filled with "Belgium".
 
-8. **Zipcode stored as float** due to 3 NaN values — convert to string or nullable int. Fix the 29900 outlier (likely 2990).
+8. **Zipcode stored as float** due to 3 NaN values — convert to string or nullable int, enrich the 3 missing real-club zipcodes, and fix the 29900 outlier (likely 2990).
 
 9. **No fully duplicate rows** — the dataset is clean in terms of complete row duplication.
 

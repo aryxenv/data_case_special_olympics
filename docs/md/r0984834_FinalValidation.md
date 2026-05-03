@@ -102,6 +102,7 @@ All fact-to-dimension relationships are many-to-one from the fact table to the d
 | Medal logic               | Medals are derived only from rank: 1 = Gold, 2 = Silver, 3 = Bronze.                                                                                                                   |
 | Score units               | Scores are parsed into numeric values with units of `seconds`, `meters`, or `points`. Unparseable or absent scores remain null.                                                        |
 | Club matching             | Results club names are matched to the club dimension by normalized exact matching first and fuzzy matching second. Unmatched clubs use `geography_key = -1` (`Unknown`).               |
+| Geography zipcodes        | Real clubs with missing zipcodes are enriched in the silver layer through Nominatim geocoding. The `Unknown` geography fallback intentionally keeps zipcode null.                     |
 | Orphan athlete codes      | Result rows whose codes do not exist in Certifications are retained in `fact_results` with nullable `athlete_key`; rows without an athlete key are excluded from `fact_participation`. |
 | Power BI transformations  | Heavy cleaning and shaping are done in Python. Power BI is limited to import typing, relationships, DAX measures, and report visuals.                                                  |
 
