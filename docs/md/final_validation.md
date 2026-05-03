@@ -8,10 +8,10 @@ This document records the final data-model assumptions, reproducibility check, o
 
 ## Reproducibility check
 
-The full ETL pipeline was re-run through the project's uv-managed environment:
+The full ETL pipeline was re-run through the project's uv-managed `src\.venv` environment:
 
 ```powershell
-uv run python main.py
+src\.venv\Scripts\python.exe src\main.py
 ```
 
 The run completed successfully and executed the full medallion flow:
@@ -125,7 +125,7 @@ All fact-to-dimension relationships are many-to-one from the fact table to the d
 | ----------- | ------ | -------- |
 | Weekly project planning | Complete | `pm/r0984834_ProjectPlan.md` |
 | Star schema with fact and dimension tables | Complete | `docs/md/dimensional_model.md`, `data/gold/` |
-| Python ETL pipeline | Complete | `main.py`, `src/pipeline.py`, `src/bronze`, `src/silver`, `src/gold` |
+| Python ETL pipeline | Complete | `src/main.py`, `src/orchestration/pipeline.py`, `src/bronze`, `src/silver`, `src/gold`, `src/quality` |
 | OOP principles | Complete | Layer-specific base classes and concrete extractor, cleaner, transformer, and validator classes |
 | Raw and clean data separation | Complete | `data/raw`, `data/bronze`, `data/silver`, `data/gold` |
 | Required CSV naming convention | Complete | `dim_*.csv` and `fact_*.csv` in `data/gold` |
@@ -133,7 +133,7 @@ All fact-to-dimension relationships are many-to-one from the fact table to the d
 | Heavy transformations in Python, not Power BI | Complete | Python handles extraction, cleaning, deduplication, normalization, key generation, and facts/dimensions |
 | Business-question dashboard coverage | Complete | Dashboard pages documented in `pbix/README.md` and screenshots in `pbix/pages` |
 | Technical documentation and data audit | Complete | `docs/md/data_exploration.md`, `docs/md/dimensional_model.md`, this document |
-| Validation evidence | Complete for ETL outputs | `src/validation.py` reports 68/68 checks passed; Power BI vs Excel screenshots were completed manually and are out of scope for this task |
+| Validation evidence | Complete for ETL outputs | `src/quality` reports 68/68 checks passed; Power BI vs Excel screenshots were completed manually and are out of scope for this task |
 | AI usage disclosure | Complete | `AI.md` |
 | Medallion architecture bonus | Complete | Bronze, silver, and gold layers are implemented and documented |
 | MySQL bonus | Not implemented | The final project uses CSV files loaded into Power BI, not a MySQL-backed semantic model |

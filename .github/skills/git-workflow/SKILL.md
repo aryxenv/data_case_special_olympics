@@ -117,7 +117,7 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 feat(etl): add score normalization for time-based results
 fix(transform): handle DQ entries in rank parsing
 docs: update data requirements with medal logic
-chore: add openpyxl to requirements.txt
+chore: add openpyxl to src\requirements.txt
 refactor(extract): simplify multi-sheet reading logic
 test(transform): add edge cases for ordinal rank parsing
 ```

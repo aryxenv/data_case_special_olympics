@@ -1,19 +1,22 @@
-"""Data profiling utility for Special Olympics raw Excel files.
+r"""Data profiling utility for Special Olympics raw Excel files.
 
 Provides a class-based profiler to inspect schemas, detect quality issues,
 and compare structures across the source files before ETL processing.
 """
 
-import os
+from pathlib import Path
 
 import pandas as pd
+
+from src.core.paths import RAW_DIR
+from src.utils.data_loader import DataLoader
 
 
 class DataProfiler:
     """Profiles raw Excel files: schemas, column stats, duplicates, and integrity checks."""
 
-    def __init__(self, raw_data_dir: str):
-        self.raw_data_dir = raw_data_dir
+    def __init__(self, raw_data_dir: str | Path):
+        self.raw_data_dir = Path(raw_data_dir)
         self._profiles: dict[str, dict] = {}
 
     # ------------------------------------------------------------------
@@ -26,7 +29,7 @@ class DataProfiler:
         Keys per sheet: columns, dtypes, row_count, sample (first 5 rows).
         The result is also cached in ``self._profiles[filename]``.
         """
-        filepath = os.path.join(self.raw_data_dir, filename)
+        filepath = self.raw_data_dir / filename
         xls = pd.ExcelFile(filepath)
         profile: dict = {"filename": filename, "sheets": {}}
 
@@ -169,12 +172,6 @@ class DataProfiler:
 # ------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import sys
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
-    from src.utils.data_loader import DataLoader
-
-    RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
     loader = DataLoader(RAW_DIR)
     profiler = DataProfiler(RAW_DIR)
 

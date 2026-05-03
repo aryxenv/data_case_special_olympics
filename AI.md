@@ -65,7 +65,7 @@ A typical week of work followed this pattern:
 
 **Week 1** — Gemini 3 Pro generated the initial project plan (`pm/r0984834_ProjectPlan.md`) from the assignment slides. Copilot CLI was not yet used.
 
-**Week 2** — Copilot CLI profiled all 11 raw Excel files, creating `src/explore.py` (OOP `DataProfiler` class) and generating `docs/week2_data_exploration.md` with column analysis, duplicate detection, and cross-file referential integrity findings.
+**Week 2** — Copilot CLI profiled all 11 raw Excel files, creating `src/profiling/data_profiler.py` (OOP `DataProfiler` class) and generating `docs/week2_data_exploration.md` with column analysis, duplicate detection, and cross-file referential integrity findings.
 
 **Week 3** — Copilot CLI designed the star schema, validated dimension cardinalities via Python notebooks, created `docs/dimensional_model.md`, and built the Excalidraw star-schema diagram exported as `docs/r0984834_Model.png`.
 
@@ -79,7 +79,7 @@ This phase was built entirely by Copilot CLI following the medallion architectur
 
 **Week 6 (Gold)** — Created `src/gold/` package: `BaseTransformer` ABC + 7 concrete transformers producing the star schema (5 dimensions + 2 facts). Includes fuzzy club name matching via `rapidfuzz` (87% match rate) and medal derivation.
 
-**Week 7 (Validation)** — Created `src/validation.py`: `OutputValidator` class running 68 automated checks (file existence, column schemas, row counts, FK integrity, null constraints, data value ranges, surrogate key uniqueness). All 68 pass.
+**Week 7 (Validation)** — Created `src/quality/`: `OutputValidator` class running 68 automated checks (file existence, column schemas, row counts, FK integrity, null constraints, data value ranges, surrogate key uniqueness). All 68 pass.
 
 ### Phase 3: Dashboarding (Weeks 8–11)
 

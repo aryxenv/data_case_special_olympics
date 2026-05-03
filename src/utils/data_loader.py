@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-import os
 import re
+from pathlib import Path
 
 import pandas as pd
 
@@ -15,8 +15,8 @@ class DataLoader:
     _CLUBS_FILE = "Thomas More Data Clubs.xlsx"
     _RESULTS_TEMPLATE = "Thomas More Results {year}.xlsx"
 
-    def __init__(self, raw_data_dir: str) -> None:
-        self.raw_data_dir = raw_data_dir
+    def __init__(self, raw_data_dir: str | Path) -> None:
+        self.raw_data_dir = Path(raw_data_dir)
         self._cache: dict[str, pd.DataFrame] = {}
 
     # ------------------------------------------------------------------
@@ -39,9 +39,9 @@ class DataLoader:
     def list_raw_files(self) -> list[str]:
         """List all .xlsx files in the raw data directory."""
         return [
-            f
-            for f in os.listdir(self.raw_data_dir)
-            if f.lower().endswith(".xlsx")
+            path.name
+            for path in self.raw_data_dir.iterdir()
+            if path.is_file() and path.suffix.lower() == ".xlsx"
         ]
 
     # ------------------------------------------------------------------
@@ -76,6 +76,6 @@ class DataLoader:
     def _load(self, filename: str) -> pd.DataFrame:
         """Read an Excel file with caching."""
         if filename not in self._cache:
-            path = os.path.join(self.raw_data_dir, filename)
+            path = self.raw_data_dir / filename
             self._cache[filename] = pd.read_excel(path, engine="openpyxl")
         return self._cache[filename]

@@ -44,8 +44,8 @@ Check what already exists before writing anything:
 - **`src/`** — which classes exist? What do they cover? Reuse `DataLoader` for all raw file access.
 - **`src/notebooks/`** — any prior exploration notebooks relevant to this week's tasks?
 - **`data/gold/`** — which output CSVs already exist?
-- **`main.py`** — is the pipeline entry point wired up?
-- **`requirements.txt`** — will this week's work need new dependencies?
+- **`src\main.py`** — is the pipeline entry point wired up?
+- **`src\requirements.txt`** — will this week's work need new dependencies?
 
 ### Step 4 — Produce a scoped implementation plan
 
@@ -86,7 +86,7 @@ For any task that involves understanding data, experimenting with transformation
 - **OOP classes in `src/`** — follow the same patterns as `DataProfiler` and `DataLoader` (class-based, docstrings, logical method grouping with section comments).
 - **Reuse `DataLoader`** (`src/utils/data_loader.py`) for all raw file access — do not re-implement Excel loading.
 - **Readability matters** — an evaluator should understand the pipeline by reading the code. Use clear method names, type hints, and concise docstrings.
-- **Wire into `main.py`** — if this week produces new pipeline stages, integrate them into the entry point.
+- **Wire into `src\main.py`** — if this week produces new pipeline stages, integrate them into the entry point.
 
 ### Step 8 — Write documentation (selectively)
 
@@ -124,7 +124,7 @@ Do **not** lump an entire week into a single commit.
 
 ### Step 10 — Validate
 
-- **Run the pipeline:** `python main.py` — it should complete without errors.
+- **Run the pipeline:** `src\.venv\Scripts\python.exe src\main.py` — it should complete without errors.
 - **Check output CSVs** in `data/gold/`:
   - Do the filenames follow `dim_<name>.csv` / `fact_<name>.csv`? (strict penalty for non-compliance)
   - Do the columns match the schema in `docs/data_requirements.md`?
