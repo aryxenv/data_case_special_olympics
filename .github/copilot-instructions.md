@@ -8,14 +8,14 @@ ETL pipeline (Python/pandas) that transforms raw Special Olympics Excel files in
 
 ```bash
 # Environment setup (uv, not pip)
-uv venv
-uv pip install -r requirements.txt
+uv venv src\.venv
+uv pip install --python src\.venv\Scripts\python.exe -r src\requirements.txt
 
 # Run the full ETL pipeline
-python main.py
+src\.venv\Scripts\python.exe src\main.py
 
 # Run the data profiler standalone
-python -m src.explore
+python -m src.profiling.data_profiler
 
 # Excalidraw diagram export (requires Node.js)
 cd excalidraw && npm install
@@ -30,11 +30,16 @@ No test suite exists yet. There are no linters or CI configured.
 data/raw/       → Source Excel files (11 files: Certifications, Clubs, Results per year)
 data/gold/      → Output CSVs: dim_*.csv (dimensions), fact_*.csv (facts)
 src/            → Python ETL scripts (OOP required by assignment)
-  explore.py    → DataProfiler class (schema inspection, column stats, duplicate detection)
+  main.py       → Pipeline entry point
+  core/         → Shared project paths and cross-cutting constants
+  orchestration/
+    pipeline.py → Medallion pipeline orchestration
+  profiling/
+    data_profiler.py → DataProfiler class (schema inspection, column stats, duplicate detection)
+  quality/      → Output validation schemas, reports, and validator
   utils/
     data_loader.py → DataLoader class (cached Excel loading, year extraction)
   notebooks/    → Jupyter notebooks for ad-hoc exploration
-main.py         → Pipeline entry point (project root)
 docs/           → Data requirements, use-case specs, assignment slides
 pm/             → Project plan and timeline
 ```
@@ -47,7 +52,7 @@ pm/             → Project plan and timeline
 ### Key classes
 
 - **`DataLoader`** (`src/utils/data_loader.py`): Loads and caches raw Excel files. Use `load_certifications()`, `load_clubs()`, `load_results(year)`, `load_all_results()`. Has `available_years()` (returns `[2015–2019, 2022–2025]`) and `extract_year(filename)`.
-- **`DataProfiler`** (`src/explore.py`): Profiles schemas, analyzes columns, detects duplicates, compares schemas across files, and checks referential integrity. All new ETL classes should follow this same OOP pattern.
+- **`DataProfiler`** (`src/profiling/data_profiler.py`): Profiles schemas, analyzes columns, detects duplicates, compares schemas across files, and checks referential integrity. All new ETL classes should follow this same OOP pattern.
 
 ### Source files in `data/raw/`
 
@@ -76,9 +81,9 @@ pm/             → Project plan and timeline
 
 ## ETL Conventions
 
-The virtual environment is at the **project root** (`.venv`), managed with **uv**. Dependencies: `pandas`, `openpyxl`.
+The virtual environment is under **`src\`** (`src\.venv`), managed with **uv**. Dependencies are listed in `src\requirements.txt`: `pandas`, `openpyxl`.
 
-ETL scripts live in `src/`. The pipeline entry point is `main.py` at the project root (not yet implemented — currently empty). New ETL classes (extractors, transformers) go in `src/` and should reuse `DataLoader` for all raw file access.
+ETL scripts live in `src/`. The pipeline entry point is `src\main.py`. New ETL classes (extractors, transformers) go in `src/` and should reuse `DataLoader` for all raw file access.
 
 ### Transformation rules (from `docs/data_requirements.md`)
 
@@ -159,7 +164,7 @@ Examples:
 feat(etl): add score normalization for time-based results
 fix(transform): handle DQ entries in rank parsing
 docs: update data requirements with medal logic
-chore: add openpyxl to requirements.txt
+chore: add openpyxl to src\requirements.txt
 ```
 
 ### PR titles

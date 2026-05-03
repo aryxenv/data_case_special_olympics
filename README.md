@@ -28,10 +28,12 @@ The main objective is to answer business questions about athlete participation, 
 
 ## Run the ETL
 
-Use the existing uv-managed environment:
+Use the uv-managed environment under `src\.venv`:
 
 ```powershell
-uv run python main.py
+uv venv src\.venv
+uv pip install --python src\.venv\Scripts\python.exe -r src\requirements.txt
+src\.venv\Scripts\python.exe src\main.py
 ```
 
 This runs the full medallion pipeline from raw Excel files to validated gold-layer CSVs:
@@ -52,15 +54,15 @@ data/raw -> data/bronze -> data/silver -> data/gold
 
 The final Power BI model is a star schema with 5 dimensions and 2 facts:
 
-| Table | Rows | Purpose |
-| ----- | ---: | ------- |
-| `dim_athlete.csv` | 20,221 | Certified people, demographics, and certificate flags |
-| `dim_geography.csv` | 437 | Clubs/delegations and regional attributes |
-| `dim_sport.csv` | 23 | Distinct sports |
-| `dim_event.csv` | 210 | Normalized competition events |
-| `dim_time.csv` | 11 | Reporting years, including the 2020-2021 COVID gap |
-| `fact_results.csv` | 72,702 | Event-level performance results |
-| `fact_participation.csv` | 27,829 | Athlete participation by club and year |
+| Table                    |   Rows | Purpose                                               |
+| ------------------------ | -----: | ----------------------------------------------------- |
+| `dim_athlete.csv`        | 20,221 | Certified people, demographics, and certificate flags |
+| `dim_geography.csv`      |    437 | Clubs/delegations and regional attributes             |
+| `dim_sport.csv`          |     23 | Distinct sports                                       |
+| `dim_event.csv`          |    210 | Normalized competition events                         |
+| `dim_time.csv`           |     11 | Reporting years, including the 2020-2021 COVID gap    |
+| `fact_results.csv`       | 72,702 | Event-level performance results                       |
+| `fact_participation.csv` | 27,829 | Athlete participation by club and year                |
 
 The latest reproducibility run completed with **68/68 validation checks passed**. See [final validation](./docs/md/final_validation.md) and the detailed [dimensional model](./docs/md/dimensional_model.md).
 
@@ -90,6 +92,7 @@ Key project documentation:
 - **Design:** Intuitive and logical dashboard layout.
 
 <!-- llm-mem:readme:start -->
+
 ## llm-mem
 
 This repository is configured for [llm-mem](https://github.com/aryxenv/llm-mem) Copilot MCP integration. llm-mem keeps its index and run artifacts in the local `.llm-mem/` directory, which is intentionally ignored by Git.
@@ -111,4 +114,5 @@ llm-mem integrate copilot install
 ```
 
 Keep using `copilot` normally after that. The project MCP config, skill, and instructions tell Copilot when to use llm-mem context tools.
+
 <!-- llm-mem:readme:end -->
