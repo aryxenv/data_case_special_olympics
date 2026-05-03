@@ -1,5 +1,7 @@
 # Project: Special Olympics Data Dashboard
 
+GITHUB REPO: https://github.com/aryxenv/data_case_special_olympics
+
 > [!NOTE]
 > Grading? Skip to [Final Deliverables](#final-deliverables) to find the files you are looking for in this project.
 
