@@ -128,7 +128,7 @@ _Goal: Submit project._
 
 - [x] Clean up code (add comments) (1.5h)
 - [x] Organize folder structure for submission (1h)
-- [ ] ZIP project (Code, PBIX, Docs) and submit (1.5h)
+- [x] ZIP project (Code, PBIX, Docs) and submit (1.5h)
 
 ---
 
