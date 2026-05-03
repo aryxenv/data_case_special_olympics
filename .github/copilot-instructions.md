@@ -85,7 +85,7 @@ The virtual environment is under **`src\`** (`src\.venv`), managed with **uv**. 
 
 ETL scripts live in `src/`. The pipeline entry point is `src\main.py`. New ETL classes (extractors, transformers) go in `src/` and should reuse `DataLoader` for all raw file access.
 
-### Transformation rules (from `docs/data_requirements.md`)
+### Transformation rules (from `docs/r0984834_DataRequirements.md`)
 
 - **Primary key:** `Code` column — data is anonymized, never attempt to reverse-engineer names.
 - **Gender:** Standardize `M`/`F`/`Male`/`Female` → consistent values.
@@ -191,6 +191,7 @@ All diagrams **must** use Excalidraw — no other diagramming tools allowed. See
 All data transformation happens in Python, **not** in Power BI. Power BI only consumes the clean CSVs from `data/gold/` and handles visualization + DAX measures.
 
 <!-- llm-mem:start -->
+
 ## High-priority llm-mem context optimization
 
 Always prefer llm-mem for efficient memory and context management on repo-specific coding, debugging, refactoring, testing, explanation, and architecture tasks.
@@ -208,4 +209,5 @@ Follow this protocol:
 7. Skip llm-mem only for trivial single-file edits, pure shell/git questions, or tasks where the user already supplied all necessary context.
 
 Keep normal Copilot behavior and user intent first; llm-mem is an optimization layer, not a replacement assistant.
+
 <!-- llm-mem:end -->

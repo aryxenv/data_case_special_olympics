@@ -65,9 +65,9 @@ A typical week of work followed this pattern:
 
 **Week 1** — Gemini 3 Pro generated the initial project plan (`pm/r0984834_ProjectPlan.md`) from the assignment slides. Copilot CLI was not yet used.
 
-**Week 2** — Copilot CLI profiled all 11 raw Excel files, creating `src/profiling/data_profiler.py` (OOP `DataProfiler` class) and generating `docs/week2_data_exploration.md` with column analysis, duplicate detection, and cross-file referential integrity findings.
+**Week 2** — Copilot CLI profiled all 11 raw Excel files, creating `src/profiling/data_profiler.py` (OOP `DataProfiler` class) and generating `docs/week2_r0984834_DataExploration.md` with column analysis, duplicate detection, and cross-file referential integrity findings.
 
-**Week 3** — Copilot CLI designed the star schema, validated dimension cardinalities via Python notebooks, created `docs/dimensional_model.md`, and built the Excalidraw star-schema diagram exported as `docs/r0984834_Model.png`.
+**Week 3** — Copilot CLI designed the star schema, validated dimension cardinalities via Python notebooks, created `docs/r0984834_DimensionalModel.md`, and built the Excalidraw star-schema diagram exported as `docs/r0984834_Model.png`.
 
 ### Phase 2: ETL Development (Weeks 4–7)
 

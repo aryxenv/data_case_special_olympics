@@ -1,6 +1,14 @@
 # Power BI Setup — Special Olympics Dashboard
 
+Wireframe made in [docs/img/r0984834_Wireframe.png](../docs/img/r0984834_Wireframe.png).
+
 If you are looking for the final PowerBI pages, open [./r0984834_Dashboard.pbix](./r0984834_Dashboard.pbix) in PowerBI or see [./pages](./pages).
+
+Semantic model made in [docs/img/r0984834_Model.png](../docs/img/r0984834_Model.png), reflected in PowerBI too.
+
+DAX Measures defined below.
+
+Dashboard pages preview made in [pages](./pages/) - fully interactive once loaded in PowerBI.
 
 ## 1. Data Import
 

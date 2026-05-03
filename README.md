@@ -64,7 +64,7 @@ The final Power BI model is a star schema with 5 dimensions and 2 facts:
 | `fact_results.csv`       | 72,702 | Event-level performance results                       |
 | `fact_participation.csv` | 27,829 | Athlete participation by club and year                |
 
-The latest reproducibility run completed with **68/68 validation checks passed**. See [final validation](./docs/md/final_validation.md) and the detailed [dimensional model](./docs/md/dimensional_model.md).
+The latest reproducibility run completed with **68/68 validation checks passed**. See [final validation](./docs/md/r0984834_FinalValidation.md) and the detailed [dimensional model](./docs/md/r0984834_DimensionalModel.md).
 
 ## Final Deliverables
 
@@ -78,10 +78,10 @@ Everything gets submitted in one ZIP file containing:
 
 Key project documentation:
 
-- [Data requirements](./docs/md/data_requirements.md)
-- [Data exploration and audit](./docs/md/data_exploration.md)
-- [Dimensional model](./docs/md/dimensional_model.md)
-- [Final validation and self-evaluation](./docs/md/final_validation.md)
+- [Data requirements](./docs/md/r0984834_DataRequirements.md)
+- [Data exploration and audit](./docs/md/r0984834_DataExploration.md)
+- [Dimensional model](./docs/md/r0984834_DimensionalModel.md)
+- [Final validation and self-evaluation](./docs/md/r0984834_FinalValidation.md)
 - [Power BI setup and measures](./pbix/README.md)
 - [AI usage disclosure](./AI.md)
 

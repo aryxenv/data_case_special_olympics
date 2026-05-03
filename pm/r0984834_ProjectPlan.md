@@ -126,8 +126,8 @@ _Goal: Ensure everything is robust._
 
 _Goal: Submit project._
 
-- [ ] Clean up code (add comments) (1.5h)
-- [ ] Organize folder structure for submission (1h)
+- [x] Clean up code (add comments) (1.5h)
+- [x] Organize folder structure for submission (1h)
 - [ ] ZIP project (Code, PBIX, Docs) and submit (1.5h)
 
 ---
