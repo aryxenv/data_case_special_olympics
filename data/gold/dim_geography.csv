@@ -1,0 +1,438 @@
+geography_key,club_id,club_name,province,city,country,primary_language,zipcode
+-1,-1,Unknown,,,,,
+1,100,LA PILERIE,Hainaut,Momignies,Belgium,French,6590
+2,101,BAM,Luxembourg,Bastogne,Belgium,French,6600
+3,102,LES DAHUTS - ANDAGE ,Luxembourg,Saint-Hubert,Belgium,French,6870
+4,103,LES TUNIQUES BLEUES,Brabant Wallon,Nivelles,Belgium,French,1400
+5,104,EVASION,Hainaut,Houdeng Goegnies,Belgium,French,7110
+6,105,LES AUBEPINES,Liège,Cerexhe-Heuseux,Belgium,French,4632
+7,107,S.J.N. CLUB,Brussel/Bruxelles,Bruxelles,Belgium,French,1030
+8,109,LES CARACOLES,Namur,Namur,Belgium,French,5000
+9,110,LES QUILLES LIBRES,Luxembourg,Arlon,Belgium,French,6700
+10,111,LA CLAIRIÈRE,Brussel/Bruxelles,Bruxelles,Belgium,French,1170
+11,112,RJCV SPORT,Namur,Malonne,Belgium,French,5020
+12,113,CLERLANDE SPORT,Brabant Wallon,Ottignies,Belgium,French,1340
+13,115,LES OURSONS,Namur,Bonneville,Belgium,French,5300
+14,116,LES COPAINS,Brussel/Bruxelles,Bruxelles,Belgium,French,1083
+15,118,LES GRINGOS,Namur,Sugny,Belgium,French,5550
+16,119,METHYS,Liège,Liege,Belgium,French,4000
+17,120,L'EFFORT,Liège,Liege,Belgium,French,4000
+18,121,L'ENVOL,Hainaut,Mouscron,Belgium,French,7700
+19,122,LA FORESTIERE,Brussel/Bruxelles,Bruxelles,Belgium,French,1050
+20,123,LA CLARINE,Hainaut,Fayt-Lez-Manage,Belgium,French,7170
+21,124,JENNEVAUX RENCONTRE,Namur,Lesve,Belgium,French,5170
+22,125,LES KOLOUTES,Brabant Wallon,Grez-Doiceau,Belgium,French,1390
+23,126,SPORT DE L'AMITIE,Brabant Wallon,Mont-Saint-Guibert,Belgium,French,
+24,127,PÉRUWELZ RAINBOW SPORTS,Hainaut,Tournai,Belgium,French,7520
+25,128,LES HAUTES ARDENNES,Luxembourg,Vielsalm,Belgium,French,6690
+26,129,C.S. DE HEMPTINNE,Brabant Wallon,Jauche,Belgium,French,1350
+27,131,LES ACACIAS,Brabant Wallon,Nivelles,Belgium,French,1400
+28,132,LA CORDEE SPORTS,Namur,Bouge,Belgium,French,5004
+29,133,LES 1001 NUITS,Brabant Wallon,Grez-Doiceau,Belgium,French,1390
+30,134,CENTRE CERFONTAINE,Hainaut,Peruwelz,Belgium,French,7600
+31,135,LE CASTILLON,Hainaut,La Louvière,Belgium,French,7100
+32,137,MOSPO,Hainaut,Herseaux,Belgium,French,7712
+33,138,OKAPI SPORT,Hainaut,Casteau,Belgium,French,7061
+34,139,CLAIRVAL SPORT ACIS,Luxembourg,Barvaux,Belgium,French,6940
+35,140,LE SESAME,Brussel/Bruxelles,Bruxelles,Belgium,French,1180
+36,142,FARRA STRATEGIE,Brussel/Bruxelles,Auderghem,Belgium,French,1160
+37,143,LE CHAT BOTTÉ,Hainaut,La Louvière,Belgium,French,7100
+38,144,LES PLATANES,Brussel/Bruxelles,Bruxelles,Belgium,French,1170
+39,145,LE PRETEXTE,Brussel/Bruxelles,Bruxelles,Belgium,French,1180
+40,146,LE PETIT POUCET,Hainaut,Sivry,Belgium,French,6470
+41,147,CENTRE REINE FABIOLA,Hainaut,Neufvilles,Belgium,French,7063
+42,148,LES RENARDS DE VOLAIVILLE,Luxembourg,Fauvillers,Belgium,French,6637
+43,152,S.R.A. L'ODYSSEE,Hainaut,Montignies / S / Sambre,Belgium,French,6061
+44,153,L'ESPACE LIOBA,Namur,Namur,Belgium,French,5000
+45,154,LES BLÉS D’OR,Hainaut,Mourcourt,Belgium,French,7543
+46,155,DELTA,Brussel/Bruxelles,Bruxelles,Belgium,French,1000
+47,157,DOMITILLE,Liège,Waimes,Belgium,French,4950
+48,158,SPORT ESPOIR,Liège,Dison  Andrimont,Belgium,French,4821
+49,159,LES BOLETS,Brussel/Bruxelles,Bruxelles,Belgium,French,1170
+50,160,B.S.C. OSTBELGIEN,Liège,Recht,Belgium,French,4780
+51,161,HOME VALERE DELCROIX,Hainaut,Tournai,Belgium,French,7500
+52,162,A.T.L.A.S.H.,Liège,Tihange,Belgium,French,4500
+53,163,FOYER DU FORT,Liège,Flemalle,Belgium,French,4400
+54,164,ARBOTEAM,Hainaut,Wasmes A-B,Belgium,French,7604
+55,165,LE COLOMBIER,Brabant Wallon,Nivelles,Belgium,French,1400
+56,166,LES GOELANDS,Hainaut,Aubechies,Belgium,French,7972
+57,168,VRAIES RICHESSES,Brussel/Bruxelles,Bruxelles,Belgium,French,1070
+58,169,CERISAIE SPORT,Liège,Bassenge,Belgium,French,4690
+59,173,ALBATROS,Namur,Petite-Chapelle,Belgium,French,5660
+60,174,ALTEO MOUSCRON,Hainaut,Mouscron,Belgium,French,7700
+61,176,OLDS BRACQS,Hainaut,Strepy-Bracquegnies,Belgium,French,7110
+62,177,"CERCLE SPORTIF ""LA SEVE""",Liège,Xhendelesse,Belgium,French,4652
+63,178,LE JARDIN DES FÉES,Hainaut,Mons,Belgium,French,7000
+64,179,EQUI - VALENCE,Hainaut,Rance,Belgium,French,6470
+65,180,PONY-CLUB HOF TE BEVER ASBL,,Mignault,Belgium,French,7070
+66,181,LA POMMERAIE,Hainaut,Ellignies-Ste-Anne,Belgium,French,7972
+67,182,LES CANAILLES,Liège,Momalle,Belgium,French,4350
+68,183,LE BOIS ROUSSEL,Hainaut,Montigny-Le-Tilleul,Belgium,French,6110
+69,184,OXYGENE,Namur,Sclayn,Belgium,French,5300
+70,186,SIROCCO,Brabant Wallon,Haut-Ittre,Belgium,French,1461
+71,187,AU PETIT BONHEUR,Liège,Grâce-Hollogne,Belgium,French,4460
+72,189,FOYER DE THÉMIS,Liège,Sprimont,Belgium,French,4141
+73,191,LES SCORPIONS,Hainaut,Willaupuis,Belgium,French,7904
+74,194,LES SPITANTS,Liège,Amay,Belgium,French,4540
+75,195,LE KOALA,Liège,Liege,Belgium,French,4000
+76,196,LES OLIVIERS SPORT,Liège,Grivegnee,Belgium,French,4030
+77,197,L'ESCAPADE,Hainaut,Houdeng-Aimeries,Belgium,French,7110
+78,198,LE CHEVREFEUIL,Liège,Spa,Belgium,French,4900
+79,203,FUN GYM B/ DANS LES YEUX DE LISA,Brabant Wallon,Nivelles,Belgium,French,1400
+80,204,C.S. KANGOUROUS,Brabant Wallon,Jodoigne,Belgium,French,1370
+81,205,ASCENSION 2,Hainaut,Pommeroeul,Belgium,French,7322
+82,206,LA SOURIS VERTE,Hainaut,Mons,Belgium,French,7000
+83,207,LES GRILLONS,Liège,Vaux-Sous-Chevremont,Belgium,French,4051
+84,209,HAMA II,Brussel/Bruxelles,Bruxelles,Belgium,French,1050
+85,210,A.S. AURORE,Hainaut,Anderlues,Belgium,French,6150
+86,211,LES BARRACUDAS,Hainaut,Rumes,Belgium,French,7610
+87,213,LA PASSERELLE,Brussel/Bruxelles,Bruxelles,Belgium,French,1170
+88,214,L'ENVOLÉE,Liège,Heusy-Verviers,Belgium,French,4802
+89,215,KEGELJAN,Namur,Ham-Sur-Sambre,Belgium,French,5190
+90,217,GRAND AXHE,Liège,Waremme,Belgium,French,4300
+91,219,BOTHEY CLUB,Namur,Gembloux,Belgium,French,5032
+92,221,INSTITUT DU BON PASTEUR,Hainaut,Bury,Belgium,French,7602
+93,222,CENTRE DE VIE,Brussel/Bruxelles,Bruxelles,Belgium,French,1090
+94,223,STARTEMIA,Brussel/Bruxelles,Etterbeek,Belgium,French,1040
+95,224,LE GARDIAN V3,Namur,Chapois -Leignon,Belgium,French,5590
+96,227,TOMA STENA,Liège,Blegny,Belgium,French,4670
+97,229,DREAM TEAM,Brussel/Bruxelles,Bruxelles,Belgium,French,1180
+98,231,LE MAGNOLIA,Hainaut,Hautrage,Belgium,French,7334
+99,232,ORFEA,Brussel/Bruxelles,Etterbeek,Belgium,French,1040
+100,233,LES PETUNIAS,Brussel/Bruxelles,Bruxelles,Belgium,French,1050
+101,234,CONFORT SOCIAL,Hainaut,Peruwelz,Belgium,French,7600
+102,235,LES FOUGERES,Brussel/Bruxelles,Bruxelles,Belgium,French,1170
+103,236,LA MAISON D'EMERAUDE,Luxembourg,Arville,Belgium,French,6870
+104,237,EMBARQUEMENT IMMEDIAT,Liège,Seraing,Belgium,French,4100
+105,238,LE VILLAGE,Hainaut,Comines,Belgium,French,7780
+106,241,MISTRAL SPORT,Liège,Saint-Georges-Sur-Meuse,Belgium,French,4470
+107,242,C.S. LES TCHANTCHES,Liège,Grivegnee,Belgium,French,4030
+108,243,LES RENES DE LA VIE,Brabant Wallon,La Hulpe,Belgium,French,1310
+109,245,EQUISTAL,Brabant Wallon,Bornival,Belgium,French,1404
+110,246,LE COUP FRANC,Brabant Wallon,Sart-Risbart,Belgium,French,1315
+111,248,I.S.B.,Brussel/Bruxelles,Boitsfort,Belgium,French,1170
+112,249,ROQUEBRUNE,Namur,Namur,Belgium,French,5000
+113,251,LES PETITS GODETS,Hainaut,Carnieres,Belgium,French,7141
+114,252,LA FORET,Brussel/Bruxelles,Bruxelles,Belgium,French,1150
+115,253,LES WEIGELIAS,Brussel/Bruxelles,Bruxelles,Belgium,French,1170
+116,254,HADEP,Brussel/Bruxelles,Bruxelles,Belgium,French,1190
+117,255,SAPI-CHAPELLE,Hainaut,Chapelle-Lez-Herlaimont,Belgium,French,7160
+118,256,LES QUATRE SAISONS,Luxembourg,Ambly,Belgium,French,6953
+119,258,LES ALIZES,Liège,Membach (Baelen),Belgium,French,4837
+120,259,COLIBRIS CLUB,Brabant Wallon,Ophain Bois Seigneur Isaac,Belgium,French,1421
+121,260,L'ENTRE DEUX,Liège,Nandrin,Belgium,French,4550
+122,261,LES LAPINS BLEUS,Namur,Alle S/ Semois,Belgium,French,5550
+123,262,ENVOL (LE DIARBOIS),Hainaut,Jumet,Belgium,French,6040
+124,263,SAPI-TEAM,Hainaut,Masnuy-St-Jean,Belgium,French,7050
+125,267,ASBL ESSENTIEL,Brabant Wallon,Lasne,Belgium,French,1380
+126,268,DYNAMISPORT,Brabant Wallon,Braine L'Alleud,Belgium,French,1420
+127,271,LE TOURNESOL SPORTIF,Hainaut,Estaimpuis,Belgium,French,7730
+128,272,LE PETIT PRINCE DE COURCELLES,Hainaut,Courcelles,Belgium,French,6180
+129,273,SAJA SOLIGNAC,Namur,Hamois (Schaltin),Belgium,French,5364
+130,274,TABUCHET SPORT,Liège,Liège,Belgium,French,4000
+131,275,LA SYMPHONIE,Hainaut,Saint-Symphorien,Belgium,French,7030
+132,279,HAMA 1,Brussel/Bruxelles,Bruxelles,Belgium,French,1030
+133,281,RESIDENCE ÉLYSÉE,Hainaut,Mont-Saint-Aubert,Belgium,French,7542
+134,282,LA CASSINE,Hainaut,Flobecq,Belgium,French,7880
+135,284,L'AIR DE PAIX,Hainaut,Frameries,Belgium,French,7080
+136,285,LA BASTIDE,Namur,Namur,Belgium,French,5000
+137,286,JUDO CLUB WELLIN ASBL,Luxembourg,Wellin,Belgium,French,6920
+138,287,HOCKEY TOGETHER PINGOUIN NIVELLES,Brabant Wallon,Nivelles,Belgium,French,1400
+139,288,LE JARDIN DES ANGES,Hainaut,Dour,Belgium,French,7370
+140,289,NEW MOBILITY CLUB SPORTIF DE MOUSCRON,Hainaut,Mouscron,Belgium,French,7700
+141,290,LOTUS D'OCQUIER,Liège,Ocquier,Belgium,French,4560
+142,291,LES DALTONS,Hainaut,Quevy-Le-Grand (Mons),Belgium,French,7040
+143,292,CARPE DIEM ASBL,Namur,Jambes,Belgium,French,5100
+144,293,LES 3 SAPINS,Hainaut,Mignault,Belgium,French,7070
+145,294,LA SAPINIERE DE QUAREGNON,Hainaut,Quaregnon,Belgium,French,7390
+146,296,KANO JC TOURNAI,Hainaut,Nechin,Belgium,French,7730
+147,297,FOYER DU CALYDON,Liège,Liège,Belgium,French,
+148,298,CERCLE ADAPTE ANDENNAIS,Namur,Andenne,Belgium,French,5300
+149,299,A.C.I.S. SOLEIL LEVANT,Hainaut,Montignies - Sur - Samble,Belgium,French,6061
+150,300,LE CHAF ASBL,Hainaut,Farciennes,Belgium,French,6240
+151,302,LE GRIMOIRE,Luxembourg,Transinne,Belgium,French,6890
+152,303,LES 3 FÉES,Liège,Spa,Belgium,French,4900
+153,304,LES DRAGONS,Hainaut,Ghlin,Belgium,French,7011
+154,306,MAISON DES PILIFS,Brussel/Bruxelles,Bruxelles,Belgium,French,1120
+155,307,JOSO ASBL,Brussel/Bruxelles,Ixelles,Belgium,French,1050
+156,308,LA CARAVELLE,Hainaut,Peronnes - Lez - Antoing,Belgium,French,7640
+157,309,LA RENAISSANCE,Hainaut,Mons,Belgium,French,7000
+158,310,VISÉ - CENTRE DE CERFONTAINE,Liège,Haccourt,Belgium,French,4684
+159,311,CHEVAL ET FORET,Brussel/Bruxelles,Auderghem,Belgium,French,1160
+160,312,FAGN' HANDISPORTS ASBL,Liège,Spa,Belgium,French,4900
+161,314,LIFE BADMINTON LE ROEULX,Hainaut,Le Roeulx,Belgium,French,7070
+162,315,ECOLE NOS PILIFS,Brussel/Bruxelles,Laeken,Belgium,French,1020
+163,316,LA CADOLE ASBL,Hainaut,Bonsecours,Belgium,French,7603
+164,317,CTM - CAROLO TEAM MARCINELLE,Hainaut,Marcinelle,Belgium,French,6001
+165,318,L'ECHALIER,Liège,Cerexhe - Heuseux,Belgium,French,4632
+166,319,ASBL L'ETOILE FILANTE,Hainaut,Péruwelz,Belgium,French,7600
+167,321,ACBBH,Hainaut,Blaton,Belgium,French,7321
+168,322,ACBB,Hainaut,Blaton,Belgium,French,7321
+169,323,LA GARENNE,Hainaut,Wiers - Péruwelz,Belgium,French,7608
+170,324,LES VELDEMANNEKES,Brussel/Bruxelles,Brussel,Belgium,French,1140
+171,325,ALL STARS,Hainaut,Strambruges,Belgium,French,7973
+172,326,LE PART'AGE,Hainaut,Estaimpuis,Belgium,French,7730
+173,327,LE PAYS DE COCAGNE,Hainaut,Mons,Belgium,French,7000
+174,328,16 ÂMES,Hainaut,Orcq,Belgium,French,7501
+175,329,L'ACCUEIL MOSAN ASBL,Namur,Namur,Belgium,French,5000
+176,330,LA BOULAIE,Hainaut,Chimay,Belgium,French,6460
+177,331,SAPI BL'A,Brabant Wallon,Braine L'Alleud,Belgium,French,1420
+178,332,B.C. CLERFAYT,,Hainaut,Belgium,French,
+179,333,EESSCF - LES PEUPLIERS,Luxembourg,Marloie,Luxembourg,French,6900
+180,334,LE NIDVELLES° (LE COLOMBIER 2),Brabant Wallon,Nivelles,Belgium,French,1400
+181,335,ASCENSION ERQUELINNES,Hainaut,Erquelinnes,Belgium,French,6560
+182,336,LONCIN AU PETIT BONHEUR,Liège,Loncin,Belgium,French,4431
+183,338,C GO GYM,Hainaut,Mouscron,Belgium,French,7700
+184,339,CIGALINE,Hainaut,Merbes-Le-Château,Belgium,French,6567
+185,340,WOLFHANDI RACLO,Hainaut,La Louvière,Belgium,French,7100
+186,341,JUDO TOP NIVEAU TOURNAI,Hainaut,Tournai,Belgium,French,7500
+187,342,AU FOYER DE CASSIOPEE,Liège,Stoumont,Belgium,French,4987
+188,343,HOCKEY TOGETHER,Brussel/Bruxelles,Uccle,Belgium,French,1180
+189,344,RESIDENCE CHATEAU ARC-EN-CIEL,Hainaut,Strepy Bracquegnies,Belgium,French,7110
+190,345,ASBL LES PASSEREAUX,Liège,Battice,Belgium,French,4650
+191,346,TAGO ASBL,Brussel/Bruxelles,Neder-Over-Heembeek,Belgium,French,1120
+192,347,TIFRA HENSIES,Hainaut,Hensies,Belgium,French,7350
+193,348,NOKTO,Brussel/Bruxelles,Neder-Over-Hembeek,Belgium,French,1120
+194,349,LE BOIS DE SAPINS,Brussel/Bruxelles,Saint-Josse Ten-Noode,Belgium,French,1210
+195,350,LES LEUPS,Liège,Grâce-Hollogne,Belgium,French,4460
+196,351,LES MARSOUX,Hainaut,Marcinelle,Belgium,French,6001
+197,352,LA PREVOTE,Hainaut,Baudour,Belgium,French,7331
+198,353,MALMEDY ATHLETIC CLUB,Liège,Malmedy,Belgium,French,4960
+199,354,LE SEQUOIA,Hainaut,Hyon,Belgium,French,7022
+200,355,VILLA PILIFS,Brussel/Bruxelles,Neder-Over-Heembeek,Belgium,French,1120
+201,356,REVALITY SPORT ASBL,Brabant Wallon,Ottignies-Louvain-La-Neuve,Belgium,French,1340
+202,357,FOOT'GERES,Hainaut,Colfontaine,Belgium,French,7340
+203,358,DOMAINE DE LA PASSERELLE,,Liège,Belgium,French,4420
+204,359,ÉTOILE MARCHOISE,Luxembourg,Marche-En-Famenne,Belgium,French,6900
+205,360,FOYER D'ASTREE,,Liège,Belgium,French,4031
+206,361,LES CHANTERELLES,Liège,Esneux,Belgium,French,4130
+207,362,RÉSIDENCE TIFRA,Hainaut,Jurbise,Belgium,French,7050
+208,500,LOMMELSE TENNIS CLUB,Limburg,Lommel,Belgium,Dutch,3920
+209,501,ZONNELIED,Vlaams-Brabant,Roosdaal,Belgium,Dutch,1761
+210,502,BORGERSTEIN,Antwerpen,Sint-Katelijne-Waver,Belgium,Dutch,2860
+211,504,DE GRAAF,,Genk,Belgium,Dutch,3600
+212,505,OPEN KANS,Limburg,Genk,Belgium,Dutch,3600
+213,506,G-BLACK DEVILS UNITED,West-Vlaanderen,Jabbeke,Belgium,Dutch,8490
+214,507,DRAPI,Oost-Vlaanderen,De Pinte,Belgium,Dutch,9840
+215,508,SPORTCLUB DRUIVENSTREEK,Vlaams-Brabant,Duisburg,Belgium,Dutch,3080
+216,509,FRISA,Vlaams-Brabant,Roosdaal,Belgium,Dutch,1760
+217,510,JC KUMIUCHI BERLARE,Oost-Vlaanderen,Berlare,Belgium,Dutch,9290
+218,511,TER MUIDEN VZW,West-Vlaanderen,Oedelem,Belgium,Dutch,8730
+219,512,HET GIELSBOS,Antwerpen,Gierle,Belgium,Dutch,2275
+220,513,RECREAS DAMESVOETBALCLUB,West-Vlaanderen,Gullegem,Belgium,Dutch,8560
+221,514,ZEVENHUIZEN,Oost-Vlaanderen,Gent,Belgium,Dutch,9000
+222,515,KJC BAZEL,Oost-Vlaanderen,Bazel,Belgium,Dutch,9150
+223,516,MASS,Oost-Vlaanderen,Zwalm - Beerlegem,Belgium,Dutch,9630
+224,517,M.P.I. MAASEIK,Limburg,Maaseik,Belgium,Dutch,3680
+225,518,ARUM,Limburg,Dilsen-Stokkem,Belgium,Dutch,3650
+226,521,ONS ERF,West-Vlaanderen,St-Michiels,Belgium,Dutch,8200
+227,522,BC WIT-WIT RONSE,Oost-Vlaanderen,Ronse,Belgium,Dutch,9600
+228,523,SPELIN WIJCHMAAL,Limburg,Peer,Belgium,Dutch,3990
+229,524,AVZK,Antwerpen,Booischot,Belgium,Dutch,2221
+230,525,SABA,Oost-Vlaanderen,Deinze,Belgium,Dutch,9800
+231,527,MIVALTI,West-Vlaanderen,Tielt,Belgium,Dutch,8700
+232,528,BLIJDORP BUGGENHOUT,Oost-Vlaanderen,Buggenhout,Belgium,Dutch,9255
+233,530,DE HOGE KOUTER,West-Vlaanderen,Kortrijk,Belgium,Dutch,8500
+234,531,OLO-Rotonde VZW,Antwerpen,Brasschaat,Belgium,Dutch,2930
+235,532,S.C. VIRO VZW,West-Vlaanderen,Brugge,Belgium,Dutch,8200
+236,533,VZW FIETS-WANDELCLUB FIT LSA,Antwerpen,Duffel,Belgium,Dutch,2570
+237,534,LEUVEN AQUATICS vzw,Vlaams-Brabant,Leuven,Belgium,Dutch,3000
+238,535,DE BRANDING,West-Vlaanderen,Kortrijk-Heule,Belgium,Dutch,8501
+239,536,A.V. LYRA-LIERSE,Antwerpen,Bonheiden,Belgium,Dutch,2820
+240,537,VZW DE VLEUGELS,West-Vlaanderen,Klerken,Belgium,Dutch,8650
+241,538,GAVERLAND,Oost-Vlaanderen,Vurste,Belgium,Dutch,9890
+242,539,SMASHING LEUVEN,Vlaams-Brabant,Leuven,Belgium,Dutch,3001
+243,540,KVC 3 LINDEN GENK,Limburg,Genk,Belgium,Dutch,3600
+244,541,KLAVIER,Antwerpen,Merksplas,Belgium,Dutch,2330
+245,543,ROZENKRANS,West-Vlaanderen,Oostduinkerke,Belgium,Dutch,8670
+246,544,ROYAL GHENT SWIMMING CLUB,Oost-Vlaanderen,Melle,Belgium,Dutch,9090
+247,545,ZONNEHOEVE / LIVING+,Oost-Vlaanderen,Eke -Nazareth,Belgium,Dutch,9810
+248,548,G-SPORT VORSELAAR,Antwerpen,Vorselaar,Belgium,Dutch,2290
+249,550,DE LOVIE,West-Vlaanderen,Poperinge,Belgium,Dutch,8970
+250,551,DE VIERKLAVER,Oost-Vlaanderen,Deinze,Belgium,Dutch,9850
+251,552,GEELSE TTC,Antwerpen,Geel,Belgium,Dutch,2440
+252,553,GROENHOVE,Oost-Vlaanderen,Vurste,Belgium,Dutch,9890
+253,554,RECREAS KFC ALKEN,Limburg,Wellen,Belgium,Dutch,3830
+254,556,'T VOSJE VZW,Vlaams-Brabant,Vilvoorde,Belgium,Dutch,1800
+255,557,SPORTCLUB TORDALE,West-Vlaanderen,Torhout,Belgium,Dutch,8820
+256,558,ALTHUS,West-Vlaanderen,Oostnieuwkerke,Belgium,Dutch,8840
+257,559,SINT ODA PELT,Limburg,Overpelt,Belgium,Dutch,3900
+258,560,FC MAASLAND NO,Limburg,Rotem,Belgium,Dutch,3650
+259,561,DE OEVER,Antwerpen,Wuustwezel (Gooreind),Belgium,Dutch,2990
+260,562,INSPIRANT,West-Vlaanderen,Oostduinkerke,Belgium,Dutch,8670
+261,564,TRIANGEL SPORT,Oost-Vlaanderen,Lovendegem,Belgium,Dutch,9920
+262,565,VZW KOMPAS,Oost-Vlaanderen,Wondelgem,Belgium,Dutch,9032
+263,566,DE CLEYNEN BEMPT,Vlaams-Brabant,Tienen,Belgium,Dutch,3300
+264,567,OOSTREM,Vlaams-Brabant,Herent,Belgium,Dutch,3020
+265,569,TER LINDE,Oost-Vlaanderen,Deinze,Belgium,Dutch,9800
+266,570,PRIMAVERA DAGCENTRUM,Antwerpen,Merksem,Belgium,Dutch,2170
+267,571,BOOTHUIS,West-Vlaanderen,Knokke-Heist,Belgium,Dutch,8301
+268,572,HAVENZATE,West-Vlaanderen,Veurne,Belgium,Dutch,8630
+269,573,JUDO CLUB MORI-NO-OTOKO,Antwerpen,Vorselaar,Belgium,Dutch,2290
+270,574,DE VALIER,Oost-Vlaanderen,Liedekerke,Belgium,Dutch,1770
+271,575,UBUNTU,West-Vlaanderen,Zwevegem,Belgium,Dutch,8550
+272,576,AVALYMPICS  VZW,Antwerpen,Geel,Belgium,Dutch,2440
+273,577,SCHOOL @ WATERKANT,Oost-Vlaanderen,Gent,Belgium,Dutch,9000
+274,578,G-VOETBAL EENDRACHT MECHELEN AAN DE MAAS,Limburg,Maasmechelen,Belgium,Dutch,3630
+275,579,SMASH BC,Limburg,Heusden-Zolder,Belgium,Dutch,3550
+276,581,ZGEEL,Antwerpen,Eindhout Laakdal,Belgium,Dutch,2430
+277,582,LOOISE A.V.,Antwerpen,Geel,Belgium,Dutch,2440
+278,583,G-SPORT PAJOTTENLAND,Vlaams-Brabant,Gooik,Belgium,Dutch,1755
+279,584,BUSO 'T VURSTJEN,Oost-Vlaanderen,Evergem,Belgium,Dutch,9940
+280,585,DUIN EN POLDER,West-Vlaanderen,Diksmuide,Belgium,Dutch,8600
+281,586,SODAM,Oost-Vlaanderen,Beerlegem - Zwalm,Belgium,Dutch,9830
+282,587,SKAR,Vlaams-Brabant,Lovenjoel,Belgium,Dutch,3360
+283,588,VOLUIT,Oost-Vlaanderen,Evergem,Belgium,Dutch,9940
+284,589,DUINHELM,West-Vlaanderen,Oostende,Belgium,Dutch,8400
+285,590,MARTINE VAN CAMP,Vlaams-Brabant,Molenstede-Diest,Belgium,Dutch,3294
+286,592,SCHOONDERHAGE,Oost-Vlaanderen,Pollare,Belgium,Dutch,9401
+287,593,SC MOZAIEK,Oost-Vlaanderen,Oostakker - Gent,Belgium,Dutch,9041
+288,595,JUNIORSGROEP,Antwerpen,Merksem,Belgium,Dutch,2170
+289,596,DE BOEG,Oost-Vlaanderen,Gent,Belgium,Dutch,9000
+290,597,SPORTSCHUURKE,Oost-Vlaanderen,Vurste,Belgium,Dutch,9890
+291,599,ALVINNENBERG,Vlaams-Brabant,Heverlee,Belgium,Dutch,3001
+292,601,HOUTLAND ATLETIEKCLUB VZW G-TEAM ACHILLES,West-Vlaanderen,Torhout,Belgium,Dutch,8820
+293,602,HET BALANSKE,Vlaams-Brabant,Tielt-Winge,Belgium,Dutch,3390
+294,603,KON. JUDO CLUB HASSELT,Limburg,Hasselt,Belgium,Dutch,3500
+295,604,G-BASKET BBC GEEL,Antwerpen,Geel,Belgium,Dutch,2440
+296,605,KONING-ALBATROS,Vlaams-Brabant,Dilbeek,Belgium,Dutch,1700
+297,608,HEJMEN,Vlaams-Brabant,Leuven,Belgium,Dutch,3000
+298,609,WIT HUIS,West-Vlaanderen,Loppem,Belgium,Dutch,8210
+299,610,DE MOLENKREKELS,Oost-Vlaanderen,Lokeren,Belgium,Dutch,9160
+300,611,BLIJDORP DENDERMONDE,Oost-Vlaanderen,Dendermonde,Belgium,Dutch,9200
+301,614,NIDO,Brussel/Bruxelles,Haren,Belgium,Dutch,1130
+302,615,BUSO DE DAGERAAD KORTESSEM VV,Limburg,Kortessem,Belgium,Dutch,3720
+303,616,SINT FERDINAND,Limburg,Lummen,Belgium,Dutch,3560
+304,617,MEKANDERS,Antwerpen,Turnhout,Belgium,Dutch,2300
+305,618,ROZEMARIJN,Vlaams-Brabant,Keerbergen,Belgium,Dutch,3140
+306,621,BBC LIONS NIJLEN,Antwerpen,Antwerpen,Belgium,Dutch,2060
+307,622,HUMIVAL,Oost-Vlaanderen,Waarschoot,Belgium,Dutch,9950
+308,624,INOA CAMPUS HANDZAME,West-Vlaanderen,Roeselare,Belgium,Dutch,8800
+309,625,DE BRON,Oost-Vlaanderen,Beveren,Belgium,Dutch,9120
+310,626,RAVELIJN,West-Vlaanderen,Brugge St.-Michiels,Belgium,Dutch,8200
+311,627,SALIX,Oost-Vlaanderen,Kluisbergen,Belgium,Dutch,9690
+312,631,BASKETBALCLUB COBRAS,Antwerpen,Schoten,Belgium,Dutch,2900
+313,632,HET ROER,Limburg,Hasselt,Belgium,Dutch,3500
+314,633,BA DE BEEMDEN,Antwerpen,Mechelen,Belgium,Dutch,2800
+315,634,WIRIC,Limburg,Sint-Truiden,Belgium,Dutch,3800
+316,635,MISPO BALEN,Antwerpen,Balen,Belgium,Dutch,2490
+317,637,HET PUNT,Antwerpen,Brecht,Belgium,Dutch,2960
+318,639,DE ROER ME NIETEN,Vlaams-Brabant,Lummen,Belgium,Dutch,3560
+319,640,AVALI VZW,Limburg,Koersel,Belgium,Dutch,3582
+320,642,DE GIEK,Limburg,Maasmechelen,Belgium,Dutch,3630
+321,643,KRACHT EN GEDULD,Oost-Vlaanderen,Sint-Niklaas,Belgium,Dutch,9100
+322,644,APOJO,Vlaams-Brabant,Aarschot,Belgium,Dutch,3200
+323,645,SPORTIVIA,Oost-Vlaanderen,Maldegem,Belgium,Dutch,9990
+324,646,DE POEL,Vlaams-Brabant,Itterbeek,Belgium,Dutch,1701
+325,648,DE NIEUWE BRUG,Oost-Vlaanderen,Deurle,Belgium,Dutch,9831
+326,651,ORANJE,West-Vlaanderen,Sijsele,Belgium,Dutch,8340
+327,654,KVC WESTERLO,Antwerpen,Westerlo,Belgium,Dutch,2260
+328,656,MOVIMENTO VZW,Antwerpen,Mortsel,Belgium,Dutch,2640
+329,657,DE VENNEBOWLERS,Antwerpen,Herentals,Belgium,Dutch,2200
+330,658,DAIS VZW,Vlaams-Brabant,Lennik,Belgium,Dutch,1750
+331,659,LEVEDALE,Vlaams-Brabant,Wolvertem,Belgium,Dutch,1861
+332,660,DE STEIGER,Antwerpen,Bornem,Belgium,Dutch,2880
+333,661,ROBA,Vlaams-Brabant,Baal,Belgium,Dutch,3128
+334,663,STB GYMNASTICS BERCHEM,Antwerpen,Berchem,Belgium,Dutch,2600
+335,664,TANDEM SPORT,Limburg,Diepenbeek,Belgium,Dutch,3590
+336,665,TAFELTENNISCLUB ZELE VZW,Oost-Vlaanderen,Zele,Belgium,Dutch,9240
+337,666,CENTRUM THERAPEUTISCH PAARDRIJDEN,Vlaams-Brabant,Landen,Belgium,Dutch,3400
+338,669,OOSTHEUVEL,Limburg,Genk,Belgium,Dutch,3600
+339,670,RAAKZAAM,Oost-Vlaanderen,Sint Niklaas,Belgium,Dutch,9100
+340,672,TANDEM  WEST,West-Vlaanderen,Koksijde,Belgium,Dutch,8670
+341,673,BUITENBEENTJES,Oost-Vlaanderen,Sinaai,Belgium,Dutch,9112
+342,674,DE BUITELAARS,Oost-Vlaanderen,Eeklo,Belgium,Dutch,9900
+343,675,'T PERDJE,Antwerpen,Laakdal,Belgium,Dutch,2430
+344,678,HET PLUIMKE,Limburg,Kinrooi,Belgium,Dutch,3640
+345,680,TC STANDAARD WETTEREN-OCTOPUS MERELBEKE,Oost-Vlaanderen,Merelbeke,Belgium,Dutch,9820
+346,682,DE BORGGRAAF-HASSELT,Limburg,Genk,Belgium,Dutch,3600
+347,683,REAL FC BERG,Limburg,Neeroeteren,Belgium,Dutch,3680
+348,685,HEISTSE TENNISCLUB VZW,Antwerpen,Hallaar,Belgium,Dutch,2220
+349,686,GT WIMBLEDON,Limburg,Wilderen,Belgium,Dutch,3803
+350,689,T.C. DE DAGERAAD,Antwerpen,Beerse,Belgium,Dutch,2340
+351,690,DE SCHELP,Antwerpen,Brecht,Belgium,Dutch,2960
+352,691,DE DIABOLO'S,Antwerpen,Berchem,Belgium,Dutch,2600
+353,693,'T ATELJEE,Antwerpen,Boechout,Belgium,Dutch,2530
+354,694,DE PELIKAAN,West-Vlaanderen,Menen,Belgium,Dutch,8930
+355,695,INDIVIDUALS,Oost-Vlaanderen,Gentbrugge,Belgium,Dutch,9050
+356,696,TRIANGEL JEUGDSPORT,Oost-Vlaanderen,Lovendegem,Belgium,Dutch,9920
+357,697,VONDELS VZW,West-Vlaanderen,Ieper,Belgium,Dutch,8900
+358,699,'T VELDZICHT,West-Vlaanderen,Sint-Kruis Brugge,Belgium,Dutch,8310
+359,700,ZONNESTRAAL VZW,Vlaams-Brabant,Herfelingen,Belgium,Dutch,1540
+360,703,KABAS,West-Vlaanderen,Deerlijk,Belgium,Dutch,8540
+361,704,G-BASKET LOMMEL,Limburg,Lommel,Belgium,Dutch,3920
+362,707,KBBC ZOLDER,Limburg,Heusden-Zolder,Belgium,Dutch,3550
+363,708,KSAV SINT-DIMPNA,Antwerpen,Geel,Belgium,Dutch,2440
+364,709,BC ASSE TERNAT,Vlaams-Brabant,Ternat,Belgium,Dutch,1741
+365,710,KOG-STASEGEM G-VOETBAL,West-Vlaanderen,Harelbeke-Stasegem,Belgium,Dutch,8530
+366,711,G-OMNISPORTCLUB VLAAMSE ARDENNEN,Oost-Vlaanderen,Kluisbergen,Belgium,Dutch,9690
+367,713,JC-GRUITRODE,Limburg,Meeuwen-Gruitrode,Belgium,Dutch,3670
+368,714,UNIFIED SAILING BELGIUM VZW,Antwerpen,Boechout,Belgium,Dutch,2530
+369,715,SOMIVAL VZW,West-Vlaanderen,Waregem,Belgium,Dutch,8790
+370,716,BBC GEMBO,Antwerpen,Antwerpen,Belgium,Dutch,2060
+371,718,VZW TENNISCLUB LUMMEN,Limburg,Lummen,Belgium,Dutch,3560
+372,719,DE NISSE,West-Vlaanderen,Kortrijk,Belgium,Dutch,8500
+373,720,KONINKLIJKE LEBBEEKSE ATLETIEKCLUB,Oost-Vlaanderen,Lebbeke,Belgium,Dutch,9280
+374,721,SPORTCLUB HUIS IN DE STAD VZW,Vlaams-Brabant,Tienen,Belgium,Dutch,3300
+375,722,'T HAVERENHOF VZW,Vlaams-Brabant,Eppegem,Belgium,Dutch,1980
+376,723,KORTRIJK SPURS VZW,West-Vlaanderen,Zwevegem,Belgium,Dutch,8550
+377,724,SPINSHUTTLE,Antwerpen,Dessel,Belgium,Dutch,2480
+378,725,OSTEND TENNIS CLUB,West-Vlaanderen,Oostende,Belgium,Dutch,8400
+379,727,AC DEINZE,Oost-Vlaanderen,Deinze,Belgium,Dutch,9800
+380,729,2GETHER ON WHEELS,Antwerpen,Brasschaat,Belgium,Dutch,2930
+381,730,BBC FALCO GENT,Oost-Vlaanderen,Gent,Belgium,Dutch,9000
+382,731,GYMFLEX VZW,Antwerpen,Mechelen,Belgium,Dutch,2800
+383,732,TERNATSE OMNISPORT VOOR ANDERSVALIDEN,Vlaams-Brabant,Wambeek,Belgium,Dutch,1741
+384,733,NET CONNECT CYCLING TEAM,Antwerpen,Kasterlee,Belgium,Dutch,2460
+385,734,AC HERENTALS,Antwerpen,Herentals,Belgium,Dutch,2200
+386,735,GEMEENTELIJKE TENNIS TESSENDERLO,Limburg,Laakal,Belgium,Dutch,2430
+387,736,OKIDO BASKET,Antwerpen,Arendonk,Belgium,Dutch,2370
+388,738,DALO VZW,Limburg,Lommel,Belgium,Dutch,3920
+389,740,TER HEIDE,Limburg,Genk,Belgium,Dutch,3600
+390,741,GYM MOL,Antwerpen,Laakdal,Belgium,Dutch,2431
+391,742,NOORDERWIJKSE BADMINTONCLUB ,Antwerpen,Noorderwijk,Belgium,Dutch,2200
+392,744,OC CIRKANT,West-Vlaanderen,Aartrijke,Belgium,Dutch,8211
+393,745,GENTSE G-DUIVELS,Oost-Vlaanderen,Wondelgem,Belgium,Dutch,9032
+394,746,A-JUDOCLUB TATAMIVRIENDEN,Oost-Vlaanderen,Bazel,Belgium,Dutch,9150
+395,747,LOKERSE BADMINTONCLUB,Oost-Vlaanderen,Lokeren,Belgium,Dutch,9160
+396,748,TTC RECREAS GULLEGEM,West-Vlaanderen,Rollegem,Belgium,Dutch,8510
+397,749,LIONS TORHOUT,West-Vlaanderen,Torhout,Belgium,Dutch,8820
+398,750,BALTI SPECIALS KORTRIJK,West-Vlaanderen,Kortrijk,Belgium,Dutch,8500
+399,751,WAASLANDSE G-BASKETTERS,Antwerpen,Burcht,Belgium,Dutch,2070
+400,752,GFC SK BEVEREN,Oost-Vlaanderen,Elversele,Belgium,Dutch,9140
+401,753,EUROSTARS,Antwerpen,Merksem,Belgium,Dutch,2170
+402,754,NO LIMIT VZW,Antwerpen,Wilrijk,Belgium,Dutch,2610
+403,755,WAVERSE BADMINTONCLUB,Antwerpen,Koningshooikt,Belgium,Dutch,2500
+404,756,DE BOOMHUT,Antwerpen,Boom,Belgium,Dutch,2850
+405,757,ANTWERP CYCLING TEAM KONTICH,Antwerpen,Kontich,Belgium,Dutch,2550
+406,758,K.W.T.P.C.,Limburg,Genk,Belgium,Dutch,3600
+407,759,K SCHELLE SPORT,Antwerpen,Schelle,Belgium,Dutch,2627
+408,760,BRAXGATA,Antwerpen,Berchem,Belgium,Dutch,2600
+409,761,ROYAL VICTORY HOCKEY CLUB,Antwerpen,Antwerpen,Belgium,Dutch,2018
+410,762,HORSE FUN VERBRANDE BRUG,Vlaams-Brabant,Eppegem,Belgium,Dutch,1980
+411,763,GEELSE KAJAKVAARDERS,Antwerpen,Geel,Belgium,Dutch,2440
+412,764,KMTHC,Antwerpen,Mechelen,Belgium,Dutch,2800
+413,765,KHC DRAGONS vzw,Antwerpen,Brasschaat,Belgium,Dutch,2930
+414,766,VRIJBROEK HOCKEY CLUB MECHELEN,,Mechelen,Belgium,Dutch,2800
+415,767,GIDOS,West-Vlaanderen,Waregem,Belgium,Dutch,8790
+416,768,KONINKLIJKE TURNKRING BOOM,Antwerpen,Boom,Belgium,Dutch,2850
+417,769,JUDO CLUB LEOPOLDSBURG,Limburg,Leopoldsburg,Belgium,Dutch,3971
+418,770,BADMINTON WAREGEM,West-Vlaanderen,Waregem,Belgium,Dutch,8790
+419,771,3MASTER,Antwerpen,Kasterlee,Belgium,Dutch,2460
+420,772,TURNKRING DEUGD EN MOED EKEREN,Antwerpen,Ekeren,Belgium,Dutch,2180
+421,773,BOAS,West-Vlaanderen,Kortrijk,Belgium,Dutch,8500
+422,774,SwimAcad,Oost-Vlaanderen,Gent,Belgium,Dutch,9000
+423,775,MANEGE DENNENHOF,Oost-Vlaanderen,Landegem,Belgium,Dutch,9850
+424,776,K. SPORTING WIJCHMAAL,,Peer,Belgium,Dutch,3990
+425,777,CITY PIRATES,Antwerpen,Merksem,Belgium,Dutch,2170
+426,778,BELOEGA FIT,Vlaams-Brabant,Herent,Belgium,Dutch,3020
+427,779,Ruitersclub Domein Leiedal,West-Vlaanderen,Bissegem,Belgium,Dutch,8501
+428,780,BASKET DESSELGEM,West-Vlaanderen,Waregem,Belgium,Dutch,8791
+429,781,ESSENSE TENNISCLUB INTER,Antwerpen,Essen,Belgium,Dutch,2910
+430,782,Sportgroep Vaste Vuist Lauwe,West-Vlaanderen,Lauwe,Belgium,Dutch,8930
+431,783,KIDS HASSELT,Limburg,Hasselt,Belgium,Dutch,3500
+432,784,KONINKLIJKE HOCKEYCLUB BRUGGE,West-Vlaanderen,Brugge,Belgium,Dutch,8200
+433,785,G-VOETBAL KORTRIJK,West-Vlaanderen,Kortrijk,Belgium,Dutch,8500
+434,786,KHC SAINT-GEORGES,West-Vlaanderen,Kortrijk,Belgium,Dutch,8500
+435,787,ATHLETES FOR HOPE,Antwerpen,Wuustwezel,Belgium,Dutch,2990
+436,788,HERK-SPORT,Limburg,Hasselt,Belgium,Dutch,3500

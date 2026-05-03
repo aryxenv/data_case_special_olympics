@@ -1,0 +1,12 @@
+time_key,year,is_covid_gap,period
+2015,2015,False,Pre-COVID
+2016,2016,False,Pre-COVID
+2017,2017,False,Pre-COVID
+2018,2018,False,Pre-COVID
+2019,2019,False,Pre-COVID
+2020,2020,True,COVID
+2021,2021,True,COVID
+2022,2022,False,Post-COVID
+2023,2023,False,Post-COVID
+2024,2024,False,Post-COVID
+2025,2025,False,Post-COVID

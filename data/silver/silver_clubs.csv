@@ -1,0 +1,437 @@
+group_number,name,primary_language,address_street_and_number,zipcode,city,province,country,participation_games_2015,participation_games_2016,participation_games_2017,participation_games_2018,participation_games_2019,participation_games_2022,participation_games_2023,participation_games_2024,participation_games_2025
+100,LA PILERIE,French,rue de la Pilerie 15,6590,Momignies,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+101,BAM,French,Avenue Mathieu 9-11,6600,Bastogne,Luxembourg,Belgium,1.0,True,True,False,False,,,,
+102,LES DAHUTS - ANDAGE ,French,route d'Hatrival 11,6870,Saint-Hubert,Luxembourg,Belgium,1.0,True,True,False,True,,,,
+103,LES TUNIQUES BLEUES,French,Rue Buisson aux Loups 12,1400,Nivelles,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+104,EVASION,French,Rue Léon Houtard 18,7110,Houdeng Goegnies,Hainaut,Belgium,1.0,True,True,True,True,,,1.0,
+105,LES AUBEPINES,French,Rue de l'Institut 40,4632,Cerexhe-Heuseux,Liège,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+107,S.J.N. CLUB,French,Rue d'Anethan 33,1030,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,,1.0,,1.0
+109,LES CARACOLES,French,Rue D'Arquet 99,5000,Namur,Namur,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+110,LES QUILLES LIBRES,French,Rue de Sesselich 236,6700,Arlon,Luxembourg,Belgium,1.0,True,False,True,True,1.0,1.0,1.0,1.0
+111,LA CLAIRIÈRE,French,Av. des Hannetons 58,1170,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+112,RJCV SPORT,French,"Rue de Reumont, 143",5020,Malonne,Namur,Belgium,1.0,True,False,False,False,,1.0,1.0,1.0
+113,CLERLANDE SPORT,French,Allée de Clerlande 7,1340,Ottignies,Brabant Wallon,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+115,LES OURSONS,French,Rue d'Anton 302,5300,Bonneville,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+116,LES COPAINS,French,Rue Heideken 58,1083,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+118,LES GRINGOS,French,Boulevard dessus de laVille 193,5550,Sugny,Namur,Belgium,0.0,False,False,False,False,,,,
+119,METHYS,French,Quai de Rome 21,4000,Liege,Liège,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+120,L'EFFORT,French,Rue St. Nicolas 554,4000,Liege,Liège,Belgium,1.0,True,True,True,True,,,1.0,
+121,L'ENVOL,French,Rue de La Vellerie 131,7700,Mouscron,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+122,LA FORESTIERE,French,Rue de l'Ete 100,1050,Bruxelles,Brussel/Bruxelles,Belgium,1.0,False,False,False,False,,,,
+123,LA CLARINE,French,rue Dieu d'en bas 44,7170,Fayt-Lez-Manage,Hainaut,Belgium,1.0,True,True,True,True,,,1.0,1.0
+124,JENNEVAUX RENCONTRE,French,rue du Centre 53,5170,Lesve,Namur,Belgium,1.0,True,True,False,False,,,,
+125,LES KOLOUTES,French,Avenue Félix Lacourt 70,1390,Grez-Doiceau,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+126,SPORT DE L'AMITIE,French,,,Mont-Saint-Guibert,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+127,PÉRUWELZ RAINBOW SPORTS,French,Carrière d'Antour 1,7520,Tournai,Hainaut,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+128,LES HAUTES ARDENNES,French,Place des Chasseurs Ardennais,6690,Vielsalm,Luxembourg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+129,C.S. DE HEMPTINNE,French,Drève de Hemptinne 4,1350,Jauche,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+131,LES ACACIAS,French,"Allée de la Cense du Colombier,2",1400,Nivelles,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+132,LA CORDEE SPORTS,French,Rue de l'Institut 30,5004,Bouge,Namur,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+133,LES 1001 NUITS,French,Avenue Felix Lacourt 198,1390,Grez-Doiceau,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+134,CENTRE CERFONTAINE,French,Rue de la Loquette 39,7600,Peruwelz,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+135,LE CASTILLON,French,Rue de la Malogne 3,7100,La Louvière,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+137,MOSPO,French,Rue du Crétinier 184,7712,Herseaux,Hainaut,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+138,OKAPI SPORT,French,Chaussée de Bruxelles 184,7061,Casteau,Hainaut,Belgium,1.0,False,True,True,True,1.0,1.0,1.0,1.0
+139,CLAIRVAL SPORT ACIS,French,Place J. Maréchal 5,6940,Barvaux,Luxembourg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+140,LE SESAME,French,Avenue De Messidor 16,1180,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,False,True,1.0,1.0,1.0,1.0
+142,FARRA STRATEGIE,French,Rue de La Stratégie 30,1160,Auderghem,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+143,LE CHAT BOTTÉ,French,Rue Anatole France 1,7100,La Louvière,Hainaut,Belgium,1.0,True,True,True,False,,,1.0,
+144,LES PLATANES,French,Rue du Loutrier 75,1170,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+145,LE PRETEXTE,French,Av. Kersbeek 340,1180,Bruxelles,Brussel/Bruxelles,Belgium,,False,False,False,False,,,,
+146,LE PETIT POUCET,French,Rue du Fief 4,6470,Sivry,Hainaut,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+147,CENTRE REINE FABIOLA,French,Rue de Neufvilles 455,7063,Neufvilles,Hainaut,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+148,LES RENARDS DE VOLAIVILLE,French,Rue de la Misbour 370,6637,Fauvillers,Luxembourg,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+152,S.R.A. L'ODYSSEE,French,"Rue de la Paix, 102",6061,Montignies / S / Sambre,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+153,L'ESPACE LIOBA,French,"Avenue Vauban, 8",5000,Namur,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,,1.0
+154,LES BLÉS D’OR,French,Route de Velaines 23,7543,Mourcourt,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+155,DELTA,French,Boulevard de Waterloo 1O5,1000,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+157,DOMITILLE,French,Rue de Bosfagne 51 A,4950,Waimes,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+158,SPORT ESPOIR,French,Domaine des Croisiers 2,4821,Dison  Andrimont,Liège,Belgium,1.0,True,True,True,True,1.0,,1.0,1.0
+159,LES BOLETS,French,Chaussée de La Hulpe 331,1170,Bruxelles,Brussel/Bruxelles,Belgium,1.0,False,False,False,False,,,,
+160,B.S.C. OSTBELGIEN,French,Dorfstraße 37,4780,Recht,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+161,HOME VALERE DELCROIX,French,"46, rue du Pont Rieu",7500,Tournai,Hainaut,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+162,A.T.L.A.S.H.,French,Grand Route 47,4500,Tihange,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+163,FOYER DU FORT,French,Avenue du fort 288,4400,Flemalle,Liège,Belgium,1.0,False,False,False,False,,,1.0,1.0
+164,ARBOTEAM,French,Rue de Briffoeil 31,7604,Wasmes A-B,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+165,LE COLOMBIER,French,"Allée de la Cense du Colombier,2",1400,Nivelles,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+166,LES GOELANDS,French,Chemin du Home André Livémont 1,7972,Aubechies,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+168,VRAIES RICHESSES,French,Rue de la Procession 24,1070,Bruxelles,Brussel/Bruxelles,Belgium,1.0,False,False,True,False,,1.0,1.0,
+169,CERISAIE SPORT,French,Rue de la Cerisaie 8,4690,Bassenge,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+173,ALBATROS,French,Chemin du Bois 5,5660,Petite-Chapelle,Namur,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+174,ALTEO MOUSCRON,French,Rue Saint Joseph 2,7700,Mouscron,Hainaut,Belgium,1.0,True,True,True,True,,,,
+176,OLDS BRACQS,French,Rue Ergot 2,7110,Strepy-Bracquegnies,Hainaut,Belgium,1.0,True,True,True,True,,,,1.0
+177,"CERCLE SPORTIF ""LA SEVE""",French,Rue des 2 Tilleuls 45,4652,Xhendelesse,Liège,Belgium,1.0,True,False,False,False,,,,
+178,LE JARDIN DES FÉES,French,Avenue de Jemappes 135B,7000,Mons,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+179,EQUI - VALENCE,French,Rue les Frès 6A,6470,Rance,Hainaut,Belgium,1.0,True,True,True,False,,1.0,1.0,1.0
+180,PONY-CLUB HOF TE BEVER ASBL,French,"Place Albert 1er, 12/2",7070,Mignault,,Belgium,1.0,True,False,True,False,,,,
+181,LA POMMERAIE,French,Rue Neuve 15,7972,Ellignies-Ste-Anne,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+182,LES CANAILLES,French,Rue des Beguines 4,4350,Momalle,Liège,Belgium,1.0,True,False,False,False,,,,
+183,LE BOIS ROUSSEL,French,Rue de Marchiennes 32,6110,Montigny-Le-Tilleul,Hainaut,Belgium,1.0,False,True,True,False,,,1.0,1.0
+184,OXYGENE,French,Chemin de Foresse s/n,5300,Sclayn,Namur,Belgium,0.0,False,False,False,False,,,,
+186,SIROCCO,French,Rue Toûne 6,1461,Haut-Ittre,Brabant Wallon,Belgium,1.0,False,True,False,False,,,,1.0
+187,AU PETIT BONHEUR,French,Thier Saint Léonard 50,4460,Grâce-Hollogne,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+189,FOYER DE THÉMIS,French,Rue des fusillés 5,4141,Sprimont,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+191,LES SCORPIONS,French,Rue du Roi Chevalier 1A,7904,Willaupuis,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+194,LES SPITANTS,French,Rue Cheneux 16,4540,Amay,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+195,LE KOALA,French,Rue Walthère Dewé 60,4000,Liege,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+196,LES OLIVIERS SPORT,French,Rue de Herve 449,4030,Grivegnee,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+197,L'ESCAPADE,French,Rue du Quinconce 16,7110,Houdeng-Aimeries,Hainaut,Belgium,1.0,True,True,True,True,1.0,,,
+198,LE CHEVREFEUIL,French,Rue de Préfayhai 21,4900,Spa,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+203,FUN GYM B/ DANS LES YEUX DE LISA,French,Rue du Fonteneau 12,1400,Nivelles,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+204,C.S. KANGOUROUS,French,Chée de Tirlemont 60,1370,Jodoigne,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+205,ASCENSION 2,French,chemin de la Motelette 12,7322,Pommeroeul,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+206,LA SOURIS VERTE,French,Chaussée de Roeulx 63,7000,Mons,Hainaut,Belgium,1.0,True,False,False,False,,,,
+207,LES GRILLONS,French,Rue de Chèvremont 35,4051,Vaux-Sous-Chevremont,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+209,HAMA II,French,Rue Jules Lejeune 46,1050,Bruxelles,Brussel/Bruxelles,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+210,A.S. AURORE,French,Rue du Château 82,6150,Anderlues,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+211,LES BARRACUDAS,French,Rue de la Résistance 5,7610,Rumes,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+213,LA PASSERELLE,French,Rue Middelbourg 68,1170,Bruxelles,Brussel/Bruxelles,Belgium,1.0,False,True,False,False,,,,
+214,L'ENVOLÉE,French,Rue Maison Communale 4,4802,Heusy-Verviers,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+215,KEGELJAN,French,Rue Vandervelde 32,5190,Ham-Sur-Sambre,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+217,GRAND AXHE,French,Rue Georges César 50,4300,Waremme,Liège,Belgium,1.0,True,True,True,True,,,,
+219,BOTHEY CLUB,French,Rue Louis Burteau 48,5032,Gembloux,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+221,INSTITUT DU BON PASTEUR,French,Rue d'Hoyaux 6,7602,Bury,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+222,CENTRE DE VIE,French,Avenue J.J. Crocq 8,1090,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+223,STARTEMIA,French,"Avenue des Champs, 129 b",1040,Etterbeek,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+224,LE GARDIAN V3,French,Rue de Bidet 8,5590,Chapois -Leignon,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+227,TOMA STENA,French,"Rue Entre-Deux-Bois, 55",4670,Blegny,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+229,DREAM TEAM,French,Rue du Melkriek 100,1180,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,,,,
+231,LE MAGNOLIA,French,"Omer Lescot, 12",7334,Hautrage,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+232,ORFEA,French,"Avenue des Champs, 129",1040,Etterbeek,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+233,LES PETUNIAS,French,Avenue de la Couronne 554,1050,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,,1.0
+234,CONFORT SOCIAL,French,"Rue de la Chassaudrie, 23-25",7600,Peruwelz,Hainaut,Belgium,0.0,True,True,True,True,,,,
+235,LES FOUGERES,French,Rue du Loutrier 63,1170,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,False,True,1.0,1.0,1.0,1.0
+236,LA MAISON D'EMERAUDE,French,"Rue Aze Fosse, 31",6870,Arville,Luxembourg,Belgium,0.0,False,False,False,False,,,,
+237,EMBARQUEMENT IMMEDIAT,French,avenue Macar 5,4100,Seraing,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+238,LE VILLAGE,French,Avenue François Geuten 88,7780,Comines,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+241,MISTRAL SPORT,French,Rue Solovaz 15,4470,Saint-Georges-Sur-Meuse,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+242,C.S. LES TCHANTCHES,French,Rue de Herve 449,4030,Grivegnee,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+243,LES RENES DE LA VIE,French,Chaussée de Bruxelles 111 bte 4,1310,La Hulpe,Brabant Wallon,Belgium,,False,False,False,False,,1.0,1.0,
+245,EQUISTAL,French,"Rue du Centre, 59",1404,Bornival,Brabant Wallon,Belgium,1.0,True,True,True,True,,,,
+246,LE COUP FRANC,French,Rue St. Wivine 15,1315,Sart-Risbart,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+248,I.S.B.,French,Kattenberg 19,1170,Boitsfort,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+249,ROQUEBRUNE,French,Avenue Vauban 8,5000,Namur,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,
+251,LES PETITS GODETS,French,Rue de Cronfestu 28,7141,Carnieres,Hainaut,Belgium,1.0,True,True,True,True,1.0,,,
+252,LA FORET,French,Val des Epinettes 17,1150,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+253,LES WEIGELIAS,French,Avenue de l'Arbalète 58,1170,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,True,,,1.0,1.0
+254,HADEP,French,Chée de Neerstalle 265,1190,Bruxelles,Brussel/Bruxelles,Belgium,1.0,True,True,True,False,,,,
+255,SAPI-CHAPELLE,French,"Rue des Bureaux, 6-8",7160,Chapelle-Lez-Herlaimont,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+256,LES QUATRE SAISONS,French,Rue Principale 36,6953,Ambly,Luxembourg,Belgium,1.0,True,False,True,True,,1.0,1.0,
+258,LES ALIZES,French,Rue des Fusillés 1,4837,Membach (Baelen),Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+259,COLIBRIS CLUB,French,Rue Sart-Moulin 1,1421,Ophain Bois Seigneur Isaac,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+260,L'ENTRE DEUX,French,Thier des Raves 2,4550,Nandrin,Liège,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+261,LES LAPINS BLEUS,French,Rue La Ringe 20,5550,Alle S/ Semois,Namur,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+262,ENVOL (LE DIARBOIS),French,"1ère Rue, 23 - Parc d'activités Economiques",6040,Jumet,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+263,SAPI-TEAM,French,Chemin de Mons 29,7050,Masnuy-St-Jean,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+267,ASBL ESSENTIEL,French,Chaussée de Louvain 563 A,1380,Lasne,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+268,DYNAMISPORT,French,Clos des Verdiers 9,1420,Braine L'Alleud,Brabant Wallon,Belgium,1.0,True,True,True,True,,,,
+271,LE TOURNESOL SPORTIF,French,Chaussée de Dottignies 124,7730,Estaimpuis,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+272,LE PETIT PRINCE DE COURCELLES,French,Rue des Claires fontaines 114,6180,Courcelles,Hainaut,Belgium,1.0,False,False,False,False,,,,
+273,SAJA SOLIGNAC,French,Rue des  Lilas 7,5364,Hamois (Schaltin),Namur,Belgium,1.0,True,True,True,True,1.0,1.0,,1.0
+274,TABUCHET SPORT,French,Boulevard Ernest Solvay 475,4000,Liège,Liège,Belgium,,False,False,False,False,,,,
+275,LA SYMPHONIE,French,Avenue Gustave Maigret 39,7030,Saint-Symphorien,Hainaut,Belgium,1.0,True,True,True,True,1.0,,,
+279,HAMA 1,French,Avenue  Ernest Cambier 10,1030,Bruxelles,Brussel/Bruxelles,Belgium,,False,False,False,False,,,,
+281,RESIDENCE ÉLYSÉE,French,Trieu Moriau 3,7542,Mont-Saint-Aubert,Hainaut,Belgium,1.0,True,False,True,False,1.0,1.0,1.0,1.0
+282,LA CASSINE,French,Place P- H Jouret 14-17,7880,Flobecq,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+284,L'AIR DE PAIX,French,Route de Bavay 56,7080,Frameries,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+285,LA BASTIDE,French,Avenue Vauban 8,5000,Namur,Namur,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+286,JUDO CLUB WELLIN ASBL,French,"Rue Paul Dubois, 45",6920,Wellin,Luxembourg,Belgium,1.0,True,True,True,False,1.0,1.0,,
+287,HOCKEY TOGETHER PINGOUIN NIVELLES,French,"67, rue du Monde",1400,Nivelles,Brabant Wallon,Belgium,,False,True,False,False,1.0,1.0,1.0,1.0
+288,LE JARDIN DES ANGES,French,Rue de Ropaix n°16,7370,Dour,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+289,NEW MOBILITY CLUB SPORTIF DE MOUSCRON,French,"Rue du Bois, 103",7700,Mouscron,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+290,LOTUS D'OCQUIER,French,"Grand Rue, 62",4560,Ocquier,Liège,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+291,LES DALTONS,French,"Rue Georges Tondeur, 60",7040,Quevy-Le-Grand (Mons),Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,
+292,CARPE DIEM ASBL,French,Rue du Plateau 11,5100,Jambes,Namur,Belgium,,True,False,True,True,1.0,1.0,1.0,1.0
+293,LES 3 SAPINS,French,Rue François Onckelet 10,7070,Mignault,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+294,LA SAPINIERE DE QUAREGNON,French,Rue De Pâturages 48,7390,Quaregnon,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+296,KANO JC TOURNAI,French,Rue de la Royère 80,7730,Nechin,Hainaut,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+297,FOYER DU CALYDON,French,,,Liège,Liège,Belgium,,False,True,True,True,1.0,1.0,,
+298,CERCLE ADAPTE ANDENNAIS,French,Rue de Velaine 162,5300,Andenne,Namur,Belgium,,False,False,True,False,,,,1.0
+299,A.C.I.S. SOLEIL LEVANT,French,"Rue de Lodelinsart, 97",6061,Montignies - Sur - Samble,Hainaut,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+300,LE CHAF ASBL,French,Rue Jules Maltaux 62,6240,Farciennes,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+302,LE GRIMOIRE,French,Rue du Couvent 50,6890,Transinne,Luxembourg,Belgium,1.0,True,True,True,False,,,,
+303,LES 3 FÉES,French,"Rue de la Sauveniere,100",4900,Spa,Liège,Belgium,,False,False,False,False,,,,
+304,LES DRAGONS,French,Rue Bonaert 29,7011,Ghlin,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+306,MAISON DES PILIFS,French,"Place Peeter Benoît, 3",1120,Bruxelles,Brussel/Bruxelles,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+307,JOSO ASBL,French,Avenue du Pesage 12,1050,Ixelles,Brussel/Bruxelles,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+308,LA CARAVELLE,French,Rue du Canal 17,7640,Peronnes - Lez - Antoing,Hainaut,Belgium,,False,True,True,True,,,,
+309,LA RENAISSANCE,French,Avenue Maistriau 52,7000,Mons,Hainaut,Belgium,,False,False,True,False,,,,
+310,VISÉ - CENTRE DE CERFONTAINE,French,Rue Du Long Fossé 166A,4684,Haccourt,Liège,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+311,CHEVAL ET FORET,French,Rue du Rouge-Cloître 5,1160,Auderghem,Brussel/Bruxelles,Belgium,,False,False,True,False,,,,
+312,FAGN' HANDISPORTS ASBL,French,Winamplanche 6,4900,Spa,Liège,Belgium,,False,False,False,False,,,,
+314,LIFE BADMINTON LE ROEULX,French,Manoir Saint Jean,7070,Le Roeulx,Hainaut,Belgium,,False,False,False,False,,,,
+315,ECOLE NOS PILIFS,French,Avenue des Pagodes 212,1020,Laeken,Brussel/Bruxelles,Belgium,,False,False,False,False,,,,
+316,LA CADOLE ASBL,French,Avenue de la Basilique 55,7603,Bonsecours,Hainaut,Belgium,,False,False,True,False,1.0,1.0,1.0,1.0
+317,CTM - CAROLO TEAM MARCINELLE,French,Rue du Débarcadère 100,6001,Marcinelle,Hainaut,Belgium,,False,False,True,True,1.0,1.0,1.0,1.0
+318,L'ECHALIER,French,Rue de L'Institut 40,4632,Cerexhe - Heuseux,Liège,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+319,ASBL L'ETOILE FILANTE,French,"Pont- A - La - Faulx, 107",7600,Péruwelz,Hainaut,Belgium,,False,False,False,False,,,1.0,
+321,ACBBH,French,Quartier Des Bruyères 5,7321,Blaton,Hainaut,Belgium,,False,False,False,True,,,,
+322,ACBB,French,Quartier des Bruyères 5,7321,Blaton,Hainaut,Belgium,,False,False,False,True,,,,
+323,LA GARENNE,French,"Rue du Vert Velu, 67",7608,Wiers - Péruwelz,Hainaut,Belgium,,False,False,False,True,,,,
+324,LES VELDEMANNEKES,French,Jules Bordetlaan 132A,1140,Brussel,Brussel/Bruxelles,Belgium,,False,False,False,False,,,,
+325,ALL STARS,French,Rue Anntoine Gosselin 16,7973,Strambruges,Hainaut,Belgium,,False,False,False,True,1.0,1.0,,
+326,LE PART'AGE,French,Rue du Saclet 2,7730,Estaimpuis,Hainaut,Belgium,,False,False,False,True,,,1.0,1.0
+327,LE PAYS DE COCAGNE,French,Chaussée du Roeulx 63,7000,Mons,Hainaut,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+328,16 ÂMES,French,"Vieux Chemin De Lille, 36",7501,Orcq,Hainaut,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+329,L'ACCUEIL MOSAN ASBL,French,Avenue de la Marlagne 205,5000,Namur,Namur,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+330,LA BOULAIE,French,Rue Jéricho 10,6460,Chimay,Hainaut,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+331,SAPI BL'A,French,213 Avenue Alphonse Allard,1420,Braine L'Alleud,Brabant Wallon,Belgium,,False,False,False,False,1.0,1.0,,1.0
+332,B.C. CLERFAYT,French,Rue de Clerfayt 104/C,,Hainaut,,Belgium,,False,False,False,False,,,,
+333,EESSCF - LES PEUPLIERS,French,Rue Mionvaux 33,6900,Marloie,Luxembourg,Luxembourg,,False,False,False,False,,,,
+334,LE NIDVELLES° (LE COLOMBIER 2),French,Allée de la Cense du Colombier 2,1400,Nivelles,Brabant Wallon,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+335,ASCENSION ERQUELINNES,French,13 rue de Bougnies,6560,Erquelinnes,Hainaut,Belgium,,False,False,False,False,,,,
+336,LONCIN AU PETIT BONHEUR,French,Rue de Jemeppe 224,4431,Loncin,Liège,Belgium,,False,False,False,False,1.0,1.0,,1.0
+338,C GO GYM,French,Rue du Bornoville 49,7700,Mouscron,Hainaut,Belgium,,False,False,False,False,1.0,1.0,,1.0
+339,CIGALINE,French,Rue de l'Hopital 3,6567,Merbes-Le-Château,Hainaut,Belgium,,False,False,False,False,1.0,1.0,,1.0
+340,WOLFHANDI RACLO,French,"boulevard du Tivoli, 80",7100,La Louvière,Hainaut,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+341,JUDO TOP NIVEAU TOURNAI,French,Rue Du Désert 37,7500,Tournai,Hainaut,Belgium,,False,False,False,False,1.0,1.0,,1.0
+342,AU FOYER DE CASSIOPEE,French,Cour 3,4987,Stoumont,Liège,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+343,HOCKEY TOGETHER,French,"Vieille Rue du Moulin, 230 ",1180,Uccle,Brussel/Bruxelles,Belgium,,False,False,False,False,,1.0,1.0,1.0
+344,RESIDENCE CHATEAU ARC-EN-CIEL,French,Rue docteur coffee 15,7110,Strepy Bracquegnies,Hainaut,Belgium,,False,False,False,False,,1.0,1.0,1.0
+345,ASBL LES PASSEREAUX,French,Route d'Henri Chapelle 10,4650,Battice,Liège,Belgium,,False,False,False,False,,,,
+346,TAGO ASBL,French,Rue des faînes 228,1120,Neder-Over-Heembeek,Brussel/Bruxelles,Belgium,,False,False,False,False,,,1.0,1.0
+347,TIFRA HENSIES,French,"Rue Haute, 32",7350,Hensies,Hainaut,Belgium,,False,False,False,False,,,,
+348,NOKTO,French,"Rue des faines, 228",1120,Neder-Over-Hembeek,Brussel/Bruxelles,Belgium,,False,False,False,False,,,1.0,1.0
+349,LE BOIS DE SAPINS,French,"Chaussée de Louvain, 27",1210,Saint-Josse Ten-Noode,Brussel/Bruxelles,Belgium,,False,False,False,False,,,1.0,1.0
+350,LES LEUPS,French,Thier St Leonard 50,4460,Grâce-Hollogne,Liège,Belgium,,False,False,False,False,,,1.0,1.0
+351,LES MARSOUX,French,"Débarcadère, 100",6001,Marcinelle,Hainaut,Belgium,,False,False,False,False,,,1.0,1.0
+352,LA PREVOTE,French,"2, Place de la résistance",7331,Baudour,Hainaut,Belgium,,False,False,False,False,,,,1.0
+353,MALMEDY ATHLETIC CLUB,French,Rue St Hilaire 28,4960,Malmedy,Liège,Belgium,,False,False,False,False,,,,1.0
+354,LE SEQUOIA,French,"Chaussée de Maubeuge,470Bis",7022,Hyon,Hainaut,Belgium,,False,False,False,False,,,,1.0
+355,VILLA PILIFS,French,Rue du Wimpelberg 188,1120,Neder-Over-Heembeek,Brussel/Bruxelles,Belgium,,False,False,False,False,,,,1.0
+356,REVALITY SPORT ASBL,French,"Allée de Clerlande,6",1340,Ottignies-Louvain-La-Neuve,Brabant Wallon,Belgium,,False,False,False,False,,,,
+357,FOOT'GERES,French,Rue du Couvent 16A,7340,Colfontaine,Hainaut,Belgium,,False,False,False,False,,,,
+358,DOMAINE DE LA PASSERELLE,French,Chaussée de Churchill 54,4420,Liège,,Belgium,,False,False,False,False,,,,
+359,ÉTOILE MARCHOISE,French,Chaussée de l'Ourthe 96,6900,Marche-En-Famenne,Luxembourg,Belgium,,False,False,False,False,,,,
+360,FOYER D'ASTREE,French,Rue De Tilff 412,4031,Liège,,Belgium,,False,False,False,False,,,,
+361,LES CHANTERELLES,French,Rue Beauregard 27,4130,Esneux,Liège,Belgium,,False,False,False,False,,,,
+362,RÉSIDENCE TIFRA,French,Rue du Bourrelier 30,7050,Jurbise,Hainaut,Belgium,,False,False,False,False,,,,
+500,LOMMELSE TENNIS CLUB,Dutch,Sint Bernardstraat,3920,Lommel,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+501,ZONNELIED,Dutch,Kloosterstraat 7,1761,Roosdaal,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+502,BORGERSTEIN,Dutch,Kapelweg 7,2860,Sint-Katelijne-Waver,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+504,DE GRAAF,Dutch,Welzijnscampus 5/B31,3600,Genk,,Belgium,1.0,True,True,True,True,1.0,,,
+505,OPEN KANS,Dutch,Welzijnscampus 5 bus 31,3600,Genk,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+506,G-BLACK DEVILS UNITED,Dutch,Cousseweg 7,8490,Jabbeke,West-Vlaanderen,Belgium,,False,False,False,False,,,,
+507,DRAPI,Dutch,Spoorweglaan 19,9840,De Pinte,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+508,SPORTCLUB DRUIVENSTREEK,Dutch,Deromstraat 45,3080,Duisburg,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+509,FRISA,Dutch,Lostraat 175,1760,Roosdaal,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+510,JC KUMIUCHI BERLARE,Dutch,Dorp 37b ,9290,Berlare,Oost-Vlaanderen,Belgium,,False,False,False,False,,1.0,1.0,1.0
+511,TER MUIDEN VZW,Dutch,Meulestraat 6,8730,Oedelem,West-Vlaanderen,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+512,HET GIELSBOS,Dutch,Vosselaarseweg 1,2275,Gierle,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+513,RECREAS DAMESVOETBALCLUB,Dutch,Hoge Kouter 11,8560,Gullegem,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+514,ZEVENHUIZEN,Dutch,Gestichtstraat 2,9000,Gent,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+515,KJC BAZEL,Dutch,Beekdam 1,9150,Bazel,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+516,MASS,Dutch,Kasteeldreef 2,9630,Zwalm - Beerlegem,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+517,M.P.I. MAASEIK,Dutch,Bokkerijdersweg 20,3680,Maaseik,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+518,ARUM,Dutch,Stokkemerbaan 147,3650,Dilsen-Stokkem,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+521,ONS ERF,Dutch,Chartreuseweg 53,8200,St-Michiels,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,,,
+522,BC WIT-WIT RONSE,Dutch,Muziekbosstraat 35,9600,Ronse,Oost-Vlaanderen,Belgium,1.0,True,False,False,False,,,,
+523,SPELIN WIJCHMAAL,Dutch,Sint Elisabethlaan  20,3990,Peer,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+524,AVZK,Dutch,Blindejennestraat 40,2221,Booischot,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+525,SABA,Dutch,Leernsesteenweg 53,9800,Deinze,Oost-Vlaanderen,Belgium,0.0,False,True,True,True,,,,
+527,MIVALTI,Dutch,Gruuthusestraat 36,8700,Tielt,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+528,BLIJDORP BUGGENHOUT,Dutch,P/A Blijdorpstraat 3,9255,Buggenhout,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+530,DE HOGE KOUTER,Dutch,Bad Godesberglaan 19,8500,Kortrijk,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+531,OLO-Rotonde VZW,Dutch,Miksebaan 2264 B,2930,Brasschaat,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+532,S.C. VIRO VZW,Dutch,Koning Albert 1 laan 188,8200,Brugge,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+533,VZW FIETS-WANDELCLUB FIT LSA,Dutch,G. Van Der Lindenlaan 10 bus3,2570,Duffel,Antwerpen,Belgium,,False,False,False,False,,,,
+534,LEUVEN AQUATICS vzw,Dutch,Naamsevest 106,3000,Leuven,Vlaams-Brabant,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+535,DE BRANDING,Dutch,Ringlaan 30,8501,Kortrijk-Heule,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+536,A.V. LYRA-LIERSE,Dutch,Grote Doelstraat 3,2820,Bonheiden,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+537,VZW DE VLEUGELS,Dutch,"Stokstraat,1",8650,Klerken,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+538,GAVERLAND,Dutch,Leenstraat 31-35,9890,Vurste,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+539,SMASHING LEUVEN,Dutch,Tervuursevest 101,3001,Leuven,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,
+540,KVC 3 LINDEN GENK,Dutch,Arbeidsstraat 72,3600,Genk,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+541,KLAVIER,Dutch,Zwart Goor 1,2330,Merksplas,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+543,ROZENKRANS,Dutch,Albert I - laan 54,8670,Oostduinkerke,West-Vlaanderen,Belgium,1.0,True,True,True,True,,,,
+544,ROYAL GHENT SWIMMING CLUB,Dutch,Lindestraat 93,9090,Melle,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,,,
+545,ZONNEHOEVE / LIVING+,Dutch,Zonnestraat 13,9810,Eke -Nazareth,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+548,G-SPORT VORSELAAR,Dutch,Vroegeinde 22,2290,Vorselaar,Antwerpen,Belgium,,False,False,False,False,,,,
+550,DE LOVIE,Dutch,Krombeekseweg 82,8970,Poperinge,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+551,DE VIERKLAVER,Dutch,Haarkensstraat 32A,9850,Deinze,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+552,GEELSE TTC,Dutch,Malosewaver 63,2440,Geel,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+553,GROENHOVE,Dutch,Leenstraat 31,9890,Vurste,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+554,RECREAS KFC ALKEN,Dutch,Bampstraat 17 B,3830,Wellen,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+556,'T VOSJE VZW,Dutch,Crocussenstraat 11,1800,Vilvoorde,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+557,SPORTCLUB TORDALE,Dutch,BRUGGESTRAAT 39,8820,Torhout,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+558,ALTHUS,Dutch,Slijperstraat 3,8840,Oostnieuwkerke,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,,1.0,1.0
+559,SINT ODA PELT,Dutch,Breugelweg 200,3900,Overpelt,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+560,FC MAASLAND NO,Dutch,Klaverstraat 13,3650,Rotem,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+561,DE OEVER,Dutch,Gasthuisstraat 10,2990,Wuustwezel (Gooreind),Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+562,INSPIRANT,Dutch,Bitterzoetlaan 5a,8670,Oostduinkerke,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+564,TRIANGEL SPORT,Dutch,Molendreef 16,9920,Lovendegem,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+565,VZW KOMPAS,Dutch,Botestraat 131-133,9032,Wondelgem,Oost-Vlaanderen,Belgium,,False,False,False,False,1.0,1.0,,1.0
+566,DE CLEYNEN BEMPT,Dutch,Delportestraat 2,3300,Tienen,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+567,OOSTREM,Dutch,Oostremstraat 26,3020,Herent,Vlaams-Brabant,Belgium,1.0,True,True,True,False,1.0,1.0,1.0,1.0
+569,TER LINDE,Dutch,Kaleshoek 53,9800,Deinze,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+570,PRIMAVERA DAGCENTRUM,Dutch,Terlindehofstraat 160,2170,Merksem,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+571,BOOTHUIS,Dutch,Heistlaan 123,8301,Knokke-Heist,West-Vlaanderen,Belgium,1.0,True,True,True,True,,,,
+572,HAVENZATE,Dutch,Noordstraat 136,8630,Veurne,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+573,JUDO CLUB MORI-NO-OTOKO,Dutch,Vroeneinde 73,2290,Vorselaar,Antwerpen,Belgium,1.0,True,True,True,False,,,,
+574,DE VALIER,Dutch,Verlorenkoststraat 103,1770,Liedekerke,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,,,
+575,UBUNTU,Dutch,Blokkestraat 29A,8550,Zwevegem,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+576,AVALYMPICS  VZW,Dutch,Amerikalaan 32,2440,Geel,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+577,SCHOOL @ WATERKANT,Dutch,Stropkaai 38 A,9000,Gent,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+578,G-VOETBAL EENDRACHT MECHELEN AAN DE MAAS,Dutch,Beekstraat 8,3630,Maasmechelen,Limburg,Belgium,1.0,False,False,False,False,,,,
+579,SMASH BC,Dutch,Halstraat 142 / 2,3550,Heusden-Zolder,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+581,ZGEEL,Dutch,Weverstraat 4,2430,Eindhout Laakdal,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+582,LOOISE A.V.,Dutch,Eindhoutseweg 25 ,2440,Geel,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+583,G-SPORT PAJOTTENLAND,Dutch,Bosstraat 4,1755,Gooik,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+584,BUSO 'T VURSTJEN,Dutch,Vurstjen 27,9940,Evergem,Oost-Vlaanderen,Belgium,,True,True,False,False,,,,
+585,DUIN EN POLDER,Dutch,G.B. Jacquesstraat 78,8600,Diksmuide,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+586,SODAM,Dutch,Kasteeldreef 2,9830,Beerlegem - Zwalm,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+587,SKAR,Dutch,Klein Park 1,3360,Lovenjoel,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+588,VOLUIT,Dutch,Kramershoek 39,9940,Evergem,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+589,DUINHELM,Dutch,Rietmustraat 24,8400,Oostende,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+590,MARTINE VAN CAMP,Dutch,Turnhoutsebaan 57,3294,Molenstede-Diest,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+592,SCHOONDERHAGE,Dutch,Schuitstraat 16,9401,Pollare,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+593,SC MOZAIEK,Dutch,Wolfputstraat 106,9041,Oostakker - Gent,Oost-Vlaanderen,Belgium,1.0,False,False,False,True,,,,
+595,JUNIORSGROEP,Dutch,Terlindenhofstraat 206,2170,Merksem,Antwerpen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+596,DE BOEG,Dutch,Ebergiste De Deynestraat 1,9000,Gent,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+597,SPORTSCHUURKE,Dutch,Leenstraat 31,9890,Vurste,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+599,ALVINNENBERG,Dutch,Gaston Feremanslaan 27,3001,Heverlee,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+601,HOUTLAND ATLETIEKCLUB VZW G-TEAM ACHILLES,Dutch,Beckhofstraat 15,8820,Torhout,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+602,HET BALANSKE,Dutch,Halensebaan 2,3390,Tielt-Winge,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+603,KON. JUDO CLUB HASSELT,Dutch,Korte Breestraat 154,3500,Hasselt,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+604,G-BASKET BBC GEEL,Dutch,Heistraat 79,2440,Geel,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+605,KONING-ALBATROS,Dutch,Zavelstraat 73,1700,Dilbeek,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,,,
+608,HEJMEN,Dutch,'s Hertogenlaan 62,3000,Leuven,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+609,WIT HUIS,Dutch,Rijselstraat 13,8210,Loppem,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+610,DE MOLENKREKELS,Dutch,Krekelstraat 17,9160,Lokeren,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+611,BLIJDORP DENDERMONDE,Dutch,Baleunisstraat 70-72,9200,Dendermonde,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+614,NIDO,Dutch,Verdunstraat 521/b,1130,Haren,Brussel/Bruxelles,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+615,BUSO DE DAGERAAD KORTESSEM VV,Dutch,Tapstraat 12,3720,Kortessem,Limburg,Belgium,,False,True,False,False,,,,
+616,SINT FERDINAND,Dutch,Sint Ferdinandstraat 1,3560,Lummen,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+617,MEKANDERS,Dutch,Steenweg op Oosthoven 25,2300,Turnhout,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+618,ROZEMARIJN,Dutch,Wageman 5,3140,Keerbergen,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,1.0,,
+621,BBC LIONS NIJLEN,Dutch,Italiëlei 171 / 4A,2060,Antwerpen,Antwerpen,Belgium,1.0,True,True,False,True,1.0,1.0,1.0,1.0
+622,HUMIVAL,Dutch,Nijverheidsstraat 9,9950,Waarschoot,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+624,INOA CAMPUS HANDZAME,Dutch,De zilten 52,8800,Roeselare,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+625,DE BRON,Dutch,Lesseliersdreef 3,9120,Beveren,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,,,
+626,RAVELIJN,Dutch,Barrierestraat 4 A,8200,Brugge St.-Michiels,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+627,SALIX,Dutch,Stationsstraat 3,9690,Kluisbergen,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+631,BASKETBALCLUB COBRAS,Dutch,Horstebaan 95,2900,Schoten,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+632,HET ROER,Dutch,Kramerslaan 3,3500,Hasselt,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+633,BA DE BEEMDEN,Dutch,Stuivenbergbaan 135,2800,Mechelen,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,
+634,WIRIC,Dutch,Diestersteenweg 59,3800,Sint-Truiden,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+635,MISPO BALEN,Dutch,Misseweg 22/3,2490,Balen,Antwerpen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+637,HET PUNT,Dutch,Bethaniëlei 5,2960,Brecht,Antwerpen,Belgium,1.0,True,True,True,True,,,,
+639,DE ROER ME NIETEN,Dutch,Sint-Ferdinandstraat 1,3560,Lummen,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+640,AVALI VZW,Dutch,Hemelstraat 27,3582,Koersel,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+642,DE GIEK,Dutch,Thomasboslaan 40,3630,Maasmechelen,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,
+643,KRACHT EN GEDULD,Dutch,Klein-Hulststraat 124,9100,Sint-Niklaas,Oost-Vlaanderen,Belgium,1.0,True,False,False,True,,,,
+644,APOJO,Dutch,Herseltsesteenweg 35,3200,Aarschot,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+645,SPORTIVIA,Dutch,Krommewege 44,9990,Maldegem,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+646,DE POEL,Dutch,Dorpstraat 21,1701,Itterbeek,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+648,DE NIEUWE BRUG,Dutch,Pontstraat 12,9831,Deurle,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,,,,
+651,ORANJE,Dutch,Brouwerijstraat 7,8340,Sijsele,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+654,KVC WESTERLO,Dutch,De Merodedreef 189,2260,Westerlo,Antwerpen,Belgium,1.0,False,False,False,False,,,,
+656,MOVIMENTO VZW,Dutch,Armand Segerslei 10,2640,Mortsel,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+657,DE VENNEBOWLERS,Dutch,Ganzenplein 5 bus 002,2200,Herentals,Antwerpen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+658,DAIS VZW,Dutch,Kamstraat 22 ,1750,Lennik,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+659,LEVEDALE,Dutch,De Biest 10,1861,Wolvertem,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+660,DE STEIGER,Dutch,Riddermoerstraat 30,2880,Bornem,Antwerpen,Belgium,1.0,True,True,True,True,,,,
+661,ROBA,Dutch,Nobelstraat 144 A,3128,Baal,Vlaams-Brabant,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+663,STB GYMNASTICS BERCHEM,Dutch,Karel Coggestraat 25,2600,Berchem,Antwerpen,Belgium,,True,True,True,True,,,,
+664,TANDEM SPORT,Dutch,Onze Lieve Vrouwstraat 18,3590,Diepenbeek,Limburg,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+665,TAFELTENNISCLUB ZELE VZW,Dutch,Guido Gezellestraat 23,9240,Zele,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+666,CENTRUM THERAPEUTISCH PAARDRIJDEN,Dutch,Mastellenstraat 21b,3400,Landen,Vlaams-Brabant,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+669,OOSTHEUVEL,Dutch,Welzijnscampus 5 bus 31,3600,Genk,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+670,RAAKZAAM,Dutch,Onze-Lieve-Vrouwplein 31,9100,Sint Niklaas,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+672,TANDEM  WEST,Dutch,R. Vandammestraat 48,8670,Koksijde,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+673,BUITENBEENTJES,Dutch,Haneweestraat 2,9112,Sinaai,Oost-Vlaanderen,Belgium,1.0,False,False,True,False,,,,
+674,DE BUITELAARS,Dutch,Zandvleuge 116,9900,Eeklo,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+675,'T PERDJE,Dutch,Meerlaerstraat 20,2430,Laakdal,Antwerpen,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
+678,HET PLUIMKE,Dutch,Oud Kevelaer 14,3640,Kinrooi,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+680,TC STANDAARD WETTEREN-OCTOPUS MERELBEKE,Dutch,P/A Abrikozenstraat 13,9820,Merelbeke,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+682,DE BORGGRAAF-HASSELT,Dutch,Arbeidstraat 72,3600,Genk,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+683,REAL FC BERG,Dutch,Bergerstraat 69,3680,Neeroeteren,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+685,HEISTSE TENNISCLUB VZW,Dutch,Boonmarkt 5-7,2220,Hallaar,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+686,GT WIMBLEDON,Dutch,Zoutleeuwsesteenweg 120,3803,Wilderen,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+689,T.C. DE DAGERAAD,Dutch,Rerum Novarumlaan 35,2340,Beerse,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,
+690,DE SCHELP,Dutch,Bethaniënlei 5,2960,Brecht,Antwerpen,Belgium,1.0,True,True,True,True,,,,
+691,DE DIABOLO'S,Dutch,Lodewijck Van Berckenlaan 87,2600,Berchem,Antwerpen,Belgium,,False,True,True,True,,,,
+693,'T ATELJEE,Dutch,Sportveldlaan 21,2530,Boechout,Antwerpen,Belgium,1.0,True,True,True,True,,,,
+694,DE PELIKAAN,Dutch,Anneessensstraat 27,8930,Menen,West-Vlaanderen,Belgium,0.0,False,True,True,True,1.0,1.0,1.0,1.0
+695,INDIVIDUALS,Dutch,Brusselseswg 511/A,9050,Gentbrugge,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+696,TRIANGEL JEUGDSPORT,Dutch,Molendreef 16c,9920,Lovendegem,Oost-Vlaanderen,Belgium,1.0,False,False,True,True,1.0,1.0,1.0,1.0
+697,VONDELS VZW,Dutch,Ter Waarde 45,8900,Ieper,West-Vlaanderen,Belgium,1.0,True,True,True,False,1.0,1.0,,1.0
+699,'T VELDZICHT,Dutch,Julius Delaplacestraat 57,8310,Sint-Kruis Brugge,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+700,ZONNESTRAAL VZW,Dutch,Sint-Niklaasstraat 24 ,1540,Herfelingen,Vlaams-Brabant,Belgium,1.0,True,False,False,False,,,,
+703,KABAS,Dutch,Paanderstraat 147,8540,Deerlijk,West-Vlaanderen,Belgium,,False,False,False,False,,,,
+704,G-BASKET LOMMEL,Dutch,Korte - Vorenweg 24,3920,Lommel,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+707,KBBC ZOLDER,Dutch,Schootstraat 217,3550,Heusden-Zolder,Limburg,Belgium,1.0,True,True,True,True,1.0,,1.0,1.0
+708,KSAV SINT-DIMPNA,Dutch,Pastoor Dergenstraat 28,2440,Geel,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,,1.0
+709,BC ASSE TERNAT,Dutch,Schapenbaan 8,1741,Ternat,Vlaams-Brabant,Belgium,1.0,True,False,False,False,,,,
+710,KOG-STASEGEM G-VOETBAL,Dutch,Veldrijk 22,8530,Harelbeke-Stasegem,West-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+711,G-OMNISPORTCLUB VLAAMSE ARDENNEN,Dutch,Molenstraat 70,9690,Kluisbergen,Oost-Vlaanderen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+713,JC-GRUITRODE,Dutch,Kerkplein 1,3670,Meeuwen-Gruitrode,Limburg,Belgium,1.0,True,True,True,True,1.0,1.0,,
+714,UNIFIED SAILING BELGIUM VZW,Dutch,Mussenhoevelaan 58,2530,Boechout,Antwerpen,Belgium,0.0,False,False,False,True,,1.0,,1.0
+715,SOMIVAL VZW,Dutch,Olmstraat 85,8790,Waregem,West-Vlaanderen,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+716,BBC GEMBO,Dutch,Lange Beeldekensstraat 102,2060,Antwerpen,Antwerpen,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,
+718,VZW TENNISCLUB LUMMEN,Dutch,Sportweg 10,3560,Lummen,Limburg,Belgium,,True,True,False,False,,,,1.0
+719,DE NISSE,Dutch,Gentsesteenweg 66,8500,Kortrijk,West-Vlaanderen,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+720,KONINKLIJKE LEBBEEKSE ATLETIEKCLUB,Dutch,Heizijdestraat 29,9280,Lebbeke,Oost-Vlaanderen,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+721,SPORTCLUB HUIS IN DE STAD VZW,Dutch,Hamelendreef 60,3300,Tienen,Vlaams-Brabant,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+722,'T HAVERENHOF VZW,Dutch,Haverenblok 99,1980,Eppegem,Vlaams-Brabant,Belgium,,True,True,True,True,,,,
+723,KORTRIJK SPURS VZW,Dutch,Meiweg 63,8550,Zwevegem,West-Vlaanderen,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
+724,SPINSHUTTLE,Dutch,Sportpark Brasel,2480,Dessel,Antwerpen,Belgium,,True,True,True,True,,1.0,1.0,
+725,OSTEND TENNIS CLUB,Dutch,Koninginnelaan 83,8400,Oostende,West-Vlaanderen,Belgium,,False,True,False,False,,,,
+727,AC DEINZE,Dutch,Gentstraat 68 /B15,9800,Deinze,Oost-Vlaanderen,Belgium,,False,True,True,True,,,1.0,1.0
+729,2GETHER ON WHEELS,Dutch,Van De Wiellei 136,2930,Brasschaat,Antwerpen,Belgium,,False,True,True,True,,1.0,1.0,1.0
+730,BBC FALCO GENT,Dutch,Rietorchisstraat 11,9000,Gent,Oost-Vlaanderen,Belgium,,False,True,False,True,,1.0,,1.0
+731,GYMFLEX VZW,Dutch,Lemmensstraat 42,2800,Mechelen,Antwerpen,Belgium,,False,True,True,True,1.0,1.0,,
+732,TERNATSE OMNISPORT VOOR ANDERSVALIDEN,Dutch,Doelstraat 51,1741,Wambeek,Vlaams-Brabant,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+733,NET CONNECT CYCLING TEAM,Dutch,Molenberg 57,2460,Kasterlee,Antwerpen,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
+734,AC HERENTALS,Dutch,Sint Waldetrudisstraat 59,2200,Herentals,Antwerpen,Belgium,,False,True,False,True,1.0,1.0,1.0,1.0
+735,GEMEENTELIJKE TENNIS TESSENDERLO,Dutch,Oude Tramlijn 13,2430,Laakal,Limburg,Belgium,,False,True,False,False,1.0,1.0,1.0,1.0
+736,OKIDO BASKET,Dutch,Kerkstraat 127,2370,Arendonk,Antwerpen,Belgium,,False,True,False,True,1.0,1.0,1.0,1.0
+738,DALO VZW,Dutch,Koningsstraat 56,3920,Lommel,Limburg,Belgium,,False,True,False,True,1.0,,,
+740,TER HEIDE,Dutch,Klotstraat 125,3600,Genk,Limburg,Belgium,,False,False,True,True,1.0,1.0,,1.0
+741,GYM MOL,Dutch,Lange Blok 11,2431,Laakdal,Antwerpen,Belgium,,False,False,True,True,1.0,1.0,1.0,1.0
+742,NOORDERWIJKSE BADMINTONCLUB ,Dutch,Oude Dreef 21 ,2200,Noorderwijk,Antwerpen,Belgium,,False,False,False,False,,,,
+744,OC CIRKANT,Dutch,Aartrijksestraat 77,8211,Aartrijke,West-Vlaanderen,Belgium,,False,False,True,True,1.0,1.0,1.0,1.0
+745,GENTSE G-DUIVELS,Dutch,Iréne Joliotstraat 6,9032,Wondelgem,Oost-Vlaanderen,Belgium,,False,False,True,True,1.0,1.0,1.0,1.0
+746,A-JUDOCLUB TATAMIVRIENDEN,Dutch,Rupelmondestraat 257,9150,Bazel,Oost-Vlaanderen,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+747,LOKERSE BADMINTONCLUB,Dutch,Sportlaan 2-3,9160,Lokeren,Oost-Vlaanderen,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+748,TTC RECREAS GULLEGEM,Dutch,Tulpenpark 36,8510,Rollegem,West-Vlaanderen,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+749,LIONS TORHOUT,Dutch,Koningsdreef 5,8820,Torhout,West-Vlaanderen,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+750,BALTI SPECIALS KORTRIJK,Dutch,"Minister A. de Clercklaan, 15",8500,Kortrijk,West-Vlaanderen,Belgium,,False,False,False,True,1.0,1.0,1.0,1.0
+751,WAASLANDSE G-BASKETTERS,Dutch,"Leo Verbeecklaan 3, bus 8",2070,Burcht,Antwerpen,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+752,GFC SK BEVEREN,Dutch,Nieuwe steenweg 47,9140,Elversele,Oost-Vlaanderen,Belgium,,False,False,False,True,,1.0,1.0,1.0
+753,EUROSTARS,Dutch,Nieuwdreef 113/5,2170,Merksem,Antwerpen,Belgium,,False,False,False,False,,1.0,1.0,1.0
+754,NO LIMIT VZW,Dutch,Moerelei 123,2610,Wilrijk,Antwerpen,Belgium,,False,False,False,False,,,,
+755,WAVERSE BADMINTONCLUB,Dutch,Eikenboslaan 3 bus 101 ,2500,Koningshooikt,Antwerpen,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+756,DE BOOMHUT,Dutch,Kerkstraat 40,2850,Boom,Antwerpen,Belgium,,False,False,False,False,,,,
+757,ANTWERP CYCLING TEAM KONTICH,Dutch,KONINGIN ASTRIDLAAN 78,2550,Kontich,Antwerpen,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+758,K.W.T.P.C.,Dutch,Tennislaan 16 ,3600,Genk,Limburg,Belgium,,False,False,False,False,,1.0,1.0,1.0
+759,K SCHELLE SPORT,Dutch,Kapelstraat 140,2627,Schelle,Antwerpen,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+760,BRAXGATA,Dutch,Grote Steenweg 616,2600,Berchem,Antwerpen,Belgium,,False,False,False,False,1.0,1.0,,
+761,ROYAL VICTORY HOCKEY CLUB,Dutch,Koniging Elisabethlei 8,2018,Antwerpen,Antwerpen,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
+762,HORSE FUN VERBRANDE BRUG,Dutch,Grimbergsesteenweg 323,1980,Eppegem,Vlaams-Brabant,Belgium,,False,False,False,False,,1.0,1.0,1.0
+763,GEELSE KAJAKVAARDERS,Dutch,Kluterstraat 19,2440,Geel,Antwerpen,Belgium,,False,False,False,False,,1.0,,1.0
+764,KMTHC,Dutch,Zemstseweg 39,2800,Mechelen,Antwerpen,Belgium,,False,False,False,False,,,,
+765,KHC DRAGONS vzw,Dutch,Sportendreef 1,2930,Brasschaat,Antwerpen,Belgium,,False,False,False,False,,1.0,1.0,1.0
+766,VRIJBROEK HOCKEY CLUB MECHELEN,Dutch,Hombeeksesteenweg 262,2800,Mechelen,,Belgium,,False,False,False,False,,1.0,,1.0
+767,GIDOS,Dutch,Kruishoutemseweg 193,8790,Waregem,West-Vlaanderen,Belgium,,False,False,False,False,,1.0,1.0,1.0
+768,KONINKLIJKE TURNKRING BOOM,Dutch,Gasstraat 23,2850,Boom,Antwerpen,Belgium,,False,False,False,False,,,,
+769,JUDO CLUB LEOPOLDSBURG,Dutch,Jean Lenaersstraat 9,3971,Leopoldsburg,Limburg,Belgium,,False,False,False,False,,,,
+770,BADMINTON WAREGEM,Dutch,Meerstraat 5,8790,Waregem,West-Vlaanderen,Belgium,,False,False,False,False,,,1.0,1.0
+771,3MASTER,Dutch,Kempenstraat 32,2460,Kasterlee,Antwerpen,Belgium,,False,False,False,False,,,1.0,1.0
+772,TURNKRING DEUGD EN MOED EKEREN,Dutch,Oorderseweg 83 bus 6,2180,Ekeren,Antwerpen,Belgium,,False,False,False,False,,,1.0,1.0
+773,BOAS,Dutch,President Rooseveltplein 20,8500,Kortrijk,West-Vlaanderen,Belgium,,False,False,False,False,,,1.0,1.0
+774,SwimAcad,Dutch,Gestichtstraat 18,9000,Gent,Oost-Vlaanderen,Belgium,,False,False,False,False,,,1.0,1.0
+775,MANEGE DENNENHOF,Dutch,Dennendreef 64,9850,Landegem,Oost-Vlaanderen,Belgium,,False,False,False,False,,,1.0,1.0
+776,K. SPORTING WIJCHMAAL,Dutch,Sportlaan 10,3990,Peer,,Belgium,,False,False,False,False,,,,1.0
+777,CITY PIRATES,Dutch,Speelpleinstraat 72,2170,Merksem,Antwerpen,Belgium,,False,False,False,False,,,,1.0
+778,BELOEGA FIT,Dutch,Schoolstraat 25,3020,Herent,Vlaams-Brabant,Belgium,,False,False,False,False,,,,1.0
+779,Ruitersclub Domein Leiedal,Dutch,Kruiskouter 54,8501,Bissegem,West-Vlaanderen,Belgium,,False,False,False,False,,,,1.0
+780,BASKET DESSELGEM,Dutch,Reinareweg 9,8791,Waregem,West-Vlaanderen,Belgium,,False,False,False,False,,,,1.0
+781,ESSENSE TENNISCLUB INTER,Dutch,Lazaret 11,2910,Essen,Antwerpen,Belgium,,False,False,False,False,,,,1.0
+782,Sportgroep Vaste Vuist Lauwe,Dutch,Lauwbergstraat 99,8930,Lauwe,West-Vlaanderen,Belgium,,False,False,False,False,,,,1.0
+783,KIDS HASSELT,Dutch,Borggravevijversstraat 9,3500,Hasselt,Limburg,Belgium,,False,False,False,False,,,,
+784,KONINKLIJKE HOCKEYCLUB BRUGGE,Dutch,K. Leopold III Laan 115a,8200,Brugge,West-Vlaanderen,Belgium,,False,False,False,False,,,,1.0
+785,G-VOETBAL KORTRIJK,Dutch,Beneluxepark 26,8500,Kortrijk,West-Vlaanderen,Belgium,,False,False,False,False,,,,1.0
+786,KHC SAINT-GEORGES,Dutch,Doorniksewijk 1,8500,Kortrijk,West-Vlaanderen,Belgium,,False,False,False,False,,,,1.0
+787,ATHLETES FOR HOPE,Dutch,Zavelbergen 12,2990,Wuustwezel,Antwerpen,Belgium,,False,False,False,False,,,,
+788,HERK-SPORT,Dutch,Sint-Lambrechtsherkstraat 96,3500,Hasselt,Limburg,Belgium,,False,False,False,False,,,,
