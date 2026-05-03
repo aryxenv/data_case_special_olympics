@@ -7,31 +7,7 @@
 The model follows a classic **star schema** with 5 dimension tables and 2 fact tables.
 All data originates from 11 raw Excel files (1 Certifications, 1 Clubs, 9 yearly Results).
 
-```
-                    ┌──────────────┐
-                    │  dim_athlete  │
-                    └──────┬───────┘
-                           │
-┌───────────────┐   ┌──────┴───────┐   ┌────────────┐
-│ dim_geography ├───┤ fact_results  ├───┤  dim_sport  │
-└───────────────┘   └──────┬───────┘   └────────────┘
-                           │
-┌───────────────┐   ┌──────┴───────┐
-│   dim_event   ├───┤              │
-└───────────────┘   └──────┬───────┘
-                           │
-                    ┌──────┴───────┐
-                    │   dim_time   │
-                    └──────────────┘
-
-┌──────────────┐   ┌────────────────────┐   ┌──────────────┐
-│ dim_athlete  ├───┤ fact_participation  ├───┤  dim_time    │
-└──────────────┘   └─────────┬──────────┘   └──────────────┘
-                             │
-                    ┌────────┴───────┐
-                    │ dim_geography  │
-                    └────────────────┘
-```
+![Star Schema](../img/r0984834_Model.png)
 
 All relationships are **many-to-one** (fact → dimension), modeled as One-to-Many in Power BI.
 
