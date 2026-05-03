@@ -33,12 +33,14 @@ The main objective is to answer business questions about athlete participation, 
 
 ## Run the ETL
 
-Use the uv-managed environment under `src\.venv`:
+> [!NOTE]
+> Not required, scripts already ran and stored in [data](./data/)
 
 ```powershell
-uv venv src\.venv
-uv pip install --python src\.venv\Scripts\python.exe -r src\requirements.txt
-src\.venv\Scripts\python.exe src\main.py
+cd src
+uv venv
+uv pip install -r requirements.txt
+uv run main.py
 ```
 
 This runs the full medallion pipeline from raw Excel files to validated gold-layer CSVs:
@@ -46,6 +48,10 @@ This runs the full medallion pipeline from raw Excel files to validated gold-lay
 ```text
 data/raw -> data/bronze -> data/silver -> data/gold
 ```
+
+## PowerBI
+
+No setup required, data already loaded in [pbix/r0984834_Dashboard.pbix](./pbix/r0984834_Dashboard.pbix). Simply open the file and you should see the report.
 
 ## Project Workflow
 
