@@ -3,7 +3,7 @@
 > [!NOTE]
 > Grading? Skip to [Final Deliverables](#final-deliverables) to find the files you are looking for in this project.
 
-Final PowerBI dashboard in [./pbix](./pbix), or directly open [./pbix/r0984834_Dashboard.pbix](./pbix/r0984834_Dashboard.pbix) in PowerBI or see [./pbix/pages](./pbix/pages).
+The final Power BI dashboard is available online at [PowerBI Web (TM Only - doesn't look great)](https://app.powerbi.com/links/GCpQLOmmdj?ctid=77d33cc5-c9b4-4766-95c7-ed5b515e1cce&pbi_source=linkShare), or locally in [./pbix/r0984834_Dashboard.pbix - better quality](./pbix/r0984834_Dashboard.pbix). You can also view page screenshots in [./pbix/pages](./pbix/pages).
 
 ## Overview
 
