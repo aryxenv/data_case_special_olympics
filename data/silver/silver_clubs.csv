@@ -21,7 +21,7 @@ group_number,name,primary_language,address_street_and_number,zipcode,city,provin
 123,LA CLARINE,French,rue Dieu d'en bas 44,7170,Fayt-Lez-Manage,Hainaut,Belgium,1.0,True,True,True,True,,,1.0,1.0
 124,JENNEVAUX RENCONTRE,French,rue du Centre 53,5170,Lesve,Namur,Belgium,1.0,True,True,False,False,,,,
 125,LES KOLOUTES,French,Avenue Félix Lacourt 70,1390,Grez-Doiceau,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
-126,SPORT DE L'AMITIE,French,,,Mont-Saint-Guibert,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
+126,SPORT DE L'AMITIE,French,,1435,Mont-Saint-Guibert,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
 127,PÉRUWELZ RAINBOW SPORTS,French,Carrière d'Antour 1,7520,Tournai,Hainaut,Belgium,1.0,True,True,True,True,,1.0,1.0,1.0
 128,LES HAUTES ARDENNES,French,Place des Chasseurs Ardennais,6690,Vielsalm,Luxembourg,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
 129,C.S. DE HEMPTINNE,French,Drève de Hemptinne 4,1350,Jauche,Brabant Wallon,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
@@ -145,7 +145,7 @@ group_number,name,primary_language,address_street_and_number,zipcode,city,provin
 293,LES 3 SAPINS,French,Rue François Onckelet 10,7070,Mignault,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
 294,LA SAPINIERE DE QUAREGNON,French,Rue De Pâturages 48,7390,Quaregnon,Hainaut,Belgium,,True,True,True,True,1.0,1.0,1.0,1.0
 296,KANO JC TOURNAI,French,Rue de la Royère 80,7730,Nechin,Hainaut,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
-297,FOYER DU CALYDON,French,,,Liège,Liège,Belgium,,False,True,True,True,1.0,1.0,,
+297,FOYER DU CALYDON,French,,4000,Liège,Liège,Belgium,,False,True,True,True,1.0,1.0,,
 298,CERCLE ADAPTE ANDENNAIS,French,Rue de Velaine 162,5300,Andenne,Namur,Belgium,,False,False,True,False,,,,1.0
 299,A.C.I.S. SOLEIL LEVANT,French,"Rue de Lodelinsart, 97",6061,Montignies - Sur - Samble,Hainaut,Belgium,,False,True,True,True,1.0,1.0,1.0,1.0
 300,LE CHAF ASBL,French,Rue Jules Maltaux 62,6240,Farciennes,Hainaut,Belgium,1.0,True,True,True,True,1.0,1.0,1.0,1.0
@@ -176,7 +176,7 @@ group_number,name,primary_language,address_street_and_number,zipcode,city,provin
 329,L'ACCUEIL MOSAN ASBL,French,Avenue de la Marlagne 205,5000,Namur,Namur,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
 330,LA BOULAIE,French,Rue Jéricho 10,6460,Chimay,Hainaut,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
 331,SAPI BL'A,French,213 Avenue Alphonse Allard,1420,Braine L'Alleud,Brabant Wallon,Belgium,,False,False,False,False,1.0,1.0,,1.0
-332,B.C. CLERFAYT,French,Rue de Clerfayt 104/C,,Hainaut,,Belgium,,False,False,False,False,,,,
+332,B.C. CLERFAYT,French,Rue de Clerfayt 104/C,7131,Hainaut,,Belgium,,False,False,False,False,,,,
 333,EESSCF - LES PEUPLIERS,French,Rue Mionvaux 33,6900,Marloie,Luxembourg,Luxembourg,,False,False,False,False,,,,
 334,LE NIDVELLES° (LE COLOMBIER 2),French,Allée de la Cense du Colombier 2,1400,Nivelles,Brabant Wallon,Belgium,,False,False,False,False,1.0,1.0,1.0,1.0
 335,ASCENSION ERQUELINNES,French,13 rue de Bougnies,6560,Erquelinnes,Hainaut,Belgium,,False,False,False,False,,,,

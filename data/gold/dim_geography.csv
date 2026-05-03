@@ -22,7 +22,7 @@ geography_key,club_id,club_name,province,city,country,primary_language,zipcode
 20,123,LA CLARINE,Hainaut,Fayt-Lez-Manage,Belgium,French,7170
 21,124,JENNEVAUX RENCONTRE,Namur,Lesve,Belgium,French,5170
 22,125,LES KOLOUTES,Brabant Wallon,Grez-Doiceau,Belgium,French,1390
-23,126,SPORT DE L'AMITIE,Brabant Wallon,Mont-Saint-Guibert,Belgium,French,
+23,126,SPORT DE L'AMITIE,Brabant Wallon,Mont-Saint-Guibert,Belgium,French,1435
 24,127,PÉRUWELZ RAINBOW SPORTS,Hainaut,Tournai,Belgium,French,7520
 25,128,LES HAUTES ARDENNES,Luxembourg,Vielsalm,Belgium,French,6690
 26,129,C.S. DE HEMPTINNE,Brabant Wallon,Jauche,Belgium,French,1350
@@ -146,7 +146,7 @@ geography_key,club_id,club_name,province,city,country,primary_language,zipcode
 144,293,LES 3 SAPINS,Hainaut,Mignault,Belgium,French,7070
 145,294,LA SAPINIERE DE QUAREGNON,Hainaut,Quaregnon,Belgium,French,7390
 146,296,KANO JC TOURNAI,Hainaut,Nechin,Belgium,French,7730
-147,297,FOYER DU CALYDON,Liège,Liège,Belgium,French,
+147,297,FOYER DU CALYDON,Liège,Liège,Belgium,French,4000
 148,298,CERCLE ADAPTE ANDENNAIS,Namur,Andenne,Belgium,French,5300
 149,299,A.C.I.S. SOLEIL LEVANT,Hainaut,Montignies - Sur - Samble,Belgium,French,6061
 150,300,LE CHAF ASBL,Hainaut,Farciennes,Belgium,French,6240
@@ -177,7 +177,7 @@ geography_key,club_id,club_name,province,city,country,primary_language,zipcode
 175,329,L'ACCUEIL MOSAN ASBL,Namur,Namur,Belgium,French,5000
 176,330,LA BOULAIE,Hainaut,Chimay,Belgium,French,6460
 177,331,SAPI BL'A,Brabant Wallon,Braine L'Alleud,Belgium,French,1420
-178,332,B.C. CLERFAYT,,Hainaut,Belgium,French,
+178,332,B.C. CLERFAYT,,Hainaut,Belgium,French,7131
 179,333,EESSCF - LES PEUPLIERS,Luxembourg,Marloie,Luxembourg,French,6900
 180,334,LE NIDVELLES° (LE COLOMBIER 2),Brabant Wallon,Nivelles,Belgium,French,1400
 181,335,ASCENSION ERQUELINNES,Hainaut,Erquelinnes,Belgium,French,6560
