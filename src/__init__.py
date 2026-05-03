@@ -1,5 +1,5 @@
-"""Special Olympics ETL pipeline – source package."""
+"""Special Olympics ETL pipeline source package."""
 
-from .pipeline import Pipeline
+from .orchestration import Pipeline
 
 __all__ = ["Pipeline"]

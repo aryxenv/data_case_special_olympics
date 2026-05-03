@@ -16,6 +16,7 @@ from pathlib import Path
 import pandas as pd
 
 from src.bronze import CertificationsExtractor, ClubsExtractor, ResultsExtractor
+from src.core.paths import BRONZE_DIR, GOLD_DIR, RAW_DIR, SILVER_DIR
 from src.gold import (
     DimAthleteTransformer,
     DimEventTransformer,
@@ -31,16 +32,9 @@ from src.silver import (
     ResultsCleaner,
 )
 from src.utils import DataLoader
-from src.validation import OutputValidator
+from src.quality import OutputValidator
 
 logger = logging.getLogger(__name__)
-
-# Project paths
-_PROJECT_ROOT = Path(__file__).resolve().parent.parent
-_RAW_DIR = _PROJECT_ROOT / "data" / "raw"
-_BRONZE_DIR = _PROJECT_ROOT / "data" / "bronze"
-_SILVER_DIR = _PROJECT_ROOT / "data" / "silver"
-_GOLD_DIR = _PROJECT_ROOT / "data" / "gold"
 
 
 class Pipeline:
@@ -56,16 +50,16 @@ class Pipeline:
 
     def __init__(
         self,
-        raw_dir: str | Path = _RAW_DIR,
-        bronze_dir: str | Path = _BRONZE_DIR,
-        silver_dir: str | Path = _SILVER_DIR,
-        gold_dir: str | Path = _GOLD_DIR,
+        raw_dir: str | Path = RAW_DIR,
+        bronze_dir: str | Path = BRONZE_DIR,
+        silver_dir: str | Path = SILVER_DIR,
+        gold_dir: str | Path = GOLD_DIR,
     ) -> None:
         self._raw_dir = Path(raw_dir)
         self._bronze_dir = Path(bronze_dir)
         self._silver_dir = Path(silver_dir)
         self._gold_dir = Path(gold_dir)
-        self._loader = DataLoader(str(self._raw_dir))
+        self._loader = DataLoader(self._raw_dir)
 
         # Bronze outputs stored after extraction
         self.bronze_certifications: pd.DataFrame | None = None

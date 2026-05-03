@@ -1,14 +1,18 @@
-"""Special Olympics ETL pipeline — entry point.
+r"""Special Olympics ETL pipeline - entry point.
 
 Usage::
 
-    python main.py
+    python src\main.py
 """
 
 import logging
+from pathlib import Path
 import sys
 
-from src.pipeline import Pipeline
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from src.orchestration import Pipeline
 
 
 def main() -> None:
