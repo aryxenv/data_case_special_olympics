@@ -1,5 +1,8 @@
 # Project: Special Olympics Data Dashboard
 
+> [!NOTE]
+> Grading? Skip to [Final Deliverables](#final-deliverables) to find the files you are looking for in this project.
+
 Final PowerBI dashboard in [./pbix](./pbix), or directly open [./pbix/r0984834_Dashboard.pbix](./pbix/r0984834_Dashboard.pbix) in PowerBI or see [./pbix/pages](./pbix/pages).
 
 ## Overview
@@ -68,28 +71,30 @@ The latest reproducibility run completed with **68/68 validation checks passed**
 
 ## Final Deliverables
 
-Everything gets submitted in one ZIP file containing:
+Use this section as the grading checklist. It maps the evaluation criteria directly to the files that prove each requirement.
 
-- Project Plan & Wireframes.
-- Dimensional Model design.
-- Power BI Dashboard (.pbix).
-- Python Repository & Cleaned Data.
-- Documentation with data audit.
+| Category                     | Criterion                  |  Points | Where to evaluate                                                                                                                                                                                                                     |
+| ---------------------------- | -------------------------- | ------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Management & Modeling        | Phase 0: Project Plan      |       5 | [Project plan](./pm/r0984834_ProjectPlan.md) or [PDF version](./pm/r0984834_ProjectPlan.pdf)                                                                                                                                          |
+| Management & Modeling        | Phase 1: Dimensional Model |      15 | [Dimensional model documentation](./docs/md/r0984834_DimensionalModel.md), [model image](./docs/img/r0984834_Model.png), and [data requirements](./docs/md/r0984834_DataRequirements.md)                                              |
+| Python Pipeline & Versioning | ETL Logic & OOP            |      15 | Python package in [src](./src), entry point [src/main.py](./src/main.py), orchestration in [src/orchestration](./src/orchestration), ETL layers in [src/bronze](./src/bronze), [src/silver](./src/silver), and [src/gold](./src/gold) |
+| Python Pipeline & Versioning | Versioning (GitHub)        |      10 | [Commit history](https://github.com/aryxenv/data_case_special_olympics/commits/main) and [pull requests](https://github.com/aryxenv/data_case_special_olympics/pulls?q=is%3Apr) with conventional commits                             |
+| Python Pipeline & Versioning | Code Structure             |      10 | Clean source layout in [src](./src), shared paths in [src/core](./src/core), profiling in [src/profiling](./src/profiling), validation in [src/quality](./src/quality), and run instructions in [Run the ETL](#run-the-etl)           |
+| Power BI Development         | Wireframe                  |       5 | [Dashboard wireframe](./docs/img/r0984834_Wireframe.png)                                                                                                                                                                              |
+| Power BI Development         | Semantic Model & Measures  |      10 | [Power BI file](./pbix/r0984834_Dashboard.pbix), [Power BI setup and measures](./pbix/README.md), and [dimensional model](./docs/md/r0984834_DimensionalModel.md)                                                                     |
+| Power BI Development         | Actionable Dashboard       |      10 | [Power BI file](./pbix/r0984834_Dashboard.pbix) and page screenshots: [overview](./pbix/pages/overview.png), [athlete](./pbix/pages/athlete.png), [performance](./pbix/pages/performance.png), [region](./pbix/pages/region.png)      |
+| Documentation & Validation   | Data Dictionary            |      10 | [Data requirements](./docs/md/r0984834_DataRequirements.md), [data exploration and audit](./docs/md/r0984834_DataExploration.md), and [dimensional model](./docs/md/r0984834_DimensionalModel.md)                                     |
+| Documentation & Validation   | Validation Audit           |      10 | [Final validation and self-evaluation](./docs/md/r0984834_FinalValidation.md), automated validator in [src/quality](./src/quality), and validated CSV outputs in [data/gold](./data/gold)                                             |
+| **Total**                    |                            | **100** |                                                                                                                                                                                                                                       |
 
-Key project documentation:
+> [!IMPORTANT]
+> I'm not giving myself max points, just making your life easier to know the point split for each item!
 
-- [Data requirements](./docs/md/r0984834_DataRequirements.md)
-- [Data exploration and audit](./docs/md/r0984834_DataExploration.md)
-- [Dimensional model](./docs/md/r0984834_DimensionalModel.md)
-- [Final validation and self-evaluation](./docs/md/r0984834_FinalValidation.md)
-- [Power BI setup and measures](./pbix/README.md)
+Additional supporting files:
+
 - [AI usage disclosure](./AI.md)
-
-## Evaluation Focus
-
-- **Accuracy:** Numbers must match the raw data.
-- **Professionalism:** Treat it like a real client job.
-- **Design:** Intuitive and logical dashboard layout.
+- [Power BI documentation](./pbix/README.md)
+- [Generated gold-layer CSVs](./data/gold)
 
 <!-- llm-mem:readme:start -->
 
